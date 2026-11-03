@@ -1,0 +1,8 @@
+# ros_gz_bridge; chạy: ros2 run ros_gz_bridge parameter_bridge --ros-args -p config_file:=<đường dẫn file này>
+- {ros_topic_name: /clock, gz_topic_name: /clock, ros_type_name: rosgraph_msgs/msg/Clock, gz_type_name: gz.msgs.Clock, direction: GZ_TO_ROS}
+- {ros_topic_name: /camera/image, gz_topic_name: /camera/image, ros_type_name: sensor_msgs/msg/Image, gz_type_name: gz.msgs.Image, direction: GZ_TO_ROS}
+- {ros_topic_name: /camera/depth_image, gz_topic_name: /camera/depth_image, ros_type_name: sensor_msgs/msg/Image, gz_type_name: gz.msgs.Image, direction: GZ_TO_ROS}
+- {ros_topic_name: /camera/camera_info, gz_topic_name: /camera/camera_info, ros_type_name: sensor_msgs/msg/CameraInfo, gz_type_name: gz.msgs.CameraInfo, direction: GZ_TO_ROS}
+- {ros_topic_name: /joint_states, gz_topic_name: /joint_states, ros_type_name: sensor_msgs/msg/JointState, gz_type_name: gz.msgs.Model, direction: GZ_TO_ROS}
+- {ros_topic_name: /pan_cmd, gz_topic_name: /pan_cmd, ros_type_name: std_msgs/msg/Float64, gz_type_name: gz.msgs.Double, direction: ROS_TO_GZ}
+# /gt/object_poses không bridge mặc định (pose/info chạy ở tần số mô phỏng, rất nặng); kiểm GT bằng tools/check_gt.py
