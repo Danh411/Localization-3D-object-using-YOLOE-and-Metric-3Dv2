@@ -1,0 +1,7 @@
+bb12719c010110f8b038f23ccc5811898207b844cfafb45b113bfd1136061096  ./src/perception/perception/core/depth.py
+9f8c7dde825699f010466cf9e945b4b6c92acc52d72340739088c1be14a555cd  ./src/perception/perception/core/yolo.py
+b878b3194203d5683584d0f8d4b45ff8e2a8600d985ee5c0a5e9b576ca28ad06  ./src/perception/perception/core/fusion.py
+36a16bfbdf15b4382b17b27f986d0173ff432c388c247b83c1115681c86a082c  ./src/perception/perception/core/pipeline.py
+3b5ba4003150525e7fb94da32ffce7ebee87301c432b04a464d484731f791f21  ./src/perception/perception/core/geometry.py
+2aa39fd706bc724fe0fd63b081df5dd0beb425d6d94dced9875aa185fd17c50e  ./config/default.yaml
+e90aed73c76eac89803a637fc47599250f56a79a7c797015579e172dcbaccff5  ./config/classes.yaml

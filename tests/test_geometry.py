@@ -19,3 +19,11 @@ def test_world_example():
     p = backproject_optical(cx, cy, 2.0, fx, fy, cx, cy)
     w = optical_to_world(p, math.radians(90), (1, 1, 1))
     assert np.allclose(w, (1, 3, 1), atol=1e-3)
+
+def test_world_optical_roundtrip_with_pan_offset():
+    p_cam = np.array([0.25, -0.4, 2.3])
+    yaw = math.radians(45)
+    base = (2.0, 2.0, 1.2)
+    offset = (0.05, 0.0, 0.0)
+    p_world = optical_to_world(p_cam, yaw, base, offset)
+    assert np.allclose(world_to_optical(p_world, yaw, base, offset), p_cam)

@@ -23,3 +23,9 @@ def optical_to_world(p_cam, yaw, base_xyz, t_offset=(0.0, 0.0, 0.0)):
     c, s = math.cos(yaw), math.sin(yaw)
     R = np.array([[c, -s, 0], [s, c, 0], [0, 0, 1]])
     return np.asarray(base_xyz) + R @ p_link
+
+def world_to_optical(p_world, yaw, base_xyz, t_offset=(0.0, 0.0, 0.0)):
+    c, s = math.cos(yaw), math.sin(yaw)
+    R = np.array([[c, -s, 0], [s, c, 0], [0, 0, 1]])
+    p_link = R.T @ (np.asarray(p_world) - np.asarray(base_xyz)) - np.asarray(t_offset)
+    return np.array([-p_link[1], -p_link[2], p_link[0]])

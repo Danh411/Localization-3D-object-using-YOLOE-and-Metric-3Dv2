@@ -1,0 +1,7 @@
+# Ghim theo máy Windows đã chạy tốt (Quadro P620, compute 6.1). Cài trong venv WSL:
+#   pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu118
+#   pip install -r requirements-perception.txt
+ultralytics==8.4.161
+opencv-python-headless
+numpy<2
+pyyaml

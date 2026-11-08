@@ -3,3 +3,7 @@ build/
 install/
 log/
 __pycache__/
+.venv/
+*.pt
+*.ts
+*.pth
