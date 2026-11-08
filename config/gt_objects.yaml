@@ -2,6 +2,7 @@ frame: world
 objects:
 - model_name: chair_1
   class_name: chair
+  shape: box
   x: 3.5
   y: 0.8
   z: 0.45
@@ -10,6 +11,7 @@ objects:
   size_z: 0.9
 - model_name: backpack_1
   class_name: backpack
+  shape: box
   x: 0.8
   y: 3.2
   z: 0.22
@@ -18,6 +20,7 @@ objects:
   size_z: 0.45
 - model_name: plant_1
   class_name: potted_plant
+  shape: cyl
   x: 4.3
   y: 3.5
   z: 0.25
@@ -26,6 +29,7 @@ objects:
   size_z: 0.5
 - model_name: tv_1
   class_name: tv
+  shape: box
   x: 2.0
   y: 3.92
   z: 1.0
@@ -34,6 +38,7 @@ objects:
   size_z: 0.55
 - model_name: clock_1
   class_name: clock
+  shape: box
   x: 0.05
   y: 2.0
   z: 1.8
@@ -42,14 +47,18 @@ objects:
   size_z: 0.3
 - model_name: laptop_1
   class_name: laptop
+  shape: mesh
   x: 3.4
   y: 3.05
-  z: 0.715
-  size_x: 0.33
-  size_y: 0.23
-  size_z: 0.03
+  z: 0.7969499999999999
+  size_x: 0.3327
+  size_y: 0.3754
+  size_z: 0.1939
+  asset_uri: https://fuel.gazebosim.org/1.0/GoogleResearch/models/Travel_Mate_P_series_Notebook
+  semantic_label: 3
 - model_name: keyboard_1
   class_name: keyboard
+  shape: box
   x: 3.85
   y: 2.7
   z: 0.715
@@ -58,6 +67,7 @@ objects:
   size_z: 0.03
 - model_name: mouse_1
   class_name: mouse
+  shape: box
   x: 4.1
   y: 2.95
   z: 0.72
@@ -66,30 +76,40 @@ objects:
   size_z: 0.04
 - model_name: book_1
   class_name: book
+  shape: mesh
   x: 3.3
   y: 2.7
-  z: 0.725
-  size_x: 0.2
-  size_y: 0.15
-  size_z: 0.05
+  z: 0.8051999999999999
+  size_x: 0.1405
+  size_y: 0.0506
+  size_z: 0.2104
+  asset_uri: https://fuel.gazebosim.org/1.0/GoogleResearch/models/Eat_to_Live_The_Amazing_NutrientRich_Program_for_Fast_and_Sustained_Weight_Loss_Revised_Edition_Book
+  semantic_label: 4
 - model_name: cup_1
   class_name: cup
+  shape: mesh
   x: 3.85
   y: 3.1
-  z: 0.75
-  size_x: 0.08
-  size_y: 0.08
-  size_z: 0.1
+  z: 0.76745
+  size_x: 0.1263
+  size_y: 0.0906
+  size_z: 0.1349
+  asset_uri: https://fuel.gazebosim.org/1.0/GoogleResearch/models/ACE_Coffee_Mug_Kristen_16_oz_cup
+  semantic_label: 1
 - model_name: bottle_1
   class_name: bottle
+  shape: mesh
   x: 3.15
   y: 2.9
-  z: 0.81
-  size_x: 0.08
-  size_y: 0.08
-  size_z: 0.22
+  z: 0.83
+  size_x: 0.1089
+  size_y: 0.1089
+  size_z: 0.2604
+  asset_uri: https://fuel.gazebosim.org/1.0/iche033/models/Water%20Bottle
+  semantic_label: 2
 - model_name: vase_1
   class_name: vase
+  shape: cyl
   x: 4.05
   y: 3.1
   z: 0.8

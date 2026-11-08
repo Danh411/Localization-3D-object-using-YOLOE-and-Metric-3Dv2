@@ -45,6 +45,7 @@ def test_pipeline_center_object():
     out = process(np.zeros((720, 1280, 3), np.uint8), K, FakeDet(), FakeDepth(), cfg)
     o = out["observations"][0]
     assert abs(o["depth_m"] - 2) < 1e-6 and abs(o["range_m"] - 2) < 0.01 and abs(o["p_cam"][0]) < 0.01 and not o["truncated"]
+    assert o["mask"].shape == (720, 1280) and o["mask"].dtype == bool
 
 def test_pipeline_includes_ground_truth_depth():
     cfg = {"fusion": dict(mask_erode_ratio=0.05, min_valid_ratio=0.3, border_px=8), "depth": dict(max_m=10.0), "camera": dict(clip_near=0.1)}
@@ -55,6 +56,8 @@ def test_pipeline_includes_ground_truth_depth():
     depth_gt[gt_mask] = 1.5
     out = process(np.zeros((720, 1280, 3), np.uint8), K, FakeDet(), FakeDepth(), cfg, depth_gt=depth_gt)
     assert out["observations"][0]["depth_gt_m"] == 1.5
+    assert out["observations"][0]["depth_gt_at_uv_m"] == 1.5
+    assert np.allclose(out["observations"][0]["p_gt_cam_at_uv"], [0.0, 0.0, 1.5], atol=1e-3)
 
 def test_pipeline_rejects_mismatched_ground_truth_shape():
     cfg = {"fusion": dict(mask_erode_ratio=0.05, min_valid_ratio=0.3, border_px=8), "depth": dict(max_m=10.0), "camera": dict(clip_near=0.1)}

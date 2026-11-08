@@ -7,7 +7,7 @@ import torch.nn.functional as F
 
 class Metric3DDepth:
     def __init__(self, device="cuda:0", input_hw=(616, 1064), fp16=False, canonical_f=1000.0, max_m=10.0,
-                 hub_repo="yvanyin/metric3d", hub_name="metric3d_vit_small"):
+                 hub_repo="yvanyin/metric3d:main", hub_name="metric3d_vit_small"):
         self.device, self.input_hw, self.canonical_f, self.max_m = device, tuple(input_hw), canonical_f, max_m
         self.use_cuda = device.startswith("cuda")
         self.fp16 = fp16 and self.use_cuda

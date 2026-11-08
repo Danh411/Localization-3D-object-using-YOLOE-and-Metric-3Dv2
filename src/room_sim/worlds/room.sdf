@@ -49,24 +49,36 @@
     <model name="clock_1"><static>true</static><pose>0.05 2.0 1.8 0 0 0</pose>
       <link name="link"><collision name="c"><geometry><box><size>0.04 0.3 0.3</size></box></geometry></collision>
       <visual name="v"><geometry><box><size>0.04 0.3 0.3</size></box></geometry><material><ambient>0.9 0.9 0.9 1</ambient><diffuse>0.9 0.9 0.9 1</diffuse></material></visual></link></model>
-    <model name="laptop_1"><static>true</static><pose>3.4 3.05 0.715 0 0 0</pose>
-      <link name="link"><collision name="c"><geometry><box><size>0.33 0.23 0.03</size></box></geometry></collision>
-      <visual name="v"><geometry><box><size>0.33 0.23 0.03</size></box></geometry><material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material></visual></link></model>
+    <include><uri>https://fuel.gazebosim.org/1.0/GoogleResearch/models/Travel_Mate_P_series_Notebook</uri><name>laptop_1</name>
+      <pose>3.400000 3.050000 0.700000 0.000000 0.000000 0.000000</pose><static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>3</label>
+      </plugin>
+    </include>
     <model name="keyboard_1"><static>true</static><pose>3.85 2.7 0.715 0 0 0</pose>
       <link name="link"><collision name="c"><geometry><box><size>0.45 0.15 0.03</size></box></geometry></collision>
       <visual name="v"><geometry><box><size>0.45 0.15 0.03</size></box></geometry><material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material></visual></link></model>
     <model name="mouse_1"><static>true</static><pose>4.1 2.95 0.72 0 0 0</pose>
       <link name="link"><collision name="c"><geometry><box><size>0.06 0.1 0.04</size></box></geometry></collision>
       <visual name="v"><geometry><box><size>0.06 0.1 0.04</size></box></geometry><material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material></visual></link></model>
-    <model name="book_1"><static>true</static><pose>3.3 2.7 0.725 0 0 0</pose>
-      <link name="link"><collision name="c"><geometry><box><size>0.2 0.15 0.05</size></box></geometry></collision>
-      <visual name="v"><geometry><box><size>0.2 0.15 0.05</size></box></geometry><material><ambient>0.7 0.1 0.1 1</ambient><diffuse>0.7 0.1 0.1 1</diffuse></material></visual></link></model>
-    <model name="cup_1"><static>true</static><pose>3.85 3.1 0.75 0 0 0</pose>
-      <link name="link"><collision name="c"><geometry><cylinder><radius>0.04</radius><length>0.1</length></cylinder></geometry></collision>
-      <visual name="v"><geometry><cylinder><radius>0.04</radius><length>0.1</length></cylinder></geometry><material><ambient>0.9 0.9 0.2 1</ambient><diffuse>0.9 0.9 0.2 1</diffuse></material></visual></link></model>
-    <model name="bottle_1"><static>true</static><pose>3.15 2.9 0.81 0 0 0</pose>
-      <link name="link"><collision name="c"><geometry><cylinder><radius>0.04</radius><length>0.22</length></cylinder></geometry></collision>
-      <visual name="v"><geometry><cylinder><radius>0.04</radius><length>0.22</length></cylinder></geometry><material><ambient>0.1 0.6 0.8 1</ambient><diffuse>0.1 0.6 0.8 1</diffuse></material></visual></link></model>
+    <include><uri>https://fuel.gazebosim.org/1.0/GoogleResearch/models/Eat_to_Live_The_Amazing_NutrientRich_Program_for_Fast_and_Sustained_Weight_Loss_Revised_Edition_Book</uri><name>book_1</name>
+      <pose>3.300000 2.700000 0.700000 0.000000 0.000000 0.000000</pose><static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>4</label>
+      </plugin>
+    </include>
+    <include><uri>https://fuel.gazebosim.org/1.0/GoogleResearch/models/ACE_Coffee_Mug_Kristen_16_oz_cup</uri><name>cup_1</name>
+      <pose>3.850000 3.100000 0.700000 0.000000 0.000000 0.000000</pose><static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>1</label>
+      </plugin>
+    </include>
+    <include><uri>https://fuel.gazebosim.org/1.0/iche033/models/Water%20Bottle</uri><name>bottle_1</name>
+      <pose>3.150000 2.900000 0.830000 1.570796 0.000000 0.000000</pose><static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>2</label>
+      </plugin>
+    </include>
     <model name="vase_1"><static>true</static><pose>4.05 3.1 0.8 0 0 0</pose>
       <link name="link"><collision name="c"><geometry><cylinder><radius>0.05</radius><length>0.2</length></cylinder></geometry></collision>
       <visual name="v"><geometry><cylinder><radius>0.05</radius><length>0.2</length></cylinder></geometry><material><ambient>0.8 0.4 0.2 1</ambient><diffuse>0.8 0.4 0.2 1</diffuse></material></visual></link></model>
@@ -85,6 +97,17 @@
             <clip><near>0.1</near><far>10.0</far></clip>
             <noise><type>gaussian</type><mean>0.0</mean><stddev>0.007</stddev></noise>
           </camera>
+        </sensor>
+        <sensor name="segmentation" type="segmentation">
+          <pose>0.05 0 0 0 0 0</pose>
+          <topic>camera/segmentation</topic>
+          <camera>
+            <segmentation_type>instance</segmentation_type>
+            <horizontal_fov>1.2217305</horizontal_fov>
+            <image><width>1280</width><height>720</height></image>
+            <clip><near>0.1</near><far>10.0</far></clip>
+          </camera>
+          <always_on>true</always_on><update_rate>10</update_rate>
         </sensor>
       </link>
       <joint name="fix" type="fixed"><parent>world</parent><child>base_link</child></joint>

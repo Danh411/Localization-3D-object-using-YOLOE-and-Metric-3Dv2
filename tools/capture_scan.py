@@ -20,9 +20,11 @@ class N(Node):
     def __init__(s):
         super().__init__("capture_scan"); s.pub = s.create_publisher(Float64, "/pan_cmd", 10)
         s.yaw = None; s.rgb_frames = deque(maxlen=20); s.depth_frames = deque(maxlen=20)
+        s.segmentation_frames = deque(maxlen=20)
         s.create_subscription(JointState, "/joint_states", s.on_js, 50)
         s.create_subscription(Image, "/camera/image", s.on_rgb, 10)
         s.create_subscription(Image, "/camera/depth_image", s.on_depth, 10)
+        s.create_subscription(Image, "/camera/segmentation/labels_map", s.on_segmentation, 10)
     def on_js(s, m):
         if "pan_joint" in m.name: s.yaw = m.position[m.name.index("pan_joint")]
     @staticmethod
@@ -42,7 +44,15 @@ class N(Node):
         if m.is_bigendian:
             a = a.byteswap().view(a.dtype.newbyteorder("="))
         s.depth_frames.append((s.stamp(m), a))
-    def get_pair(s, after_stamp, timeout=10.0, tolerance=0.05):
+    def on_segmentation(s, m):
+        if m.encoding not in ("rgb8", "bgr8"):
+            raise RuntimeError(f"Encoding segmentation không hỗ trợ: {m.encoding}")
+        a = np.frombuffer(m.data, np.uint8).reshape(m.height, m.step)
+        a = a[:, :m.width * 3].reshape(m.height, m.width, 3).copy()
+        if m.encoding == "bgr8": a = a[..., ::-1].copy()
+        s.segmentation_frames.append((s.stamp(m), a))
+    def get_pair(s, after_stamp, timeout=10.0, tolerance=0.05,
+                 require_segmentation=False):
         deadline = time.monotonic() + timeout
         while time.monotonic() < deadline:
             rclpy.spin_once(s, timeout_sec=0.02)
@@ -53,9 +63,23 @@ class N(Node):
             if not depths: continue
             depth = min(depths, key=lambda f: abs(f[0] - rgb[0]))
             skew = abs(depth[0] - rgb[0])
-            if skew <= tolerance:
-                return rgb, depth, skew
-        raise TimeoutError(f"Không tìm được cặp RGB-depth đồng bộ trong {timeout:g}s (dung sai {tolerance:g}s)")
+            if skew > tolerance:
+                continue
+            segmentation = None
+            segmentation_skew = None
+            if require_segmentation:
+                frames = list(s.segmentation_frames)
+                if not frames: continue
+                segmentation = min(frames, key=lambda f: abs(f[0] - rgb[0]))
+                segmentation_skew = abs(segmentation[0] - rgb[0])
+                if segmentation_skew > tolerance:
+                    continue
+            return rgb, depth, skew, segmentation, segmentation_skew
+        streams = "RGB-depth-segmentation" if require_segmentation else "RGB-depth"
+        raise TimeoutError(
+            f"Không tìm được bộ {streams} đồng bộ trong {timeout:g}s "
+            f"(dung sai {tolerance:g}s)"
+        )
     def spin(s, dt):
         t0 = time.time()
         while time.time() - t0 < dt: rclpy.spin_once(s, timeout_sec=0.02)
@@ -67,17 +91,25 @@ def main():
     ap.add_argument("--out", default="data/w2_images")
     ap.add_argument("--depth-out", default=None, help="Thư mục lưu depth .npy; mặc định <out>/depth_gt")
     ap.add_argument("--sync-tolerance-ms", type=float, default=50.0)
+    ap.add_argument("--segmentation-gt", action="store_true",
+                    help="Lưu panoptic label map GT từ Gazebo segmentation camera")
     a = ap.parse_args()
     depth_out = a.depth_out or os.path.join(a.out, "depth_gt")
+    segmentation_out = os.path.join(a.out, "segmentation_gt")
     os.makedirs(a.out, exist_ok=True); os.makedirs(depth_out, exist_ok=True)
+    if a.segmentation_gt: os.makedirs(segmentation_out, exist_ok=True)
     rclpy.init(); n = N()
     try:
         while n.yaw is None: rclpy.spin_once(n, timeout_sec=0.2)
         t_start = time.time(); stops = int(math.ceil(360 / a.step)); last_stamp = -1.0
         with open(os.path.join(a.out, "capture_metadata.csv"), "w", newline="") as fh:
-            wr = csv.writer(fh); wr.writerow(["image", "yaw_deg", "rgb_stamp_s", "depth_stamp_s", "sync_delta_ms"])
+            wr = csv.writer(fh)
+            metadata_columns = ["image", "yaw_deg", "rgb_stamp_s", "depth_stamp_s", "sync_delta_ms"]
+            if a.segmentation_gt:
+                metadata_columns += ["segmentation_stamp_s", "segmentation_delta_ms"]
+            wr.writerow(metadata_columns)
             for k in range(stops):
-                cmd = wrap(math.radians(k * a.step)); n.pub.publish(Float64(data=cmd)); t0 = time.time()
+                cmd = math.radians(k * a.step); n.pub.publish(Float64(data=cmd)); t0 = time.time()
                 while abs(math.degrees(wrap(n.yaw - cmd))) > 0.5:
                     n.spin(0.05)
                     if time.time() - t0 > 20: raise TimeoutError(f"Stop {k}: camera không tới góc lệnh")
@@ -85,14 +117,25 @@ def main():
                 if n.rgb_frames:
                     last_stamp = max(last_stamp, n.rgb_frames[-1][0])
                 for j in range(a.frames):
-                    (rgb_stamp, rgb), (depth_stamp, depth), skew = n.get_pair(
-                        last_stamp, tolerance=a.sync_tolerance_ms / 1000.0)
+                    (rgb_stamp, rgb), (depth_stamp, depth), skew, segmentation, segmentation_skew = n.get_pair(
+                        last_stamp,
+                        tolerance=a.sync_tolerance_ms / 1000.0,
+                        require_segmentation=a.segmentation_gt,
+                    )
                     last_stamp = rgb_stamp
                     stem = f"stop{k}_f{j}"
                     save(os.path.join(a.out, stem + ".png"), rgb)
                     np.save(os.path.join(depth_out, stem + ".npy"), depth)
-                    wr.writerow([stem, f"{math.degrees(n.yaw):.3f}", f"{rgb_stamp:.9f}",
-                                 f"{depth_stamp:.9f}", f"{skew * 1000:.3f}"])
+                    metadata = [
+                        stem, f"{math.degrees(n.yaw):.3f}", f"{rgb_stamp:.9f}",
+                        f"{depth_stamp:.9f}", f"{skew * 1000:.3f}",
+                    ]
+                    if segmentation:
+                        np.save(os.path.join(segmentation_out, stem + ".npy"), segmentation[1])
+                        metadata += [
+                            f"{segmentation[0]:.9f}", f"{segmentation_skew * 1000:.3f}",
+                        ]
+                    wr.writerow(metadata)
                 print(f"stop {k}: yaw={math.degrees(n.yaw):7.2f} deg, đã lưu {a.frames} cặp RGB-depth")
         print(f"XONG trong {time.time()-t_start:.1f} s, RGB ở {a.out}/, depth ở {depth_out}/")
     finally:

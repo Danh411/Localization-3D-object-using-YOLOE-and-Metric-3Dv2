@@ -12,14 +12,44 @@ OBJECTS = [
  ("plant_1",  "potted_plant","cyl", (4.3, 3.5, 0.25), (0.15, 0.50),       (0.1, 0.5, 0.1)),
  ("tv_1",     "tv",          "box", (2.0, 3.92, 1.0),  (0.90, 0.08, 0.55), (0.05, 0.05, 0.05)),
  ("clock_1",  "clock",       "box", (0.05, 2.0, 1.8),  (0.04, 0.30, 0.30), (0.9, 0.9, 0.9)),
- ("laptop_1", "laptop",      "box", (3.40, 3.05, 0.715), (0.33, 0.23, 0.03), (0.6, 0.6, 0.6)),
+ ("laptop_1", "laptop",      "box", (3.40, 3.05, 0.70), (0.33, 0.23, 0.03), (0.6, 0.6, 0.6)),
  ("keyboard_1","keyboard",   "box", (3.85, 2.70, 0.715), (0.45, 0.15, 0.03), (0.1, 0.1, 0.1)),
  ("mouse_1",  "mouse",       "box", (4.10, 2.95, 0.72),  (0.06, 0.10, 0.04), (0.2, 0.2, 0.2)),
- ("book_1",   "book",        "box", (3.30, 2.70, 0.725), (0.20, 0.15, 0.05), (0.7, 0.1, 0.1)),
- ("cup_1",    "cup",         "cyl", (3.85, 3.10, 0.75),  (0.04, 0.10),       (0.9, 0.9, 0.2)),
- ("bottle_1", "bottle",      "cyl", (3.15, 2.90, 0.81),  (0.04, 0.22),       (0.1, 0.6, 0.8)),
+ ("book_1",   "book",        "box", (3.30, 2.70, 0.70), (0.20, 0.15, 0.05), (0.7, 0.1, 0.1)),
+ ("cup_1",    "cup",         "cyl", (3.85, 3.10, 0.70),  (0.04, 0.10),       (0.9, 0.9, 0.2)),
+ ("bottle_1", "bottle",      "cyl", (3.15, 2.90, 0.83),  (0.04, 0.22),       (0.1, 0.6, 0.8)),
  ("vase_1",   "vase",        "cyl", (4.05, 3.10, 0.80),  (0.05, 0.20),       (0.8, 0.4, 0.2)),
 ]
+FUEL_ASSETS = {
+    "laptop_1": {
+        "uri": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Travel_Mate_P_series_Notebook",
+        "size": (0.3327, 0.3754, 0.1939),
+        "center_z_offset": 0.09695,
+        "rpy": (0.0, 0.0, 0.0),
+        "label": 3,
+    },
+    "book_1": {
+        "uri": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Eat_to_Live_The_Amazing_NutrientRich_Program_for_Fast_and_Sustained_Weight_Loss_Revised_Edition_Book",
+        "size": (0.1405, 0.0506, 0.2104),
+        "center_z_offset": 0.1052,
+        "rpy": (0.0, 0.0, 0.0),
+        "label": 4,
+    },
+    "cup_1": {
+        "uri": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/ACE_Coffee_Mug_Kristen_16_oz_cup",
+        "size": (0.1263, 0.0906, 0.1349),
+        "center_z_offset": 0.06745,
+        "rpy": (0.0, 0.0, 0.0),
+        "label": 1,
+    },
+    "bottle_1": {
+        "uri": "https://fuel.gazebosim.org/1.0/iche033/models/Water%20Bottle",
+        "size": (0.1089, 0.1089, 0.2604),
+        "center_z_offset": 0.0,
+        "rpy": (math.pi / 2.0, 0.0, 0.0),
+        "label": 2,
+    },
+}
 TABLE = dict(name="table", pose=(3.65, 2.9, 0.35), size=(1.2, 0.7, 0.70))   # mặt bàn z = 0.70
 MARKER = dict(name="yaw_marker", pose=(3.5, 3.5, 0.6), r=0.1, length=1.2)  # W2-A5: magenta, KHÔNG nằm trong GT
 
@@ -32,6 +62,15 @@ def static_model(name, pose, shape, size, rgb):
     return f"""    <model name="{name}"><static>true</static><pose>{pose[0]} {pose[1]} {pose[2]} 0 0 0</pose>
       <link name="link"><collision name="c"><geometry>{g}</geometry></collision>
       <visual name="v"><geometry>{g}</geometry>{mat(rgb)}</visual></link></model>"""
+
+def fuel_model(name, pose, asset):
+    p = " ".join(f"{value:.6f}" for value in (*pose, *asset["rpy"]))
+    return f"""    <include><uri>{asset["uri"]}</uri><name>{name}</name>
+      <pose>{p}</pose><static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>{asset["label"]}</label>
+      </plugin>
+    </include>"""
 
 def room_walls():
     X, Y, H, t = ROOM["x"], ROOM["y"], ROOM["h"], 0.1
@@ -58,6 +97,17 @@ RIG = f"""    <model name="camera_rig">
             <noise><type>gaussian</type><mean>0.0</mean><stddev>0.007</stddev></noise>
           </camera>
         </sensor>
+        <sensor name="segmentation" type="segmentation">
+          <pose>0.05 0 0 0 0 0</pose>
+          <topic>camera/segmentation</topic>
+          <camera>
+            <segmentation_type>instance</segmentation_type>
+            <horizontal_fov>1.2217305</horizontal_fov>
+            <image><width>1280</width><height>720</height></image>
+            <clip><near>0.1</near><far>10.0</far></clip>
+          </camera>
+          <always_on>true</always_on><update_rate>10</update_rate>
+        </sensor>
       </link>
       <joint name="fix" type="fixed"><parent>world</parent><child>base_link</child></joint>
       <joint name="pan_joint" type="revolute"><parent>base_link</parent><child>pan_link</child>
@@ -82,13 +132,36 @@ def main():
     parts += room_walls()
     parts.append(static_model(TABLE["name"], TABLE["pose"], "box", TABLE["size"], (0.6, 0.45, 0.3)))
     parts.append(static_model(MARKER["name"], MARKER["pose"], "cyl", (MARKER["r"], MARKER["length"]), (1.0, 0.0, 1.0)))
-    for n, c, shp, pose, size, rgb in OBJECTS: parts.append(static_model(n, pose, shp, size, rgb))
+    for n, c, shp, pose, size, rgb in OBJECTS:
+        asset = FUEL_ASSETS.get(n)
+        parts.append(
+            fuel_model(n, pose, asset) if asset else static_model(n, pose, shp, size, rgb)
+        )
     parts += [RIG, "  </world>", "</sdf>"]
     os.makedirs("src/room_sim/worlds", exist_ok=True); os.makedirs("config", exist_ok=True)
     open("src/room_sim/worlds/room.sdf", "w").write("\n".join(parts) + "\n")
-    gt = [dict(model_name=n, class_name=c, x=p[0], y=p[1], z=p[2],
-               size_x=(s[0] if sh == "box" else 2*s[0]), size_y=(s[1] if sh == "box" else 2*s[0]),
-               size_z=(s[2] if sh == "box" else s[1])) for n, c, sh, p, s, _ in OBJECTS]
+    gt = []
+    for n, c, shape, pose, size, _ in OBJECTS:
+        asset = FUEL_ASSETS.get(n)
+        dimensions = asset["size"] if asset else (
+            (size[0], size[1], size[2]) if shape == "box"
+            else (2 * size[0], 2 * size[0], size[1])
+        )
+        item = dict(
+            model_name=n,
+            class_name=c,
+            shape="mesh" if asset else shape,
+            x=pose[0],
+            y=pose[1],
+            z=pose[2] + (asset["center_z_offset"] if asset else 0.0),
+            size_x=dimensions[0],
+            size_y=dimensions[1],
+            size_z=dimensions[2],
+        )
+        if asset:
+            item["asset_uri"] = asset["uri"]
+            item["semantic_label"] = asset["label"]
+        gt.append(item)
     yaml.safe_dump({"frame": "world", "objects": gt}, open("config/gt_objects.yaml", "w"), sort_keys=False)
     # kiểm tra khoảng cách cùng lớp >= 0.6 m
     for i, a in enumerate(OBJECTS):
