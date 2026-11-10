@@ -85,7 +85,7 @@ def insert_object(conn: sqlite3.Connection, scan_id: str, class_name: str,
 
 def update_object(conn: sqlite3.Connection, object_id: int,
                   x: float, y: float, z: float, weight: float,
-                  conf_mean: float, n_obs: int, stop_index: int,
+                  conf_sum: float, n_obs: int, stop_index: int,
                   seen_untruncated: int) -> None:
     """Cập nhật vật sau khi gộp thêm một quan sát (vị trí/độ tin cậy đã tính)."""
     row = conn.execute(
@@ -95,10 +95,10 @@ def update_object(conn: sqlite3.Connection, object_id: int,
     last = max(row["last_seen_stop"], stop_index) if row["last_seen_stop"] is not None else stop_index
     seen = int(bool(row["seen_untruncated"] or seen_untruncated))
     conn.execute(
-        """UPDATE objects SET x=?, y=?, z=?, weight_sum=?, n_obs=?, conf_mean=?,
+        """UPDATE objects SET x=?, y=?, z=?, weight_sum=?, n_obs=?, conf_sum=?, conf_mean=?,
              first_seen_stop=?, last_seen_stop=?, seen_untruncated=?, updated_at=?
            WHERE object_id=?""",
-        (x, y, z, weight, n_obs, conf_mean, first, last, seen, utcnow(), object_id))
+        (x, y, z, weight, n_obs, conf_sum, conf_sum / n_obs, first, last, seen, utcnow(), object_id))
     conn.commit()
 
 

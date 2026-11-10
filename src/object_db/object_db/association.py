@@ -69,7 +69,7 @@ def add_observation(conn: sqlite3.Connection, scan_id: str, obs: dict,
         nz = (W * cand["z"] + w * p[2]) / (W + w)
         conf_sum = float(cand["conf_sum"]) + conf
         n = int(cand["n_obs"]) + 1
-        db.update_object(conn, oid, nx, ny, nz, W + w, conf_sum / n, n,
+        db.update_object(conn, oid, nx, ny, nz, W + w, conf_sum, n,
                          stop if stop is not None else 0, untrunc)
         created = False
     elif conf >= min_conf_create:
@@ -118,15 +118,15 @@ def merge_duplicates(conn: sqlite3.Connection, scan_id: str,
         ny = (keep["weight_sum"] * keep["y"] + drop["weight_sum"] * drop["y"]) / W
         nz = (keep["weight_sum"] * keep["z"] + drop["weight_sum"] * drop["z"]) / W
         n = int(keep["n_obs"]) + int(drop["n_obs"])
-        conf_mean = (float(keep["conf_sum"]) + float(drop["conf_sum"])) / n
+        conf_sum = float(keep["conf_sum"]) + float(drop["conf_sum"])
         first = min(keep["first_seen_stop"] or 0, drop["first_seen_stop"] or 0)
         last = max(keep["last_seen_stop"] or 0, drop["last_seen_stop"] or 0)
         seen = int(bool(keep["seen_untruncated"] or drop["seen_untruncated"]))
         conn.execute(
-            """UPDATE objects SET x=?,y=?,z=?,weight_sum=?,n_obs=?,conf_mean=?,
+            """UPDATE objects SET x=?,y=?,z=?,weight_sum=?,n_obs=?,conf_sum=?,conf_mean=?,
                  first_seen_stop=?,last_seen_stop=?,seen_untruncated=?,updated_at=?
                WHERE object_id=?""",
-            (nx, ny, nz, W, n, conf_mean, first, last, seen, db.utcnow(),
+            (nx, ny, nz, W, n, conf_sum, conf_sum / n, first, last, seen, db.utcnow(),
              keep["object_id"]))
         conn.execute(
             "UPDATE observations SET object_id=? WHERE object_id=?",

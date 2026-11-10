@@ -122,6 +122,34 @@ class TestAssociate(unittest.TestCase):
         self.assertEqual(kept[0]["n_obs"], 6)
 
 
+    def test_confidence_tracks_all_observations_across_merge_and_update(self):
+        settings = {**ASSOC, "radius_m": 0.1}
+        for x, conf in ((0.0, 0.9), (0.01, 0.7), (0.2, 0.8), (0.21, 0.6)):
+            association.add_observation(
+                self.conn, "s1", obs("cup", (x, 0, 0), conf=conf), settings, FUS)
+        objects = queries.list_objects(self.conn, "s1", status=None)
+        self.assertEqual(len(objects), 2)
+        for obj, total in zip(objects, (1.6, 1.4), strict=True):
+            self.assertAlmostEqual(obj["conf_sum"], total)
+            self.assertAlmostEqual(obj["conf_mean"], total / 2)
+
+        result = association.run_association_pass(self.conn, "s1", settings)
+        self.assertEqual(len(result["merged_pairs"]), 1)
+        merged_id = result["merged_pairs"][0][1]
+        merged = queries.list_objects(self.conn, "s1")[0]
+        self.assertAlmostEqual(merged["conf_sum"], 3.0)
+        self.assertAlmostEqual(merged["conf_mean"], 0.75)
+
+        self._assoc(obs("cup", (0.05, 0, 0), conf=0.5))
+        final = queries.list_objects(self.conn, "s1")[0]
+        self.assertEqual(final["object_id"], merged_id)
+        self.assertEqual(final["n_obs"], 5)
+        self.assertAlmostEqual(final["conf_sum"], 3.5)
+        self.assertAlmostEqual(final["conf_mean"], 0.7)
+        rows = self.conn.execute("SELECT object_id FROM observations").fetchall()
+        self.assertEqual([r["object_id"] for r in rows], [merged_id] * 5)
+
+
 class TestStatus(unittest.TestCase):
     def setUp(self):
         self.conn = _open()
