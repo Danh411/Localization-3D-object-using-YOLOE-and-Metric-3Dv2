@@ -1,0 +1,17 @@
+room,file,target,stamp_ns,distance_m,relative_yaw_deg,issues,target_pixels,target_luma_median,target_bbox,gt_support_fraction,detections_all,best_class,best_iou,correct_instance,wrong_class_on_instance,missed_visible_instance,geometry_scored,not_scored_reason,confidence,truncated,valid_depth_ratio
+tiffany,00_cup_1_2.16_20.npz,cup,500000000,2.16,20,,2090,53.0,"[624, 495, 661, 557]",1.0,2,person,0.0,False,0,True,False,no correct instance,,,
+tiffany,01_laptop_1_1.27_20.npz,laptop,1700000000,1.27,20,cut_frame,16349,16.0,"[486, 540, 817, 719]",1.0,3,laptop,0.9404658186675959,True,0,False,False,capture QA,,,
+tiffany,02_book_1_1.68_65.npz,book,3300000000,1.68,65,,8799,74.0,"[602, 491, 678, 612]",1.0,2,person,0.0,False,0,True,False,no correct instance,,,
+tiffany,03_cup_1_2.23_65.npz,cup,4800000000,2.23,65,,2139,51.0,"[616, 490, 664, 550]",1.0,3,cup,0.8167701863354038,True,0,False,True,,0.46298250555992126,False,1.0
+tiffany,04_bottle_1_1.68_65.npz,bottle,6000000000,1.68,65,,7529,9.0,"[610, 466, 669, 615]",1.0,3,bottle,0.9404551201011379,True,0,False,True,,0.5347729325294495,False,1.0
+tiffany,05_book_1_2.16_20.npz,book,7300000000,2.16,20,,3079,79.0,"[622, 462, 657, 558]",1.0,2,person,0.0,False,0,True,False,no correct instance,,,
+tiffany,06_laptop_1_2.23_65.npz,laptop,8900000000,2.23,65,,9473,2.0,"[545, 474, 728, 553]",1.0,3,laptop,0.8912898619704902,True,0,False,True,,0.44633492827415466,False,1.0
+tiffany,07_bottle_1_2.16_20.npz,bottle,10500000000,2.16,20,,4484,10.0,"[617, 443, 662, 557]",1.0,3,bottle,0.9128459314332921,True,0,False,True,,0.39392516016960144,False,1.0
+tiffany,08_book_1_1.27_20.npz,book,12200000000,1.27,20,,9172,80.5,"[610, 529, 670, 705]",1.0,2,person,0.0,False,0,True,False,no correct instance,,,
+tiffany,09_bottle_1_1.27_20.npz,bottle,13400000000,1.27,20,,13399,10.0,"[601, 500, 678, 702]",1.0,3,bottle,0.9453298077610234,True,0,False,True,,0.5523874163627625,False,1.0
+tiffany,10_laptop_1_2.16_20.npz,laptop,14800000000,2.16,20,,5090,10.0,"[547, 469, 741, 565]",1.0,2,person,0.0,False,0,True,False,no correct instance,,,
+tiffany,11_cup_1_1.68_65.npz,cup,16300000000,1.68,65,,3869,50.0,"[608, 532, 673, 614]",1.0,3,cup,0.8451726413019574,True,0,False,True,,0.4035744369029999,False,1.0
+tiffany,12_book_1_2.23_65.npz,book,17900000000,2.23,65,,4959,74.0,"[611, 459, 669, 549]",1.0,2,person,0.0,False,0,True,False,no correct instance,,,
+tiffany,13_bottle_1_2.23_65.npz,bottle,19500000000,2.23,65,,4166,9.0,"[618, 440, 661, 551]",1.0,3,bottle,0.9142102947646282,True,0,False,True,,0.64078688621521,False,1.0
+tiffany,14_laptop_1_1.68_65.npz,laptop,20600000000,1.68,65,,16491,2.0,"[512, 514, 755, 620]",1.0,2,person,0.0,False,0,True,False,no correct instance,,,
+tiffany,15_cup_1_1.27_20.npz,cup,21900000000,1.27,20,,6437,53.0,"[612, 587, 677, 701]",1.0,3,cup,0.9373902867173786,True,0,False,True,,0.8494438529014587,False,1.0

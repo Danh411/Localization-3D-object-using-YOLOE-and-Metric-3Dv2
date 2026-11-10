@@ -1,0 +1,14 @@
+good: actual 8x6; controls={'autofocus': {'reported': 0.0, 'set_accepted': True}, 'zoom': {'reported': 0.0, 'set_accepted': True}}
+Finished small run 1: 35650.62 Hz; D:\loc3d_ws\data\eval\metric3d_depth_calibration_20261110_184655\tmp-win\tmpv4ysfnkp\20261110_190144_809133_gazebo
+Finished small run 2: 30674.85 Hz; D:\loc3d_ws\data\eval\metric3d_depth_calibration_20261110_184655\tmp-win\tmpv4ysfnkp\20261110_190144_809133_gazebo
+Report: D:\loc3d_ws\data\eval\metric3d_depth_calibration_20261110_184655\tmp-win\tmpv4ysfnkp\20261110_190144_809133_gazebo\benchmark.json
+1 static_1m (2, 0)
+2 static_1m (4, 0)
+Saved D:\loc3d_ws\data\eval\metric3d_depth_calibration_20261110_184655\tmp-win\tmptobp6efk\capture\20261110_190144_966986\dataset.json
+Finished small run 1: 69930.07 Hz; D:\loc3d_ws\data\eval\metric3d_depth_calibration_20261110_184655\tmp-win\tmptwtvxo4k\result\20261110_190144_981377_offline
+Report: D:\loc3d_ws\data\eval\metric3d_depth_calibration_20261110_184655\tmp-win\tmptwtvxo4k\result\20261110_190144_981377_offline\benchmark.json
+...............................................................................
+----------------------------------------------------------------------
+Ran 79 tests in 1.093s
+
+OK

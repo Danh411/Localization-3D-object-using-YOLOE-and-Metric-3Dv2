@@ -1,0 +1,87 @@
+{
+  "source_world": "/mnt/d/loc3d_ws/data/eval/metric3d_depth_calibration_20261110_184655/easynav/playground_kobuki/easynav_playground_kobuki_worlds/worlds/small_house.world",
+  "resource_path": "/mnt/d/loc3d_ws/data/eval/metric3d_depth_calibration_20261110_184655/easynav/playground_kobuki/easynav_playground_kobuki_worlds/models:/mnt/d/loc3d_ws/src/room_sim/models",
+  "camera_xyz_yaw": [
+    -2.0,
+    0.75,
+    0.46,
+    1.5707963267948966
+  ],
+  "surface_z_m": 0.006,
+  "props": {
+    "laptop_1": {
+      "label": 3,
+      "pose_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "z_origin_above_support": 2.9999999999752447e-06,
+      "center_offset": [
+        -0.0011355000000000115,
+        -2.4000000000024002e-05,
+        0.09692999999999996
+      ]
+    },
+    "book_1": {
+      "label": 4,
+      "pose_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "z_origin_above_support": -3.100000000000325e-05,
+      "center_offset": [
+        -0.000496000000000052,
+        -0.0035475000000000367,
+        0.10521500000000006
+      ]
+    },
+    "cup_1": {
+      "label": 1,
+      "pose_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "z_origin_above_support": 2.8000000000028002e-05,
+      "center_offset": [
+        9.200000000000874e-05,
+        -0.0011420000000000041,
+        0.06743999999999994
+      ]
+    },
+    "bottle_1": {
+      "label": 2,
+      "pose_rpy": [
+        1.570796,
+        0.0,
+        0.0
+      ],
+      "z_origin_above_support": 0.13022035679398292,
+      "center_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "conditions": [
+    [
+      1.27,
+      20
+    ],
+    [
+      1.68,
+      65
+    ],
+    [
+      2.16,
+      20
+    ],
+    [
+      2.23,
+      65
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+room,file,target,stamp_ns,distance_m,relative_yaw_deg,issues,target_pixels,target_luma_median,target_bbox,gt_support_fraction,detections_all,best_class,best_iou,correct_instance,wrong_class_on_instance,missed_visible_instance,geometry_scored,not_scored_reason,confidence,truncated,valid_depth_ratio
+aws,00_cup_1_2.16_20.npz,cup,500000000,2.16,20,,2088,90.0,"[624, 493, 661, 556]",1.0,2,chair,0.0,False,0,True,False,no correct instance,,,
+aws,01_laptop_1_1.27_20.npz,laptop,1400000000,1.27,20,cut_frame,16538,12.0,"[486, 538, 817, 719]",1.0,3,laptop,0.9272696109238416,True,0,False,False,capture QA,,,
+aws,02_book_1_1.68_65.npz,book,2300000000,1.68,65,,8804,126.0,"[602, 489, 678, 611]",1.0,2,chair,0.0,False,0,True,False,no correct instance,,,
+aws,03_cup_1_2.23_65.npz,cup,3400000000,2.23,65,,2136,87.0,"[616, 489, 664, 548]",1.0,2,chair,0.0,False,0,True,False,no correct instance,,,
+aws,04_bottle_1_1.68_65.npz,bottle,4300000000,1.68,65,,7532,23.0,"[610, 465, 669, 614]",1.0,2,bottle,0.9367772750125691,True,0,False,True,,0.810093343257904,False,1.0
+aws,05_book_1_2.16_20.npz,book,5200000000,2.16,20,,3075,121.0,"[622, 460, 657, 557]",1.0,1,chair,0.0,False,0,True,False,no correct instance,,,
+aws,06_laptop_1_2.23_65.npz,laptop,6100000000,2.23,65,,9474,4.0,"[545, 473, 728, 551]",1.0,3,laptop,0.9227749975468551,True,0,False,True,,0.6137204766273499,False,1.0
+aws,07_bottle_1_2.16_20.npz,bottle,7000000000,2.16,20,,4478,24.0,"[617, 442, 662, 556]",1.0,3,bottle,0.9261506276150627,True,0,False,True,,0.8265436291694641,False,1.0
+aws,08_book_1_1.27_20.npz,book,7900000000,1.27,20,,9165,126.0,"[610, 527, 670, 703]",1.0,1,chair,0.0,False,0,True,False,no correct instance,,,
+aws,09_bottle_1_1.27_20.npz,bottle,8800000000,1.27,20,,13384,23.0,"[601, 498, 678, 699]",1.0,3,bottle,0.955757970071568,True,0,False,True,,0.8444791436195374,False,1.0
+aws,10_laptop_1_2.16_20.npz,laptop,9900000000,2.16,20,,5088,11.0,"[547, 467, 741, 564]",1.0,1,chair,0.0,False,0,True,False,no correct instance,,,
+aws,11_cup_1_1.68_65.npz,cup,10800000000,1.68,65,,3865,87.0,"[608, 530, 673, 612]",1.0,2,chair,0.0,False,0,True,False,no correct instance,,,
+aws,12_book_1_2.23_65.npz,book,11700000000,2.23,65,,4956,125.0,"[611, 458, 669, 548]",1.0,2,chair,0.0,False,0,True,False,no correct instance,,,
+aws,13_bottle_1_2.23_65.npz,bottle,12800000000,2.23,65,,4162,24.0,"[618, 439, 661, 549]",1.0,2,bottle,0.9239228007181328,True,0,False,True,,0.8023792505264282,False,1.0
+aws,14_laptop_1_1.68_65.npz,laptop,13900000000,1.68,65,,16511,4.0,"[512, 513, 755, 619]",1.0,3,laptop,0.9521177565743542,True,0,False,True,,0.7288025617599487,False,1.0
+aws,15_cup_1_1.27_20.npz,cup,15000000000,1.27,20,,6434,93.0,"[612, 585, 677, 699]",1.0,2,cup,0.9502664298401421,True,0,False,True,,0.5976393222808838,False,1.0

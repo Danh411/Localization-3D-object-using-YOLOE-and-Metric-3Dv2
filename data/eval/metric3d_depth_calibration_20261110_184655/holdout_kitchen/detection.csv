@@ -1,0 +1,17 @@
+room,file,target,stamp_ns,distance_m,relative_yaw_deg,issues,target_pixels,target_luma_median,target_bbox,gt_support_fraction,detections_all,best_class,best_iou,correct_instance,wrong_class_on_instance,missed_visible_instance,geometry_scored,confidence,truncated,valid_depth_ratio,not_scored_reason
+kitchen,00_cup_1_2.16_20.npz,cup,500000000,2.16,20,,2056,78.0,"[624, 458, 661, 519]",1.0,7,cup,0.9296803652968036,True,0,False,True,0.38590002059936523,False,1.0,
+kitchen,01_laptop_1_1.27_20.npz,laptop,1400000000,1.27,20,,15753,40.0,"[486, 481, 817, 659]",1.0,7,laptop,0.9437075973351262,True,0,False,True,0.4941959083080292,False,1.0,
+kitchen,02_book_1_1.68_65.npz,book,2500000000,1.68,65,,8736,107.0,"[602, 445, 678, 564]",1.0,6,dining table,0.0003347589052700616,False,0,True,False,,,,no correct instance
+kitchen,03_cup_1_2.23_65.npz,cup,3400000000,2.23,65,,2105,77.0,"[616, 455, 664, 513]",1.0,6,dining table,0.00028466687033076903,False,0,True,False,,,,no correct instance
+kitchen,04_bottle_1_1.68_65.npz,bottle,4500000000,1.68,65,,7441,15.0,"[610, 419, 669, 567]",1.0,7,bottle,0.9295154185022027,True,0,False,True,0.7758480310440063,False,1.0,
+kitchen,05_book_1_2.16_20.npz,book,5400000000,2.16,20,,3052,121.0,"[622, 426, 657, 520]",1.0,6,dining table,0.00020696791997240429,False,0,True,False,,,,no correct instance
+kitchen,06_laptop_1_2.23_65.npz,laptop,6500000000,2.23,65,,9735,2.0,"[545, 437, 728, 516]",1.0,7,chair,0.9401398050605494,False,1,True,False,,,,no correct instance
+kitchen,07_bottle_1_2.16_20.npz,bottle,7600000000,2.16,20,,4449,18.0,"[617, 406, 662, 519]",1.0,7,bottle,0.928997867803838,True,0,False,True,0.8203778266906738,False,1.0,
+kitchen,08_book_1_1.27_20.npz,book,8700000000,1.27,20,,9012,99.0,"[610, 470, 670, 639]",1.0,6,dining table,0.0005493321095048362,False,0,True,False,,,,no correct instance
+kitchen,09_bottle_1_1.27_20.npz,bottle,9600000000,1.27,20,,13188,14.0,"[601, 438, 678, 636]",1.0,7,bottle,0.9435524881946967,True,0,False,True,0.697683572769165,False,1.0,
+kitchen,10_laptop_1_2.16_20.npz,laptop,10500000000,2.16,20,,4920,8.0,"[547, 433, 741, 525]",1.0,7,chair,0.8552819414703783,False,1,True,False,,,,no correct instance
+kitchen,11_cup_1_1.68_65.npz,cup,11600000000,1.68,65,,3777,67.0,"[608, 485, 673, 565]",1.0,7,cup,0.8423413321372505,True,0,False,True,0.6904592514038086,False,1.0,
+kitchen,12_book_1_2.23_65.npz,book,12500000000,2.23,65,,4924,121.0,"[611, 424, 669, 513]",1.0,6,dining table,0.00038096533895710737,False,0,True,False,,,,no correct instance
+kitchen,13_bottle_1_2.23_65.npz,bottle,13700000000,2.23,65,,4129,18.0,"[618, 405, 661, 514]",1.0,7,bottle,0.9141689373297003,True,0,False,True,0.8522352576255798,False,1.0,
+kitchen,14_laptop_1_1.68_65.npz,laptop,14800000000,1.68,65,,17118,2.0,"[512, 464, 755, 570]",1.0,7,laptop,0.9536117381489841,True,0,False,True,0.6064180731773376,False,1.0,
+kitchen,15_cup_1_1.27_20.npz,cup,15900000000,1.27,20,,6253,63.0,"[612, 526, 677, 636]",1.0,7,cup,0.9434361766485179,True,0,False,True,0.6761643886566162,False,1.0,

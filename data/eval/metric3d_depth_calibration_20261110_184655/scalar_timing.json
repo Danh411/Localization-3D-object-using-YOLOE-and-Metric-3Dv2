@@ -1,0 +1,17 @@
+{
+  "A": {
+    "median_ns_per_z": 148.7916,
+    "repeats": 5,
+    "iterations_per_repeat": 250000
+  },
+  "B": {
+    "median_ns_per_z": 499.0308,
+    "repeats": 5,
+    "iterations_per_repeat": 250000
+  },
+  "C": {
+    "median_ns_per_z": 494.9856,
+    "repeats": 5,
+    "iterations_per_repeat": 250000
+  }
+}

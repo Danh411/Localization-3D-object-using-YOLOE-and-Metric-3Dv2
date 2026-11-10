@@ -1,0 +1,63 @@
+/mnt/d/loc3d_ws/.venv/lib/python3.12/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+/mnt/d/loc3d_ws/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/mnt/d/loc3d_ws/.venv/lib/python3.12/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+Creating new Ultralytics Settings v0.0.8 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/mnt/d/loc3d_ws/data/eval/metric3d_depth_calibration_20261110_184655/batch_config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+Production models ready; coefficient lock e7307ac5818f43221b4a9a7aae647afafa5ba720ee3835c4282acf3139f9a511
+tiffany 00_cup_1_2.16_20.npz correct False geometry False []
+tiffany 01_laptop_1_1.27_20.npz correct True geometry False ['cut_frame']
+tiffany 02_book_1_1.68_65.npz correct False geometry False []
+tiffany 03_cup_1_2.23_65.npz correct True geometry True []
+tiffany 04_bottle_1_1.68_65.npz correct True geometry True []
+tiffany 05_book_1_2.16_20.npz correct False geometry False []
+tiffany 06_laptop_1_2.23_65.npz correct True geometry True []
+tiffany 07_bottle_1_2.16_20.npz correct True geometry True []
+tiffany 08_book_1_1.27_20.npz correct False geometry False []
+tiffany 09_bottle_1_1.27_20.npz correct True geometry True []
+tiffany 10_laptop_1_2.16_20.npz correct False geometry False []
+tiffany 11_cup_1_1.68_65.npz correct True geometry True []
+tiffany 12_book_1_2.23_65.npz correct False geometry False []
+tiffany 13_bottle_1_2.23_65.npz correct True geometry True []
+tiffany 14_laptop_1_1.68_65.npz correct False geometry False []
+tiffany 15_cup_1_1.27_20.npz correct True geometry True []
+aws 00_cup_1_2.16_20.npz correct False geometry False []
+aws 01_laptop_1_1.27_20.npz correct True geometry False ['cut_frame']
+aws 02_book_1_1.68_65.npz correct False geometry False []
+aws 03_cup_1_2.23_65.npz correct False geometry False []
+aws 04_bottle_1_1.68_65.npz correct True geometry True []
+aws 05_book_1_2.16_20.npz correct False geometry False []
+aws 06_laptop_1_2.23_65.npz correct True geometry True []
+aws 07_bottle_1_2.16_20.npz correct True geometry True []
+aws 08_book_1_1.27_20.npz correct False geometry False []
+aws 09_bottle_1_1.27_20.npz correct True geometry True []
+aws 10_laptop_1_2.16_20.npz correct False geometry False []
+aws 11_cup_1_1.68_65.npz correct False geometry False []
+aws 12_book_1_2.23_65.npz correct False geometry False []
+aws 13_bottle_1_2.23_65.npz correct True geometry True []
+aws 14_laptop_1_1.68_65.npz correct True geometry True []
+aws 15_cup_1_1.27_20.npz correct True geometry True []
+kitchen 00_cup_1_2.16_20.npz correct True geometry True []
+kitchen 01_laptop_1_1.27_20.npz correct True geometry True []
+kitchen 02_book_1_1.68_65.npz correct False geometry False []
+kitchen 03_cup_1_2.23_65.npz correct False geometry False []
+kitchen 04_bottle_1_1.68_65.npz correct True geometry True []
+kitchen 05_book_1_2.16_20.npz correct False geometry False []
+kitchen 06_laptop_1_2.23_65.npz correct False geometry False []
+kitchen 07_bottle_1_2.16_20.npz correct True geometry True []
+kitchen 08_book_1_1.27_20.npz correct False geometry False []
+kitchen 09_bottle_1_1.27_20.npz correct True geometry True []
+kitchen 10_laptop_1_2.16_20.npz correct False geometry False []
+kitchen 11_cup_1_1.68_65.npz correct True geometry True []
+kitchen 12_book_1_2.23_65.npz correct False geometry False []
+kitchen 13_bottle_1_2.23_65.npz correct True geometry True []
+kitchen 14_laptop_1_1.68_65.npz correct True geometry True []
+kitchen 15_cup_1_1.27_20.npz correct True geometry True []
+Evaluation complete
