@@ -1,0 +1,321 @@
+branch,stamp_ns,stop,det_index,class_name,target_gt,match,source,reason,orb_points
+P0_metric,42700000000,0,0,laptop,laptop_1,true,METRIC3D,,115
+ORB_A_only,42700000000,0,0,laptop,laptop_1,true,ORB,accepted,115
+ORB_B_only,42700000000,0,0,laptop,laptop_1,true,ORB,accepted,115
+P1_orb_A,42700000000,0,0,laptop,laptop_1,true,ORB,,115
+P1_orb_B,42700000000,0,0,laptop,laptop_1,true,ORB,,115
+P2_ground,42700000000,0,0,laptop,laptop_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,115
+P3_combined,42700000000,0,0,laptop,laptop_1,true,ORB,,115
+S_on_demand,42700000000,0,0,laptop,laptop_1,true,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,115
+P0_metric,42700000000,0,1,person,,unresolved,METRIC3D,,0
+ORB_A_only,42700000000,0,1,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,42700000000,0,1,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,42700000000,0,1,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,42700000000,0,1,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,42700000000,0,1,person,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,42700000000,0,1,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,42700000000,0,1,person,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,42700000000,0,2,person,,unresolved,METRIC3D,,0
+ORB_A_only,42700000000,0,2,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,42700000000,0,2,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,42700000000,0,2,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,42700000000,0,2,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,42700000000,0,2,person,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,42700000000,0,2,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,42700000000,0,2,person,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,42700000000,0,3,bottle,bottle_1,true,METRIC3D,,72
+ORB_A_only,42700000000,0,3,bottle,bottle_1,true,ORB,accepted,72
+ORB_B_only,42700000000,0,3,bottle,bottle_1,true,ORB,accepted,72
+P1_orb_A,42700000000,0,3,bottle,bottle_1,true,ORB,,72
+P1_orb_B,42700000000,0,3,bottle,bottle_1,true,ORB,,72
+P2_ground,42700000000,0,3,bottle,bottle_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,72
+P3_combined,42700000000,0,3,bottle,bottle_1,true,ORB,,72
+S_on_demand,42700000000,0,3,bottle,bottle_1,true,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,72
+P0_metric,42700000000,0,4,chair,,unresolved,METRIC3D,,0
+ORB_A_only,42700000000,0,4,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,42700000000,0,4,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,42700000000,0,4,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,42700000000,0,4,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,42700000000,0,4,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,42700000000,0,4,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,42700000000,0,4,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,42700000000,0,5,chair,,unresolved,METRIC3D,,0
+ORB_A_only,42700000000,0,5,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,42700000000,0,5,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,42700000000,0,5,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,42700000000,0,5,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,42700000000,0,5,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,42700000000,0,5,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,42700000000,0,5,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,42700000000,0,6,cup,cup_1,true,METRIC3D,,156
+ORB_A_only,42700000000,0,6,cup,cup_1,true,ORB,accepted,156
+ORB_B_only,42700000000,0,6,cup,cup_1,true,ORB,accepted,156
+P1_orb_A,42700000000,0,6,cup,cup_1,true,ORB,,156
+P1_orb_B,42700000000,0,6,cup,cup_1,true,ORB,,156
+P2_ground,42700000000,0,6,cup,cup_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,156
+P3_combined,42700000000,0,6,cup,cup_1,true,ORB,,156
+S_on_demand,42700000000,0,6,cup,cup_1,true,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,156
+P0_metric,42700000000,0,7,dining table,,unresolved,METRIC3D,,0
+ORB_A_only,42700000000,0,7,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,42700000000,0,7,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,42700000000,0,7,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,42700000000,0,7,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,42700000000,0,7,dining table,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,42700000000,0,7,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,42700000000,0,7,dining table,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,48800000000,1,0,person,,unresolved,METRIC3D,,0
+ORB_A_only,48800000000,1,0,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,48800000000,1,0,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,48800000000,1,0,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,48800000000,1,0,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,48800000000,1,0,person,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,48800000000,1,0,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,48800000000,1,0,person,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,48800000000,1,1,laptop,laptop_1,true,METRIC3D,,105
+ORB_A_only,48800000000,1,1,laptop,laptop_1,true,ORB,accepted,105
+ORB_B_only,48800000000,1,1,laptop,laptop_1,true,ORB,accepted,105
+P1_orb_A,48800000000,1,1,laptop,laptop_1,true,ORB,,105
+P1_orb_B,48800000000,1,1,laptop,laptop_1,true,ORB,,105
+P2_ground,48800000000,1,1,laptop,laptop_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,105
+P3_combined,48800000000,1,1,laptop,laptop_1,true,ORB,,105
+S_on_demand,48800000000,1,1,laptop,laptop_1,true,ORB,,105
+P0_metric,48800000000,1,2,chair,,unresolved,METRIC3D,,0
+ORB_A_only,48800000000,1,2,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,48800000000,1,2,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,48800000000,1,2,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,48800000000,1,2,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,48800000000,1,2,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,48800000000,1,2,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,48800000000,1,2,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,48800000000,1,3,chair,,unresolved,METRIC3D,,0
+ORB_A_only,48800000000,1,3,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,48800000000,1,3,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,48800000000,1,3,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,48800000000,1,3,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,48800000000,1,3,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,48800000000,1,3,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,48800000000,1,3,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,48800000000,1,4,cup,cup_1,true,METRIC3D,,154
+ORB_A_only,48800000000,1,4,cup,cup_1,true,ORB,accepted,154
+ORB_B_only,48800000000,1,4,cup,cup_1,true,ORB,accepted,154
+P1_orb_A,48800000000,1,4,cup,cup_1,true,ORB,,154
+P1_orb_B,48800000000,1,4,cup,cup_1,true,ORB,,154
+P2_ground,48800000000,1,4,cup,cup_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,154
+P3_combined,48800000000,1,4,cup,cup_1,true,ORB,,154
+S_on_demand,48800000000,1,4,cup,cup_1,true,ORB,,154
+P0_metric,48800000000,1,5,oven,,unresolved,METRIC3D,,0
+ORB_A_only,48800000000,1,5,oven,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,48800000000,1,5,oven,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,48800000000,1,5,oven,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,48800000000,1,5,oven,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,48800000000,1,5,oven,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,48800000000,1,5,oven,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,48800000000,1,5,oven,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,48800000000,1,6,dining table,,unresolved,METRIC3D,,0
+ORB_A_only,48800000000,1,6,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,48800000000,1,6,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,48800000000,1,6,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,48800000000,1,6,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,48800000000,1,6,dining table,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,48800000000,1,6,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,48800000000,1,6,dining table,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,52400000000,2,0,person,,unresolved,METRIC3D,,0
+ORB_A_only,52400000000,2,0,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,52400000000,2,0,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,52400000000,2,0,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,52400000000,2,0,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,52400000000,2,0,person,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,52400000000,2,0,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,52400000000,2,0,person,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,52400000000,2,1,chair,,unresolved,METRIC3D,,0
+ORB_A_only,52400000000,2,1,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,52400000000,2,1,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,52400000000,2,1,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,52400000000,2,1,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,52400000000,2,1,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,52400000000,2,1,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,52400000000,2,1,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,52400000000,2,2,oven,,unresolved,METRIC3D,,0
+ORB_A_only,52400000000,2,2,oven,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,52400000000,2,2,oven,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,52400000000,2,2,oven,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,52400000000,2,2,oven,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,52400000000,2,2,oven,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,52400000000,2,2,oven,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,52400000000,2,2,oven,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,52400000000,2,3,laptop,laptop_1,true,METRIC3D,,23
+ORB_A_only,52400000000,2,3,laptop,laptop_1,true,ORB,accepted,23
+ORB_B_only,52400000000,2,3,laptop,laptop_1,true,ORB,accepted,23
+P1_orb_A,52400000000,2,3,laptop,laptop_1,true,ORB,,23
+P1_orb_B,52400000000,2,3,laptop,laptop_1,true,ORB,,23
+P2_ground,52400000000,2,3,laptop,laptop_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,23
+P3_combined,52400000000,2,3,laptop,laptop_1,true,ORB,,23
+S_on_demand,52400000000,2,3,laptop,laptop_1,true,ORB,,23
+P0_metric,52400000000,2,4,dining table,,unresolved,METRIC3D,,0
+ORB_A_only,52400000000,2,4,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,52400000000,2,4,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,52400000000,2,4,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,52400000000,2,4,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,52400000000,2,4,dining table,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,52400000000,2,4,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,52400000000,2,4,dining table,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,56600000000,3,0,chair,,unresolved,METRIC3D,,0
+ORB_A_only,56600000000,3,0,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,56600000000,3,0,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,56600000000,3,0,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,56600000000,3,0,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,56600000000,3,0,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,56600000000,3,0,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,56600000000,3,0,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,56600000000,3,1,chair,,unresolved,METRIC3D,,0
+ORB_A_only,56600000000,3,1,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,56600000000,3,1,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,56600000000,3,1,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,56600000000,3,1,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,56600000000,3,1,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,56600000000,3,1,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,56600000000,3,1,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,56600000000,3,2,person,,unresolved,METRIC3D,,0
+ORB_A_only,56600000000,3,2,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,56600000000,3,2,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,56600000000,3,2,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,56600000000,3,2,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,56600000000,3,2,person,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,56600000000,3,2,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,56600000000,3,2,person,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,56600000000,3,3,oven,,unresolved,METRIC3D,,0
+ORB_A_only,56600000000,3,3,oven,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,56600000000,3,3,oven,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,56600000000,3,3,oven,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,56600000000,3,3,oven,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,56600000000,3,3,oven,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,56600000000,3,3,oven,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,56600000000,3,3,oven,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,107700000000,14,0,chair,,unresolved,METRIC3D,,0
+ORB_A_only,107700000000,14,0,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,107700000000,14,0,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,107700000000,14,0,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,107700000000,14,0,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,107700000000,14,0,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,107700000000,14,0,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,107700000000,14,0,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,113000000000,15,0,chair,,unresolved,METRIC3D,,0
+ORB_A_only,113000000000,15,0,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,113000000000,15,0,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,113000000000,15,0,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,113000000000,15,0,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,113000000000,15,0,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,113000000000,15,0,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,113000000000,15,0,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,113000000000,15,1,chair,,unresolved,METRIC3D,,0
+ORB_A_only,113000000000,15,1,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,113000000000,15,1,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,113000000000,15,1,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,113000000000,15,1,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,113000000000,15,1,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,113000000000,15,1,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,113000000000,15,1,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,113000000000,15,2,person,,unresolved,METRIC3D,,0
+ORB_A_only,113000000000,15,2,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,113000000000,15,2,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,113000000000,15,2,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,113000000000,15,2,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,113000000000,15,2,person,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,113000000000,15,2,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,113000000000,15,2,person,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,117600000000,16,0,person,,unresolved,METRIC3D,,0
+ORB_A_only,117600000000,16,0,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,117600000000,16,0,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,117600000000,16,0,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,117600000000,16,0,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,117600000000,16,0,person,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,117600000000,16,0,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,117600000000,16,0,person,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,117600000000,16,1,bottle,bottle_1,true,METRIC3D,,60
+ORB_A_only,117600000000,16,1,bottle,bottle_1,true,ORB,accepted,60
+ORB_B_only,117600000000,16,1,bottle,bottle_1,true,ORB,accepted,60
+P1_orb_A,117600000000,16,1,bottle,bottle_1,true,ORB,,60
+P1_orb_B,117600000000,16,1,bottle,bottle_1,true,ORB,,60
+P2_ground,117600000000,16,1,bottle,bottle_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,60
+P3_combined,117600000000,16,1,bottle,bottle_1,true,ORB,,60
+S_on_demand,117600000000,16,1,bottle,bottle_1,true,ORB,,60
+P0_metric,117600000000,16,2,chair,,unresolved,METRIC3D,,0
+ORB_A_only,117600000000,16,2,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,117600000000,16,2,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,117600000000,16,2,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,117600000000,16,2,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,117600000000,16,2,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,117600000000,16,2,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,117600000000,16,2,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,117600000000,16,3,chair,,unresolved,METRIC3D,,0
+ORB_A_only,117600000000,16,3,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,117600000000,16,3,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,117600000000,16,3,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,117600000000,16,3,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,117600000000,16,3,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,117600000000,16,3,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,117600000000,16,3,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,117600000000,16,4,dining table,,unresolved,METRIC3D,,0
+ORB_A_only,117600000000,16,4,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,117600000000,16,4,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,117600000000,16,4,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,117600000000,16,4,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,117600000000,16,4,dining table,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,117600000000,16,4,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,117600000000,16,4,dining table,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,122000000000,17,0,laptop,laptop_1,true,METRIC3D,,97
+ORB_A_only,122000000000,17,0,laptop,laptop_1,true,ORB,accepted,97
+ORB_B_only,122000000000,17,0,laptop,laptop_1,true,ORB,accepted,97
+P1_orb_A,122000000000,17,0,laptop,laptop_1,true,ORB,,97
+P1_orb_B,122000000000,17,0,laptop,laptop_1,true,ORB,,97
+P2_ground,122000000000,17,0,laptop,laptop_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,97
+P3_combined,122000000000,17,0,laptop,laptop_1,true,ORB,,97
+S_on_demand,122000000000,17,0,laptop,laptop_1,true,ORB,,97
+P0_metric,122000000000,17,1,person,,unresolved,METRIC3D,,0
+ORB_A_only,122000000000,17,1,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,122000000000,17,1,person,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,122000000000,17,1,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,122000000000,17,1,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,122000000000,17,1,person,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,122000000000,17,1,person,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,122000000000,17,1,person,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,122000000000,17,2,bottle,bottle_1,true,METRIC3D,,92
+ORB_A_only,122000000000,17,2,bottle,bottle_1,true,ORB,accepted,92
+ORB_B_only,122000000000,17,2,bottle,bottle_1,true,ORB,accepted,92
+P1_orb_A,122000000000,17,2,bottle,bottle_1,true,ORB,,92
+P1_orb_B,122000000000,17,2,bottle,bottle_1,true,ORB,,92
+P2_ground,122000000000,17,2,bottle,bottle_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,92
+P3_combined,122000000000,17,2,bottle,bottle_1,true,ORB,,92
+S_on_demand,122000000000,17,2,bottle,bottle_1,true,ORB,,92
+P0_metric,122000000000,17,3,chair,,unresolved,METRIC3D,,0
+ORB_A_only,122000000000,17,3,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,122000000000,17,3,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,122000000000,17,3,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,122000000000,17,3,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,122000000000,17,3,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,122000000000,17,3,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,122000000000,17,3,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,122000000000,17,4,chair,,unresolved,METRIC3D,,0
+ORB_A_only,122000000000,17,4,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,122000000000,17,4,chair,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,122000000000,17,4,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,122000000000,17,4,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,122000000000,17,4,chair,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,122000000000,17,4,chair,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,122000000000,17,4,chair,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,122000000000,17,5,dining table,,unresolved,METRIC3D,,0
+ORB_A_only,122000000000,17,5,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+ORB_B_only,122000000000,17,5,dining table,,unresolved,UNAVAILABLE,not_target_or_no_tf,0
+P1_orb_A,122000000000,17,5,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P1_orb_B,122000000000,17,5,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:disabled,0
+P2_ground,122000000000,17,5,dining table,,unresolved,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,122000000000,17,5,dining table,,unresolved,METRIC3D,orb:not_target_or_no_tf;ground:GROUND_UNAVAILABLE,0
+S_on_demand,122000000000,17,5,dining table,,unresolved,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0
+P0_metric,122000000000,17,6,book,book_1,true,METRIC3D,,0
+ORB_A_only,122000000000,17,6,book,book_1,true,UNAVAILABLE,insufficient_unique_features,0
+ORB_B_only,122000000000,17,6,book,book_1,true,UNAVAILABLE,insufficient_unique_features,0
+P1_orb_A,122000000000,17,6,book,book_1,true,METRIC3D,orb:insufficient_unique_features;ground:disabled,0
+P1_orb_B,122000000000,17,6,book,book_1,true,METRIC3D,orb:insufficient_unique_features;ground:disabled,0
+P2_ground,122000000000,17,6,book,book_1,true,METRIC3D,orb:disabled;ground:GROUND_UNAVAILABLE,0
+P3_combined,122000000000,17,6,book,book_1,true,METRIC3D,orb:insufficient_unique_features;ground:GROUND_UNAVAILABLE,0
+S_on_demand,122000000000,17,6,book,book_1,true,METRIC3D,orb:no_causal_orb;ground:GROUND_UNAVAILABLE,0

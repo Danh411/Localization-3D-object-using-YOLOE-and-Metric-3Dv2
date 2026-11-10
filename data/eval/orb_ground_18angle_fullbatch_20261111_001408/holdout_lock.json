@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-10T17:21:36.871946+00:00",
+  "files": {
+    "orb.py": "f13084ad7c875946bb9de7776d80f913a0573f28ac34c33a0dac0278cc5bd881",
+    "experiment.py": "654f79d11f9e0eccc58fe3c069f70d67daf9bdc36245bdc07adfb76dbe7f131c",
+    "PLAN.md": "cbdd47d64b218fb5c822adfed7444e0e77663fb65c8b6dd799d6ea204565338f",
+    "../multiview_36deg_geometry_fullbatch_20261110_231819/angles.py": "cc21b49510279b6fbd2fff2446effd4f74cd10b6c226f8cd7ec64640760110d1",
+    "../multiview_36deg_geometry_fullbatch_20261110_231819/common.py": "4dd9e1bf218eb847f6e0f9fc6e0c2cfd91c3e75f9d85ef80e577e1004ff5cc16",
+    "../multiview_36deg_geometry_fullbatch_20261110_231819/ground.py": "9a6dc4669d4c4eb504182abb0815dcb2015e80baf7190dfaddc48b56e11fdbf2",
+    "holdout_18x1/kitchen_controlled.sdf": "2849264ff735c705eb832613cfba5ceff85774f9808dd4ea372d1391776998fc",
+    "holdout_18x1/config.yaml": "fd3cbd98487ac411828f4b9f9fe7ce63250676e8ad3634966e1eafe2ab72d57d",
+    "holdout_18x1/gt.yaml": "b50f9c96eb17b3b4a2e5ec3a9ebdb00435840eda51b5462dd99bcdceda8b2950",
+    "holdout_18x1/mesh_centers.json": "80835f65a38a9667070551bbd48b430b6ce8c35d701c612a05ab3f778909c3de",
+    "holdout_18x1/classes.yaml": "1572d9f82e5bc49d1181a70a67b70bc15adb1672e9df719c8e8e9fb5c19d9725",
+    "holdout_18x1/layout.json": "923990eed5a4a751e2d6518e6cc24212372921832e00f6f46c4cae9d6273da47",
+    "scan_18x1/kitchen_controlled.sdf": "382828dc19552d6dad05b437e5ec20ebb99e9ff8cd3bf34c3aa6a2f439e597c6",
+    "scan_18x1/experiment_summary.json": "1f909de526e055ee5b926db24c04823d7de8a379dd449a93e659bf15b89a25ef"
+  }
+}

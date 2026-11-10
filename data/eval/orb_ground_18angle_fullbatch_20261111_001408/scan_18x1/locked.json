@@ -1,0 +1,33 @@
+{
+  "locked_utc": "2026-11-10T11:47:42.511514+00:00",
+  "training_cases": 27,
+  "source": "metric3d_hypotheses_20261110_144943",
+  "training_sha256_manifest": "fb68b480dd6e003225f384824bd4653e876da32abd34d812ccc10d1d629b4a40",
+  "fit": "least squares, each physical condition equal weight; only valid pixels of eroded GT instance",
+  "cv": "leave one nominal distance out, select B/C by mean per-case depth MAE",
+  "cv_mae_m": {
+    "A": 0.42114564241167074,
+    "B": 0.09609375061216817,
+    "C": 0.13739182350399362
+  },
+  "selected_before_holdouts": "B",
+  "models": {
+    "A": [
+      1.0,
+      0.0
+    ],
+    "B": [
+      1.3720333573615522,
+      0.0
+    ],
+    "C": [
+      1.15865739679807,
+      0.24792241223854572
+    ]
+  },
+  "output_clip_m": [
+    0.100001,
+    9.999999
+  ],
+  "clip_note": "positive slope; fixed saturating guard in open camera range; report saturation"
+}

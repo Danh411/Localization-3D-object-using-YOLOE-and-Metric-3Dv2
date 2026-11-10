@@ -1,0 +1,16 @@
+...F
+======================================================================
+FAIL: test_triangulates_metric_point (__main__.Geometry.test_triangulates_metric_point)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/d/loc3d_ws/data/eval/orb_ground_18angle_fullbatch_20261111_001408/test_diagnostic.py", line 14, in test_triangulates_metric_point
+    self.assertEqual(reason,'ok')
+AssertionError: 'depth_or_cheirality' != 'ok'
+- depth_or_cheirality
++ ok
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.063s
+
+FAILED (failures=1)

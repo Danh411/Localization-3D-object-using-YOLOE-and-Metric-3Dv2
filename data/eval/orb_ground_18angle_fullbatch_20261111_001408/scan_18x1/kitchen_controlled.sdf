@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.10">
+  <world name="default">
+    
+    <scene>
+      <shadows>false</shadows>
+      <ambient>0.55 0.55 0.56 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+    </scene>
+    
+    <physics type="ode">
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>150</iters>
+          <precon_iters>0</precon_iters>
+          <sor>1.3999999999999999</sor>
+          <use_dynamic_moi_rescaling>true</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>1.0000000000000001e-05</cfm>
+          <erp>0.20000000000000001</erp>
+          <contact_max_correcting_vel>2000</contact_max_correcting_vel>
+          <contact_surface_layer>0.01</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+    <plugin name="gz::sim::systems::Physics" filename="gz-sim-physics-system" />
+    <plugin name="gz::sim::systems::UserCommands" filename="gz-sim-user-commands-system" />
+    <plugin name="gz::sim::systems::SceneBroadcaster" filename="gz-sim-scene-broadcaster-system" />
+    <plugin name="gz::sim::systems::Sensors" filename="gz-sim-sensors-system">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin name="gz::sim::systems::Imu" filename="gz-sim-imu-system" />
+    
+    <plugin name="gz::sim::systems::Contact" filename="gz-sim-contact-system" />
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type="adiabatic" />
+
+    <include>
+      <uri>model://ground plane</uri>
+      <name>ground_plane</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    
+
+    <light name="sun" type="directional">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <intensity>4</intensity>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.1 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+
+    <light name="ceiling_light" type="point">
+      <cast_shadows>false</cast_shadows>
+      <pose>-0.2 0.1 2.4 0 -0 0</pose>
+      <diffuse>1 0.97 0.92 1</diffuse>
+      <specular>0.3 0.3 0.3 1</specular>
+      <intensity>0.6</intensity>
+      <attenuation>
+        <range>8</range>
+        <constant>0.35</constant>
+        <linear>0.12</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+    </light>
+
+    
+    
+
+    <model name="wall_west">
+      <static>true</static>
+      <include>
+        <uri>model://room_wall_25x4m</uri>
+      </include>
+      <pose>-2.5 0 1.25 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="wall_east">
+      <static>true</static>
+      <include>
+        <uri>model://room_wall_25x4m</uri>
+      </include>
+      <pose>2.5 0 1.25 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="wall_south">
+      <static>true</static>
+      <include>
+        <uri>model://room_wall_25x5m</uri>
+      </include>
+      <pose>0 -1.95 1.25 0 -0 1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="wall_north">
+      <static>true</static>
+      <include>
+        <uri>model://room_wall_25x5m</uri>
+      </include>
+      <pose>0 1.95 1.25 0 -0 1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="door_08x2m">
+      <static>true</static>
+      <include>
+        <uri>model://door_08x2m</uri>
+      </include>
+      <pose>-2.495 0.5 1 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="vacuum_dock">
+      <static>true</static>
+      <include>
+        <uri>model://vacuum_dock</uri>
+      </include>
+      <pose>-2.45 -0.5 0 0 -0 1.5708</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="charging_dock_basic">
+      <static>true</static>
+      <include>
+        <uri>model://charging_dock_basic</uri>
+      </include>
+      <pose>-1.9 -1.9 0 0 -0 3.1416</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="makerspet_poster">
+      <static>true</static>
+      <include>
+        <uri>model://makerspet_poster</uri>
+      </include>
+      <pose>-2.435 -0.6 1.5 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="window_curtains_south_west">
+      <static>true</static>
+      <include>
+        <uri>model://window_curtains</uri>
+      </include>
+      <pose>-1.4 -1.89 1.25 0 -0 1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="window_curtains_south_east">
+      <static>true</static>
+      <include>
+        <uri>model://window_curtains</uri>
+      </include>
+      <pose>0.85 -1.89 1.25 0 -0 1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="window_curtains_east">
+      <static>true</static>
+      <include>
+        <uri>model://window_curtains_small</uri>
+      </include>
+      <pose>2.44 0.75 1.6 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+
+    
+    <model name="fridge_double_door">
+      <static>true</static>
+      <include>
+        <uri>model://fridge_double_door</uri>
+      </include>
+      <pose>-2 1.9 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="kitchen_base_run_w">
+      <static>true</static>
+      <include>
+        <uri>model://kitchen_base_run_w</uri>
+      </include>
+      <pose>-0.978 1.9 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="Oven">
+      <static>true</static>
+      <include>
+        <uri>model://Oven</uri>
+      </include>
+      <pose>0 1.5811 0 0 -0 -1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="kitchen_base_run_e">
+      <static>true</static>
+      <include>
+        <uri>model://kitchen_base_run_e</uri>
+      </include>
+      <pose>1.0965 1.9 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="range_hood">
+      <static>true</static>
+      <include>
+        <uri>model://range_hood</uri>
+      </include>
+      <pose>0 1.9 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="kitchen_wall_cab_w">
+      <static>true</static>
+      <include>
+        <uri>model://kitchen_wall_cab_w</uri>
+      </include>
+      <pose>-0.978 1.9 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="kitchen_wall_cab_e">
+      <static>true</static>
+      <include>
+        <uri>model://kitchen_wall_cab_e</uri>
+      </include>
+      <pose>1.0965 1.9 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="coffee_maker">
+      <static>true</static>
+      <include>
+        <uri>model://coffee_maker</uri>
+      </include>
+      <pose>-1 1.798 0.9 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+
+    
+    <model name="kitchen_base_run_east">
+      <static>true</static>
+      <include>
+        <uri>model://kitchen_base_run_east</uri>
+      </include>
+      <pose>2.45 0.325 0 0 -0 -1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="dishwasher">
+      <static>true</static>
+      <include>
+        <uri>model://dishwasher</uri>
+      </include>
+      <pose>2.45 -0.02 0 0 -0 -1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="kitchen_wall_cab_ec">
+      <static>true</static>
+      <include>
+        <uri>model://kitchen_wall_cab_ec</uri>
+      </include>
+      <pose>2.15 1.9 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="kitchen_wall_cab_es">
+      <static>true</static>
+      <include>
+        <uri>model://kitchen_wall_cab_es</uri>
+      </include>
+      <pose>2.45 -0.525 0 0 -0 -1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="kitchen_pantry">
+      <static>true</static>
+      <include>
+        <uri>model://kitchen_pantry</uri>
+      </include>
+      <pose>2.45 -1.6 0 0 -0 -1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    
+
+    <model name="DiningTable">
+      <static>true</static>
+      <include>
+        <uri>model://DiningTable</uri>
+      </include>
+      <pose>-0.33 -0.55 0 0 -0 1.5707</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="dining_chair_n_west">
+      <static>true</static>
+      <include>
+        <uri>model://DiningChair</uri>
+      </include>
+      <pose>-0.93 -0.2 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="dining_chair_n_east">
+      <static>true</static>
+      <include>
+        <uri>model://DiningChair</uri>
+      </include>
+      <pose>0.27 0.15 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="dining_chair_s_west">
+      <static>true</static>
+      <include>
+        <uri>model://DiningChair</uri>
+      </include>
+      <pose>-0.93 -0.9 0 0 -0 3.1416</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="dining_chair_s_east">
+      <static>true</static>
+      <include>
+        <uri>model://DiningChair</uri>
+      </include>
+      <pose>0.27 -1.25 0 0 -0 3.1416</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+
+    
+    <model name="person_standing">
+      <static>true</static>
+      <include>
+        <uri>model://person_standing</uri>
+      </include>
+      <pose>1.5 0.75 0 0 -0 1.5708</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="PatientFSit">
+      <static>true</static>
+      <include>
+        <uri>model://PatientFSit</uri>
+      </include>
+      <pose>0.275 -1.288 0 0 -0 1.5708</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="salad_plate">
+      <static>true</static>
+      <include>
+        <uri>model://salad_plate</uri>
+      </include>
+      <pose>0.27 -0.85 0.74 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="pressure_cooker">
+      <static>true</static>
+      <include>
+        <uri>model://pressure_cooker</uri>
+      </include>
+      <pose>-1.34 1.73 0.9 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name="toaster_4_slice">
+      <static>true</static>
+      <include>
+        <uri>model://toaster_4_slice</uri>
+      </include>
+      <pose>-0.65 1.78 0.9 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+    
+    <model name="dish_drainer">
+      <static>true</static>
+      <include>
+        <uri>model://dish_drainer</uri>
+      </include>
+      <pose>2.14 -0.02 0.9 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+
+    
+    <model name="camera_rig">
+      <pose>-1.5 -0.5 1.1 0 0 0</pose>
+      <link name="base_link"><inertial><mass>5</mass><inertia><ixx>0.1</ixx><iyy>0.1</iyy><izz>0.1</izz></inertia></inertial>
+        <visual name="v"><geometry><cylinder><radius>0.04</radius><length>0.1</length></cylinder></geometry></visual></link>
+      <link name="pan_link"><inertial><mass>0.5</mass><inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz></inertia></inertial>
+        <visual name="v"><geometry><box><size>0.06 0.10 0.06</size></box></geometry></visual>
+        <sensor name="rgbd" type="rgbd_camera">
+          <pose>0.05 0 0 0 0 0</pose>
+          <topic>camera</topic><gz_frame_id>camera_optical_frame</gz_frame_id>
+          <update_rate>10</update_rate><always_on>true</always_on>
+          <camera><horizontal_fov>1.2217305</horizontal_fov>
+            <image><width>1280</width><height>720</height><format>R8G8B8</format></image>
+            <clip><near>0.1</near><far>10.0</far></clip>
+            <noise><type>gaussian</type><mean>0.0</mean><stddev>0.007</stddev></noise>
+          </camera>
+        </sensor>
+        <sensor name="segmentation" type="segmentation">
+          <pose>0.05 0 0 0 0 0</pose>
+          <topic>camera/segmentation</topic>
+          <camera>
+            <segmentation_type>instance</segmentation_type>
+            <horizontal_fov>1.2217305</horizontal_fov>
+            <image><width>1280</width><height>720</height></image>
+            <clip><near>0.1</near><far>10.0</far></clip>
+          </camera>
+          <always_on>true</always_on><update_rate>10</update_rate>
+        </sensor>
+      </link>
+      <joint name="fix" type="fixed"><parent>world</parent><child>base_link</child></joint>
+      <joint name="pan_joint" type="revolute"><parent>base_link</parent><child>pan_link</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit><dynamics><damping>0.5</damping></dynamics></axis></joint>
+      <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>pan_joint</joint_name><topic>pan_cmd</topic><p_gain>20</p_gain><i_gain>0.5</i_gain><d_gain>2.0</d_gain></plugin>
+      <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+        <topic>joint_states</topic><joint_name>pan_joint</joint_name></plugin>
+    </model>
+  <include><uri>/mnt/d/loc3d_ws/data/eval/kitchen_textured_20261110_132916/assets/laptop_1</uri><name>laptop_1</name>
+      <pose>0.1 -0.38 0.74 0.0 0.0 0.0</pose><static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>3</label>
+      </plugin>
+    </include>
+    <include><uri>/mnt/d/loc3d_ws/data/eval/kitchen_textured_20261110_132916/assets/book_1</uri><name>book_1</name>
+      <pose>-0.56 -0.64 0.74 0.0 0.0 0.0</pose><static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>4</label>
+      </plugin>
+    </include>
+    <include><uri>/mnt/d/loc3d_ws/data/eval/kitchen_textured_20261110_132916/assets/cup_1</uri><name>cup_1</name>
+      <pose>-0.18 -0.28 0.74 0.0 0.0 0.0</pose><static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>1</label>
+      </plugin>
+    </include>
+    <include><uri>/home/drakil/.gz/fuel/fuel.gazebosim.org/iche033/models/water%20bottle/3</uri><name>bottle_1</name>
+      <pose>-0.16 -0.88 0.87 1.570796 0.0 0.0</pose><static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>2</label>
+      </plugin>
+    </include>
+    </world>
+</sdf>

@@ -1,0 +1,114 @@
+{
+  "laptop_1": {
+    "method": "AABB of original mesh vertices transformed through SDF include pose; identical position buffer in converted visual.",
+    "aabb_min_m": [
+      0.012526999999999983,
+      -0.677712,
+      0.739997
+    ],
+    "aabb_max_m": [
+      0.345202,
+      -0.302336,
+      0.933863
+    ],
+    "mesh_aabb_center_world_m": [
+      0.17886449999999998,
+      -0.490024,
+      0.83693
+    ],
+    "yaml_ref_world_m": [
+      0.18,
+      -0.49,
+      0.83695
+    ],
+    "center_minus_yaml_m": [
+      -0.0011355000000000115,
+      -2.4000000000024002e-05,
+      -2.0000000000020002e-05
+    ]
+  },
+  "book_1": {
+    "method": "AABB of original mesh vertices transformed through SDF include pose; identical position buffer in converted visual.",
+    "aabb_min_m": [
+      -0.11076600000000003,
+      -0.7588239999999999,
+      0.740031
+    ],
+    "aabb_max_m": [
+      0.029773999999999967,
+      -0.708271,
+      0.950399
+    ],
+    "mesh_aabb_center_world_m": [
+      -0.04049600000000009,
+      -0.7335475,
+      0.845215
+    ],
+    "yaml_ref_world_m": [
+      -0.040000000000000036,
+      -0.73,
+      0.8452
+    ],
+    "center_minus_yaml_m": [
+      -0.000496000000000052,
+      -0.0035475000000000367,
+      1.5000000000098268e-05
+    ]
+  },
+  "cup_1": {
+    "method": "AABB of original mesh vertices transformed through SDF include pose; identical position buffer in converted visual.",
+    "aabb_min_m": [
+      -0.37306900000000004,
+      -0.236454,
+      0.739972
+    ],
+    "aabb_max_m": [
+      -0.246747,
+      -0.14583000000000002,
+      0.874908
+    ],
+    "mesh_aabb_center_world_m": [
+      -0.309908,
+      -0.19114199999999998,
+      0.8074399999999999
+    ],
+    "yaml_ref_world_m": [
+      -0.31,
+      -0.19,
+      0.80745
+    ],
+    "center_minus_yaml_m": [
+      9.200000000000874e-05,
+      -0.0011420000000000041,
+      -1.0000000000065512e-05
+    ]
+  },
+  "bottle_1": {
+    "method": "Symmetric GLB POSITION accessor bounds, centered mesh; its single node rotation preserves local center.",
+    "aabb_min_m": [
+      -0.024450009999999994,
+      -0.9244500664553393,
+      0.7397796432060171
+    ],
+    "aabb_max_m": [
+      0.08445000999999999,
+      -0.8155499335446607,
+      1.000220356793983
+    ],
+    "mesh_aabb_center_world_m": [
+      0.03,
+      -0.87,
+      0.87
+    ],
+    "yaml_ref_world_m": [
+      0.03,
+      -0.87,
+      0.87
+    ],
+    "center_minus_yaml_m": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

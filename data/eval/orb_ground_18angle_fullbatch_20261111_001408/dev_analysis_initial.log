@@ -1,0 +1,13 @@
+Creating new Ultralytics Settings v0.0.8 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/mnt/d/loc3d_ws/data/eval/orb_ground_18angle_fullbatch_20261111_001408/ultralytics/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+Traceback (most recent call last):
+  File "/mnt/d/loc3d_ws/data/eval/orb_ground_18angle_fullbatch_20261111_001408/experiment.py", line 368, in <module>
+    analyze(sys.argv[1])
+  File "/mnt/d/loc3d_ws/data/eval/orb_ground_18angle_fullbatch_20261111_001408/experiment.py", line 313, in analyze
+    metric=replay_validate(s,name,entries)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/loc3d_ws/data/eval/orb_ground_18angle_fullbatch_20261111_001408/experiment.py", line 92, in replay_validate
+    assert c.execute('pragma foreign_key_check').fetchone()[0] is None
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable

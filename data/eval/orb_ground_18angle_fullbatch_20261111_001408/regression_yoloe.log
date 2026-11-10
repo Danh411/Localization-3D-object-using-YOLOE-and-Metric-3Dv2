@@ -1,0 +1,14 @@
+good: actual 8x6; controls={'autofocus': {'reported': 0.0, 'set_accepted': True}, 'zoom': {'reported': 0.0, 'set_accepted': True}}
+Finished small run 1: 11142.06 Hz; D:\loc3d_ws\data\eval\orb_ground_18angle_fullbatch_20261111_001408\tmp\tmpg9fxmx0t\20261111_002220_320376_gazebo
+Finished small run 2: 14662.76 Hz; D:\loc3d_ws\data\eval\orb_ground_18angle_fullbatch_20261111_001408\tmp\tmpg9fxmx0t\20261111_002220_320376_gazebo
+Report: D:\loc3d_ws\data\eval\orb_ground_18angle_fullbatch_20261111_001408\tmp\tmpg9fxmx0t\20261111_002220_320376_gazebo\benchmark.json
+1 static_1m (2, 0)
+2 static_1m (4, 0)
+Saved D:\loc3d_ws\data\eval\orb_ground_18angle_fullbatch_20261111_001408\tmp\tmprczpkni4\capture\20261111_002220_642068\dataset.json
+Finished small run 1: 28735.63 Hz; D:\loc3d_ws\data\eval\orb_ground_18angle_fullbatch_20261111_001408\tmp\tmp33q75f7z\result\20261111_002220_671028_offline
+Report: D:\loc3d_ws\data\eval\orb_ground_18angle_fullbatch_20261111_001408\tmp\tmp33q75f7z\result\20261111_002220_671028_offline\benchmark.json
+...............................................................................
+----------------------------------------------------------------------
+Ran 79 tests in 1.612s
+
+OK
