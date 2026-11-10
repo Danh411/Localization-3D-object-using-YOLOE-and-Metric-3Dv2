@@ -1,0 +1,752 @@
+[
+  {
+    "condition": "book_1",
+    "rep": 0,
+    "file": "00_book_1_1.47_0.npz",
+    "target": "book_1",
+    "label": 4,
+    "distance_m": 1.47,
+    "relative_yaw_deg": 0,
+    "stamp_ns": 500000000,
+    "target_pose_command": [
+      0.02,
+      -0.7,
+      0.74,
+      0,
+      0,
+      0.0
+    ],
+    "target_pose_observed": [
+      [
+        0.02,
+        -0.7,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      487000000,
+      501000000,
+      487000000,
+      501000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 500000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 4588,
+    "gt_valid_pixels": 4588,
+    "gt_median_z_m": 1.4105315208435059,
+    "issues": []
+  },
+  {
+    "condition": "book_alt",
+    "rep": 0,
+    "file": "01_book_alt_1.47_0.npz",
+    "target": "book_alt",
+    "label": 5,
+    "distance_m": 1.47,
+    "relative_yaw_deg": 0,
+    "stamp_ns": 1400000000,
+    "target_pose_command": [
+      0.02,
+      -0.7,
+      0.74,
+      0,
+      0,
+      0.0
+    ],
+    "target_pose_observed": [
+      [
+        0.02,
+        -0.7,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      1389000000,
+      1401000000,
+      1389000000,
+      1401000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 1400000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 6193,
+    "gt_valid_pixels": 6193,
+    "gt_median_z_m": 1.4588932991027832,
+    "issues": []
+  },
+  {
+    "condition": "book_1",
+    "rep": 1,
+    "file": "02_book_1_1.47_24.npz",
+    "target": "book_1",
+    "label": 4,
+    "distance_m": 1.47,
+    "relative_yaw_deg": 24,
+    "stamp_ns": 2200000000,
+    "target_pose_command": [
+      0.02,
+      -0.7,
+      0.74,
+      0,
+      0,
+      0.4188790204786391
+    ],
+    "target_pose_observed": [
+      [
+        0.02,
+        -0.7,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.20791169081775934,
+        0.9781476007338057
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      2195000000,
+      2201000000,
+      2195000000,
+      2201000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 2200000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 8496,
+    "gt_valid_pixels": 8496,
+    "gt_median_z_m": 1.4420421123504639,
+    "issues": []
+  },
+  {
+    "condition": "book_alt",
+    "rep": 1,
+    "file": "03_book_alt_1.47_24.npz",
+    "target": "book_alt",
+    "label": 5,
+    "distance_m": 1.47,
+    "relative_yaw_deg": 24,
+    "stamp_ns": 3100000000,
+    "target_pose_command": [
+      0.02,
+      -0.7,
+      0.74,
+      0,
+      0,
+      0.4188790204786391
+    ],
+    "target_pose_observed": [
+      [
+        0.02,
+        -0.7,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.20791169081775934,
+        0.9781476007338057
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      3088000000,
+      3101000000,
+      3088000000,
+      3101000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 3100000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 6139,
+    "gt_valid_pixels": 6139,
+    "gt_median_z_m": 1.4164422750473022,
+    "issues": []
+  },
+  {
+    "condition": "book_1",
+    "rep": 2,
+    "file": "04_book_1_1.47_-24.npz",
+    "target": "book_1",
+    "label": 4,
+    "distance_m": 1.47,
+    "relative_yaw_deg": -24,
+    "stamp_ns": 4200000000,
+    "target_pose_command": [
+      0.02,
+      -0.7,
+      0.74,
+      0,
+      0,
+      -0.4188790204786391
+    ],
+    "target_pose_observed": [
+      [
+        0.02,
+        -0.7,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        -0.20791169081775934,
+        0.9781476007338057
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      4191000000,
+      4201000000,
+      4191000000,
+      4201000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 4200000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 5998,
+    "gt_valid_pixels": 5998,
+    "gt_median_z_m": 1.4204845428466797,
+    "issues": []
+  },
+  {
+    "condition": "book_alt",
+    "rep": 2,
+    "file": "05_book_alt_1.47_-24.npz",
+    "target": "book_alt",
+    "label": 5,
+    "distance_m": 1.47,
+    "relative_yaw_deg": -24,
+    "stamp_ns": 5100000000,
+    "target_pose_command": [
+      0.02,
+      -0.7,
+      0.74,
+      0,
+      0,
+      -0.4188790204786391
+    ],
+    "target_pose_observed": [
+      [
+        0.02,
+        -0.7,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        -0.20791169081775934,
+        0.9781476007338057
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      5091000000,
+      5101000000,
+      5091000000,
+      5101000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 5100000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 5724,
+    "gt_valid_pixels": 5724,
+    "gt_median_z_m": 1.4976931810379028,
+    "issues": []
+  },
+  {
+    "condition": "cup_edge",
+    "rep": 0,
+    "file": "06_cup_1_0.97_0.npz",
+    "target": "cup_1",
+    "label": 1,
+    "distance_m": 0.97,
+    "relative_yaw_deg": 0,
+    "stamp_ns": 6000000000,
+    "target_pose_command": [
+      -0.48,
+      -0.26,
+      0.74,
+      0,
+      0,
+      0.0
+    ],
+    "target_pose_observed": [
+      [
+        -0.48,
+        -0.26,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      5997000000,
+      6001000000,
+      5997000000,
+      6001000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 6000000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 11488,
+    "gt_valid_pixels": 11488,
+    "gt_median_z_m": 0.9217567443847656,
+    "issues": [
+      "cut_frame"
+    ]
+  },
+  {
+    "condition": "cup_full",
+    "rep": 0,
+    "file": "07_cup_1_1.42_0.npz",
+    "target": "cup_1",
+    "label": 1,
+    "distance_m": 1.42,
+    "relative_yaw_deg": 0,
+    "stamp_ns": 6900000000,
+    "target_pose_command": [
+      -0.03,
+      -0.23,
+      0.74,
+      0,
+      0,
+      0.0
+    ],
+    "target_pose_observed": [
+      [
+        -0.03,
+        -0.23,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      6888000000,
+      6901000000,
+      6888000000,
+      6901000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 6900000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 5028,
+    "gt_valid_pixels": 5028,
+    "gt_median_z_m": 1.3711180686950684,
+    "issues": []
+  },
+  {
+    "condition": "cup_edge",
+    "rep": 1,
+    "file": "08_cup_1_0.97_0.npz",
+    "target": "cup_1",
+    "label": 1,
+    "distance_m": 0.97,
+    "relative_yaw_deg": 0,
+    "stamp_ns": 7800000000,
+    "target_pose_command": [
+      -0.48,
+      -0.26,
+      0.74,
+      0,
+      0,
+      0.0
+    ],
+    "target_pose_observed": [
+      [
+        -0.48,
+        -0.26,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      7791000000,
+      7801000000,
+      7791000000,
+      7801000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 7800000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 11488,
+    "gt_valid_pixels": 11488,
+    "gt_median_z_m": 0.9217267036437988,
+    "issues": [
+      "cut_frame"
+    ]
+  },
+  {
+    "condition": "cup_full",
+    "rep": 1,
+    "file": "09_cup_1_1.42_0.npz",
+    "target": "cup_1",
+    "label": 1,
+    "distance_m": 1.42,
+    "relative_yaw_deg": 0,
+    "stamp_ns": 8700000000,
+    "target_pose_command": [
+      -0.03,
+      -0.23,
+      0.74,
+      0,
+      0,
+      0.0
+    ],
+    "target_pose_observed": [
+      [
+        -0.03,
+        -0.23,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      8686000000,
+      8701000000,
+      8686000000,
+      8701000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 8700000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 5028,
+    "gt_valid_pixels": 5028,
+    "gt_median_z_m": 1.3712375164031982,
+    "issues": []
+  },
+  {
+    "condition": "cup_edge",
+    "rep": 2,
+    "file": "10_cup_1_0.97_0.npz",
+    "target": "cup_1",
+    "label": 1,
+    "distance_m": 0.97,
+    "relative_yaw_deg": 0,
+    "stamp_ns": 9600000000,
+    "target_pose_command": [
+      -0.48,
+      -0.26,
+      0.74,
+      0,
+      0,
+      0.0
+    ],
+    "target_pose_observed": [
+      [
+        -0.48,
+        -0.26,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      9592000000,
+      9601000000,
+      9592000000,
+      9601000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 9600000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 11488,
+    "gt_valid_pixels": 11488,
+    "gt_median_z_m": 0.9218928813934326,
+    "issues": [
+      "cut_frame"
+    ]
+  },
+  {
+    "condition": "cup_full",
+    "rep": 2,
+    "file": "11_cup_1_1.42_0.npz",
+    "target": "cup_1",
+    "label": 1,
+    "distance_m": 1.42,
+    "relative_yaw_deg": 0,
+    "stamp_ns": 10500000000,
+    "target_pose_command": [
+      -0.03,
+      -0.23,
+      0.74,
+      0,
+      0,
+      0.0
+    ],
+    "target_pose_observed": [
+      [
+        -0.03,
+        -0.23,
+        0.74
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rig_pose_observed": [
+      [
+        -1.5,
+        -0.5,
+        1.1
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pose_brackets_ns": [
+      10487000000,
+      10501000000,
+      10487000000,
+      10501000000
+    ],
+    "pan_rad": 0.0,
+    "pan_stamp_ns": 10500000000,
+    "optical_origin_world_m": [
+      -1.45,
+      -0.5,
+      1.1
+    ],
+    "optical_heading_rad": 0.0,
+    "visible_pixels": 5028,
+    "gt_valid_pixels": 5028,
+    "gt_median_z_m": 1.3712854385375977,
+    "issues": []
+  }
+]

@@ -1,0 +1,301 @@
+{
+  "scan_id": "scan_1794316856",
+  "frames": 24,
+  "live_observations": 59,
+  "a_matches_live": true,
+  "bbox_blob_columns": 236,
+  "targets": {
+    "laptop_1": {
+      "visible": 6,
+      "true_detections": 3,
+      "false_class": 0,
+      "missed_visible": 3,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 3,
+      "visible_stops": [
+        0,
+        1
+      ],
+      "visibility_status": {
+        "visible": 3,
+        "edge_cut_gt": 3,
+        "frustum_uncertain": 6,
+        "outside_fov": 12
+      }
+    },
+    "book_1": {
+      "visible": 3,
+      "true_detections": 0,
+      "false_class": 0,
+      "missed_visible": 3,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 0,
+      "visible_stops": [
+        0
+      ],
+      "visibility_status": {
+        "edge_cut_gt": 3,
+        "outside_fov": 21
+      }
+    },
+    "cup_1": {
+      "visible": 6,
+      "true_detections": 5,
+      "false_class": 0,
+      "missed_visible": 1,
+      "depth_rejected": 0,
+      "truncated": 5,
+      "valid_observations": 5,
+      "visible_stops": [
+        0,
+        1
+      ],
+      "visibility_status": {
+        "visible": 3,
+        "edge_cut_gt": 3,
+        "outside_fov": 18
+      }
+    },
+    "bottle_1": {
+      "visible": 6,
+      "true_detections": 6,
+      "false_class": 0,
+      "missed_visible": 0,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 6,
+      "visible_stops": [
+        0,
+        7
+      ],
+      "visibility_status": {
+        "visible": 6,
+        "outside_fov": 18
+      }
+    }
+  },
+  "branches": {
+    "A": {
+      "association": {
+        "merged_pairs": [],
+        "confirmed": 5,
+        "rejected": 7
+      },
+      "final_confirmed": 5,
+      "scoped_confirmed": 2,
+      "unique_clean_instances": 2,
+      "localized_under_match_radius": 2,
+      "wrong_confirmed": 0,
+      "duplicate_confirmed": 0,
+      "unresolved_target_predictions": [],
+      "recall": 0.5,
+      "localized_recall": 0.5,
+      "precision": 1.0,
+      "localized_precision": 1.0,
+      "precision_conservative": 1.0,
+      "duplicate_rate": 0.0,
+      "xy_m": {
+        "mean": 0.42817622514440157,
+        "median": 0.42817622514440157,
+        "p90": 0.44733228085129256
+      },
+      "xyz_m": {
+        "mean": 0.43114300459383625,
+        "median": 0.43114300459383625,
+        "p90": 0.4516377823690431
+      },
+      "depth": {
+        "n": 14,
+        "absrel": 0.23572254708634954,
+        "mae_m": 0.2777602331978934,
+        "bias_m": -0.2777602331978934,
+        "clipped": 0
+      },
+      "primary": {
+        "laptop_1": {
+          "method": "A",
+          "object_id": 1,
+          "scan_id": "scan_1794316856",
+          "class_name": "laptop",
+          "x": -0.30502714114970664,
+          "y": -0.39658809656405214,
+          "z": 0.8692923125291746,
+          "weight_sum": 2.0875256660967576,
+          "n_obs": 3,
+          "conf_sum": 0.9570174217224121,
+          "conf_mean": 0.6382040778795878,
+          "first_seen_stop": 0,
+          "last_seen_stop": 0,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T13:24:56.004278+00:00",
+          "updated_at": "2026-11-10T13:25:14.638712+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "laptop_1",
+          "xy_m": 0.40423115551078775,
+          "xyz_m": 0.40552453237482766,
+          "obs_linked": 3,
+          "instance_votes": {
+            "laptop_1": 3
+          },
+          "true_votes": {
+            "laptop_1": 3
+          },
+          "conf_sum_error": -1.9130964875221252,
+          "conf_mean_error": -0.31850055853525805
+        },
+        "bottle_1": {
+          "method": "A",
+          "object_id": 4,
+          "scan_id": "scan_1794316856",
+          "class_name": "bottle",
+          "x": -0.596049904040938,
+          "y": -0.7605255408983251,
+          "z": 0.9349413697769147,
+          "weight_sum": 6.185446358808768,
+          "n_obs": 6,
+          "conf_sum": 0.8941095471382141,
+          "conf_mean": 0.2880214949448903,
+          "first_seen_stop": 0,
+          "last_seen_stop": 7,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T13:24:56.527719+00:00",
+          "updated_at": "2026-11-10T13:25:14.379286+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "bottle_1",
+          "xy_m": 0.4521212947780153,
+          "xyz_m": 0.45676147681284485,
+          "obs_linked": 6,
+          "instance_votes": {
+            "bottle_1": 6
+          },
+          "true_votes": {
+            "bottle_1": 6
+          },
+          "conf_sum_error": -4.285414218902588,
+          "conf_mean_error": -0.5752324660619099
+        }
+      },
+      "association_sqlite_s": 5.659513073000198
+    },
+    "B": {
+      "association": {
+        "merged_pairs": [],
+        "confirmed": 5,
+        "rejected": 8
+      },
+      "final_confirmed": 5,
+      "scoped_confirmed": 2,
+      "unique_clean_instances": 2,
+      "localized_under_match_radius": 2,
+      "wrong_confirmed": 0,
+      "duplicate_confirmed": 0,
+      "unresolved_target_predictions": [],
+      "recall": 0.5,
+      "localized_recall": 0.5,
+      "precision": 1.0,
+      "localized_precision": 1.0,
+      "precision_conservative": 1.0,
+      "duplicate_rate": 0.0,
+      "xy_m": {
+        "mean": 0.07509552377546097,
+        "median": 0.07509552377546097,
+        "p90": 0.11029006748385929
+      },
+      "xyz_m": {
+        "mean": 0.09049891595505367,
+        "median": 0.09049891595505367,
+        "p90": 0.11341268704473134
+      },
+      "depth": {
+        "n": 14,
+        "absrel": 0.10863413914706829,
+        "mae_m": 0.11288365386253574,
+        "bias_m": 0.045032995920648355,
+        "clipped": 0
+      },
+      "primary": {
+        "laptop_1": {
+          "method": "B",
+          "object_id": 1,
+          "scan_id": "scan_1794316856",
+          "class_name": "laptop",
+          "x": 0.12094095549752466,
+          "y": -0.3581154189490395,
+          "z": 0.7834613570135159,
+          "weight_sum": 1.1089257863940192,
+          "n_obs": 3,
+          "conf_sum": 0.9570174217224121,
+          "conf_mean": 0.6382040778795878,
+          "first_seen_stop": 0,
+          "last_seen_stop": 0,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T13:24:56.072541+00:00",
+          "updated_at": "2026-11-10T13:25:15.201087+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "laptop_1",
+          "xy_m": 0.031102344139963066,
+          "xyz_m": 0.0618567020929566,
+          "obs_linked": 3,
+          "instance_votes": {
+            "laptop_1": 3
+          },
+          "true_votes": {
+            "laptop_1": 3
+          },
+          "conf_sum_error": -1.9130964875221252,
+          "conf_mean_error": -0.31850055853525805
+        },
+        "bottle_1": {
+          "method": "B",
+          "object_id": 4,
+          "scan_id": "scan_1794316856",
+          "class_name": "bottle",
+          "x": -0.27519760835138884,
+          "y": -0.8498067837052202,
+          "z": 0.8735340534806137,
+          "weight_sum": 3.2858044895777616,
+          "n_obs": 6,
+          "conf_sum": 0.8941095471382141,
+          "conf_mean": 0.2880214949448903,
+          "first_seen_stop": 0,
+          "last_seen_stop": 7,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T13:24:56.593501+00:00",
+          "updated_at": "2026-11-10T13:25:14.943880+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "bottle_1",
+          "xy_m": 0.11908870341095887,
+          "xyz_m": 0.11914112981715075,
+          "obs_linked": 6,
+          "instance_votes": {
+            "bottle_1": 6
+          },
+          "true_votes": {
+            "bottle_1": 6
+          },
+          "conf_sum_error": -4.285414218902588,
+          "conf_mean_error": -0.5752324660619099
+        }
+      },
+      "association_sqlite_s": 5.695664141000179
+    }
+  },
+  "timings_ms": {
+    "yolo_ms": 9266.890099000364,
+    "depth_ms": 77309.0214749999,
+    "post_ms": 1288.8271829997962
+  },
+  "max_joint_skew_ms": 5.0,
+  "max_command_error_deg": 0.1508417594830067,
+  "max_tf_joint_error_deg": 1.4655876434216737e-05
+}

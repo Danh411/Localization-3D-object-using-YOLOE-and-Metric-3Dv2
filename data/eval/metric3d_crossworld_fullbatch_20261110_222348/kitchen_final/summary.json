@@ -1,0 +1,376 @@
+{
+  "scan_id": "scan_1794324951",
+  "frames": 24,
+  "live_observations": 56,
+  "a_matches_live": true,
+  "wire_tf_missing": [
+    {
+      "stop": 6,
+      "frame": 2,
+      "stamp_ns": 120300000000,
+      "class_name": "chair",
+      "det_index": 0
+    }
+  ],
+  "bbox_blob_columns": 224,
+  "targets": {
+    "laptop_1": {
+      "visible": 6,
+      "true_detections": 3,
+      "false_class": 0,
+      "missed_visible": 3,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 3,
+      "visible_stops": [
+        0,
+        1
+      ],
+      "visibility_status": {
+        "visible": 3,
+        "edge_cut_gt": 3,
+        "frustum_uncertain": 6,
+        "outside_fov": 12
+      }
+    },
+    "book_1": {
+      "visible": 3,
+      "true_detections": 0,
+      "false_class": 0,
+      "missed_visible": 3,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 0,
+      "visible_stops": [
+        0
+      ],
+      "visibility_status": {
+        "edge_cut_gt": 3,
+        "outside_fov": 21
+      }
+    },
+    "cup_1": {
+      "visible": 6,
+      "true_detections": 3,
+      "false_class": 0,
+      "missed_visible": 3,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 3,
+      "visible_stops": [
+        0,
+        1
+      ],
+      "visibility_status": {
+        "visible": 3,
+        "edge_cut_gt": 3,
+        "outside_fov": 18
+      }
+    },
+    "bottle_1": {
+      "visible": 6,
+      "true_detections": 6,
+      "false_class": 0,
+      "missed_visible": 0,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 6,
+      "visible_stops": [
+        0,
+        7
+      ],
+      "visibility_status": {
+        "visible": 6,
+        "outside_fov": 18
+      }
+    }
+  },
+  "branches": {
+    "A": {
+      "association": {
+        "merged_pairs": [],
+        "confirmed": 6,
+        "rejected": 6
+      },
+      "final_confirmed": 6,
+      "scoped_confirmed": 3,
+      "unique_clean_instances": 3,
+      "localized_under_match_radius": 3,
+      "wrong_confirmed": 0,
+      "duplicate_confirmed": 0,
+      "unresolved_target_predictions": [],
+      "recall": 0.75,
+      "localized_recall": 0.75,
+      "precision": 1.0,
+      "localized_precision": 1.0,
+      "precision_conservative": 1.0,
+      "duplicate_rate": 0.0,
+      "xy_m": {
+        "mean": 0.3661685140516722,
+        "median": 0.38660830380066874,
+        "p90": 0.4369530180065169
+      },
+      "xyz_m": {
+        "mean": 0.37008313671408266,
+        "median": 0.3876370854871635,
+        "p90": 0.4408475153142393
+      },
+      "depth": {
+        "n": 12,
+        "absrel": 0.253963245868937,
+        "mae_m": 0.32138336698214215,
+        "bias_m": -0.32138336698214215,
+        "clipped": 0
+      },
+      "primary": {
+        "laptop_1": {
+          "method": "A",
+          "object_id": 1,
+          "scan_id": "scan_1794324951",
+          "class_name": "laptop",
+          "x": -0.287113028316693,
+          "y": -0.40209951136818084,
+          "z": 0.8651528538130422,
+          "weight_sum": 2.0341388862489094,
+          "n_obs": 3,
+          "conf_sum": 2.882469356060028,
+          "conf_mean": 0.960823118686676,
+          "first_seen_stop": 0,
+          "last_seen_stop": 0,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T15:39:47.150364+00:00",
+          "updated_at": "2026-11-10T15:39:57.949947+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "laptop_1",
+          "xy_m": 0.38660830380066874,
+          "xyz_m": 0.3876370854871635,
+          "obs_linked": 3,
+          "instance_votes": {
+            "laptop_1": 3
+          },
+          "true_votes": {
+            "laptop_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        },
+        "bottle_1": {
+          "method": "A",
+          "object_id": 4,
+          "scan_id": "scan_1794324951",
+          "class_name": "bottle",
+          "x": -0.5934823973472523,
+          "y": -0.7609264914766002,
+          "z": 0.934551102011729,
+          "weight_sum": 6.154084571608804,
+          "n_obs": 6,
+          "conf_sum": 5.167838752269745,
+          "conf_mean": 0.8613064587116241,
+          "first_seen_stop": 0,
+          "last_seen_stop": 7,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T15:39:47.505936+00:00",
+          "updated_at": "2026-11-10T15:39:57.786306+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "bottle_1",
+          "xy_m": 0.44953919655797897,
+          "xyz_m": 0.45415012277100825,
+          "obs_linked": 6,
+          "instance_votes": {
+            "bottle_1": 6
+          },
+          "true_votes": {
+            "bottle_1": 6
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        },
+        "cup_1": {
+          "method": "A",
+          "object_id": 7,
+          "scan_id": "scan_1794324951",
+          "class_name": "cup",
+          "x": -0.43899032515413466,
+          "y": -0.3224710562189917,
+          "z": 0.8643628578448163,
+          "weight_sum": 1.6030364902532386,
+          "n_obs": 3,
+          "conf_sum": 1.7780703902244568,
+          "conf_mean": 0.592690130074819,
+          "first_seen_stop": 0,
+          "last_seen_stop": 0,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T15:39:47.884653+00:00",
+          "updated_at": "2026-11-10T15:39:57.890605+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "cup_1",
+          "xy_m": 0.26235804179636907,
+          "xyz_m": 0.2684622018840762,
+          "obs_linked": 3,
+          "instance_votes": {
+            "cup_1": 3
+          },
+          "true_votes": {
+            "cup_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        }
+      },
+      "association_sqlite_s": 3.360384918999898
+    },
+    "B": {
+      "association": {
+        "merged_pairs": [],
+        "confirmed": 6,
+        "rejected": 7
+      },
+      "final_confirmed": 6,
+      "scoped_confirmed": 3,
+      "unique_clean_instances": 3,
+      "localized_under_match_radius": 3,
+      "wrong_confirmed": 0,
+      "duplicate_confirmed": 0,
+      "unresolved_target_predictions": [],
+      "recall": 0.75,
+      "localized_recall": 0.75,
+      "precision": 1.0,
+      "localized_precision": 1.0,
+      "precision_conservative": 1.0,
+      "duplicate_rate": 0.0,
+      "xy_m": {
+        "mean": 0.09467024903142078,
+        "median": 0.11557106826150415,
+        "p90": 0.11881695760426529
+      },
+      "xyz_m": {
+        "mean": 0.10527106757726772,
+        "median": 0.11560996227548014,
+        "p90": 0.12193424432688817
+      },
+      "depth": {
+        "n": 12,
+        "absrel": 0.08800095556716026,
+        "mae_m": 0.10839282127253531,
+        "bias_m": 0.03558590831413394,
+        "clipped": 0
+      },
+      "primary": {
+        "laptop_1": {
+          "method": "B",
+          "object_id": 1,
+          "scan_id": "scan_1794324951",
+          "class_name": "laptop",
+          "x": 0.14551971601699606,
+          "y": -0.3656772638944408,
+          "z": 0.7777818815438782,
+          "weight_sum": 1.0805659642814827,
+          "n_obs": 3,
+          "conf_sum": 2.882469356060028,
+          "conf_mean": 0.960823118686676,
+          "first_seen_stop": 0,
+          "last_seen_stop": 0,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T15:39:47.199411+00:00",
+          "updated_at": "2026-11-10T15:39:58.342309+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "laptop_1",
+          "xy_m": 0.04881124889280261,
+          "xyz_m": 0.07668792561658282,
+          "obs_linked": 3,
+          "instance_votes": {
+            "laptop_1": 3
+          },
+          "true_votes": {
+            "laptop_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        },
+        "bottle_1": {
+          "method": "B",
+          "object_id": 4,
+          "scan_id": "scan_1794324951",
+          "class_name": "bottle",
+          "x": -0.27175981950075945,
+          "y": -0.8505650791700925,
+          "z": 0.872998592708703,
+          "weight_sum": 3.269144524190825,
+          "n_obs": 6,
+          "conf_sum": 5.167838752269745,
+          "conf_mean": 0.8613064587116241,
+          "first_seen_stop": 0,
+          "last_seen_stop": 7,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T15:39:47.591463+00:00",
+          "updated_at": "2026-11-10T15:39:58.123280+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "bottle_1",
+          "xy_m": 0.11557106826150415,
+          "xyz_m": 0.11560996227548014,
+          "obs_linked": 6,
+          "instance_votes": {
+            "bottle_1": 6
+          },
+          "true_votes": {
+            "bottle_1": 6
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        },
+        "cup_1": {
+          "method": "B",
+          "object_id": 7,
+          "scan_id": "scan_1794324951",
+          "class_name": "cup",
+          "x": -0.06286100140690898,
+          "y": -0.2564243672199823,
+          "z": 0.7766979807094381,
+          "weight_sum": 0.8515576899404111,
+          "n_obs": 3,
+          "conf_sum": 1.7780703902244568,
+          "conf_mean": 0.592690130074819,
+          "first_seen_stop": 0,
+          "last_seen_stop": 0,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-10T15:39:47.926530+00:00",
+          "updated_at": "2026-11-10T15:39:58.247511+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "cup_1",
+          "xy_m": 0.11962842993995558,
+          "xyz_m": 0.12351531483974017,
+          "obs_linked": 3,
+          "instance_votes": {
+            "cup_1": 3
+          },
+          "true_votes": {
+            "cup_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        }
+      },
+      "association_sqlite_s": 3.031339868000714
+    }
+  },
+  "timings_ms": {
+    "yolo_ms": 13918.85735999972,
+    "depth_ms": 105383.82999199962,
+    "post_ms": 2069.948800999782
+  },
+  "max_joint_skew_ms": 8.0,
+  "max_command_error_deg": 0.1336166611841292,
+  "max_tf_joint_error_deg": 2.5360939240210985e-05
+}

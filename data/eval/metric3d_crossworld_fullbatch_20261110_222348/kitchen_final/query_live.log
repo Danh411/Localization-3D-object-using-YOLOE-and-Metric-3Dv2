@@ -1,0 +1,68 @@
+[
+  {
+    "object_id": 4,
+    "class_name": "bottle",
+    "x": -0.5934823973472523,
+    "y": -0.7609264914766002,
+    "approach_x": -1.170072828478618,
+    "approach_y": -0.5949642224882965,
+    "yaw": -0.2802581976935918,
+    "distance_to_db_object": 0.6000000000000002,
+    "already_close": false
+  },
+  {
+    "object_id": 5,
+    "class_name": "chair",
+    "x": -0.0053587142573224954,
+    "y": -1.376651284580117,
+    "approach_x": -0.5229046267703799,
+    "approach_y": -1.073095312079119,
+    "yaw": -0.5304558750011373,
+    "distance_to_db_object": 0.6,
+    "already_close": false
+  },
+  {
+    "object_id": 7,
+    "class_name": "cup",
+    "x": -0.43899032515413466,
+    "y": -0.3224710562189917,
+    "approach_x": -1.030763790818594,
+    "approach_y": -0.4214870414712469,
+    "yaw": 0.16578502370033837,
+    "distance_to_db_object": 0.5999999999999999,
+    "already_close": false
+  },
+  {
+    "object_id": 1,
+    "class_name": "laptop",
+    "x": -0.287113028316693,
+    "y": -0.40209951136818084,
+    "approach_x": -0.8851679617033066,
+    "approach_y": -0.45037265764986695,
+    "yaw": 0.08054229603297264,
+    "distance_to_db_object": 0.6,
+    "already_close": false
+  },
+  {
+    "object_id": 2,
+    "class_name": "person",
+    "x": -0.18619378363847072,
+    "y": -1.0450815284984152,
+    "approach_x": -0.7403893987111108,
+    "approach_y": -0.81515279990136,
+    "yaw": -0.39327402524620286,
+    "distance_to_db_object": 0.6000000000000001,
+    "already_close": false
+  },
+  {
+    "object_id": 3,
+    "class_name": "person",
+    "x": 1.0382731284312445,
+    "y": 0.5154242135265822,
+    "approach_x": 0.4811958146204468,
+    "approach_y": 0.2925680571446103,
+    "yaw": 0.3805454208844109,
+    "distance_to_db_object": 0.6,
+    "already_close": false
+  }
+]

@@ -1,0 +1,97 @@
+diff --git a/src/object_db/object_db/association.py b/src/object_db/object_db/association.py
+index 3977c0c..28e64eb 100644
+--- a/src/object_db/object_db/association.py
++++ b/src/object_db/object_db/association.py
+@@ -69,7 +69,7 @@ def add_observation(conn: sqlite3.Connection, scan_id: str, obs: dict,
+         nz = (W * cand["z"] + w * p[2]) / (W + w)
+         conf_sum = float(cand["conf_sum"]) + conf
+         n = int(cand["n_obs"]) + 1
+-        db.update_object(conn, oid, nx, ny, nz, W + w, conf_sum / n, n,
++        db.update_object(conn, oid, nx, ny, nz, W + w, conf_sum, n,
+                          stop if stop is not None else 0, untrunc)
+         created = False
+     elif conf >= min_conf_create:
+@@ -118,15 +118,15 @@ def merge_duplicates(conn: sqlite3.Connection, scan_id: str,
+         ny = (keep["weight_sum"] * keep["y"] + drop["weight_sum"] * drop["y"]) / W
+         nz = (keep["weight_sum"] * keep["z"] + drop["weight_sum"] * drop["z"]) / W
+         n = int(keep["n_obs"]) + int(drop["n_obs"])
+-        conf_mean = (float(keep["conf_sum"]) + float(drop["conf_sum"])) / n
++        conf_sum = float(keep["conf_sum"]) + float(drop["conf_sum"])
+         first = min(keep["first_seen_stop"] or 0, drop["first_seen_stop"] or 0)
+         last = max(keep["last_seen_stop"] or 0, drop["last_seen_stop"] or 0)
+         seen = int(bool(keep["seen_untruncated"] or drop["seen_untruncated"]))
+         conn.execute(
+-            """UPDATE objects SET x=?,y=?,z=?,weight_sum=?,n_obs=?,conf_mean=?,
++            """UPDATE objects SET x=?,y=?,z=?,weight_sum=?,n_obs=?,conf_sum=?,conf_mean=?,
+                  first_seen_stop=?,last_seen_stop=?,seen_untruncated=?,updated_at=?
+                WHERE object_id=?""",
+-            (nx, ny, nz, W, n, conf_mean, first, last, seen, db.utcnow(),
++            (nx, ny, nz, W, n, conf_sum, conf_sum / n, first, last, seen, db.utcnow(),
+              keep["object_id"]))
+         conn.execute(
+             "UPDATE observations SET object_id=? WHERE object_id=?",
+diff --git a/src/object_db/object_db/db.py b/src/object_db/object_db/db.py
+index 586dd99..28b78c7 100644
+--- a/src/object_db/object_db/db.py
++++ b/src/object_db/object_db/db.py
+@@ -85,7 +85,7 @@ def insert_object(conn: sqlite3.Connection, scan_id: str, class_name: str,
+ 
+ def update_object(conn: sqlite3.Connection, object_id: int,
+                   x: float, y: float, z: float, weight: float,
+-                  conf_mean: float, n_obs: int, stop_index: int,
++                  conf_sum: float, n_obs: int, stop_index: int,
+                   seen_untruncated: int) -> None:
+     """Cập nhật vật sau khi gộp thêm một quan sát (vị trí/độ tin cậy đã tính)."""
+     row = conn.execute(
+@@ -95,10 +95,10 @@ def update_object(conn: sqlite3.Connection, object_id: int,
+     last = max(row["last_seen_stop"], stop_index) if row["last_seen_stop"] is not None else stop_index
+     seen = int(bool(row["seen_untruncated"] or seen_untruncated))
+     conn.execute(
+-        """UPDATE objects SET x=?, y=?, z=?, weight_sum=?, n_obs=?, conf_mean=?,
++        """UPDATE objects SET x=?, y=?, z=?, weight_sum=?, n_obs=?, conf_sum=?, conf_mean=?,
+              first_seen_stop=?, last_seen_stop=?, seen_untruncated=?, updated_at=?
+            WHERE object_id=?""",
+-        (x, y, z, weight, n_obs, conf_mean, first, last, seen, utcnow(), object_id))
++        (x, y, z, weight, n_obs, conf_sum, conf_sum / n_obs, first, last, seen, utcnow(), object_id))
+     conn.commit()
+ 
+ 
+diff --git a/tests/test_association.py b/tests/test_association.py
+index 1095a2a..412fd57 100644
+--- a/tests/test_association.py
++++ b/tests/test_association.py
+@@ -122,6 +122,34 @@ class TestAssociate(unittest.TestCase):
+         self.assertEqual(kept[0]["n_obs"], 6)
+ 
+ 
++    def test_confidence_tracks_all_observations_across_merge_and_update(self):
++        settings = {**ASSOC, "radius_m": 0.1}
++        for x, conf in ((0.0, 0.9), (0.01, 0.7), (0.2, 0.8), (0.21, 0.6)):
++            association.add_observation(
++                self.conn, "s1", obs("cup", (x, 0, 0), conf=conf), settings, FUS)
++        objects = queries.list_objects(self.conn, "s1", status=None)
++        self.assertEqual(len(objects), 2)
++        for obj, total in zip(objects, (1.6, 1.4), strict=True):
++            self.assertAlmostEqual(obj["conf_sum"], total)
++            self.assertAlmostEqual(obj["conf_mean"], total / 2)
++
++        result = association.run_association_pass(self.conn, "s1", settings)
++        self.assertEqual(len(result["merged_pairs"]), 1)
++        merged_id = result["merged_pairs"][0][1]
++        merged = queries.list_objects(self.conn, "s1")[0]
++        self.assertAlmostEqual(merged["conf_sum"], 3.0)
++        self.assertAlmostEqual(merged["conf_mean"], 0.75)
++
++        self._assoc(obs("cup", (0.05, 0, 0), conf=0.5))
++        final = queries.list_objects(self.conn, "s1")[0]
++        self.assertEqual(final["object_id"], merged_id)
++        self.assertEqual(final["n_obs"], 5)
++        self.assertAlmostEqual(final["conf_sum"], 3.5)
++        self.assertAlmostEqual(final["conf_mean"], 0.7)
++        rows = self.conn.execute("SELECT object_id FROM observations").fetchall()
++        self.assertEqual([r["object_id"] for r in rows], [merged_id] * 5)
++
++
+ class TestStatus(unittest.TestCase):
+     def setUp(self):
+         self.conn = _open()

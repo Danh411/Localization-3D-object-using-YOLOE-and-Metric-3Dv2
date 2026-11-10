@@ -1,0 +1,26 @@
+{
+  "planned_xy": {
+    "laptop_1": [
+      0.1,
+      -0.38
+    ],
+    "book_1": [
+      -0.56,
+      -0.64
+    ],
+    "cup_1": [
+      -0.48,
+      -0.26
+    ],
+    "bottle_1": [
+      -0.16,
+      -0.88
+    ]
+  },
+  "lock_sha256": "e7307ac5818f43221b4a9a7aae647afafa5ba720ee3835c4282acf3139f9a511",
+  "source_sha256": "ed888f8958f15c31663676469707b604402557b90ac796afc6b6394222229dce",
+  "world_sha256": "0d72574fb51d2d5271e0cd705a25db5007819332a67beae2e4656380daf96991",
+  "stops": 8,
+  "frames_per_stop": 3,
+  "settle_s": 1.5
+}

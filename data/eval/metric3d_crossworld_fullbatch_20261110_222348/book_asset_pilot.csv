@@ -1,0 +1,7 @@
+condition,rep,yaw_deg,file,visible_px,gt_bbox,issues,correct,wrong_classes,missed,best_iou,best_class,best_conf,true_conf,bbox,truncated,valid_depth_ratio
+book_1,0,0,00_book_1_1.47_0.npz,4588,"[746, 450, 782, 593]",,False,[],True,0.0001894682708313597,dining table,0.6569998264312744,,,,
+book_alt,0,0,01_book_alt_1.47_0.npz,6193,"[642, 536, 764, 632]",,False,[],True,0.003820104072024449,dining table,0.7503700852394104,,,,
+book_1,1,24,02_book_1_1.47_24.npz,8496,"[732, 449, 798, 593]",,False,[],True,0.00023904699929613938,dining table,0.5967420935630798,,,,
+book_alt,1,24,03_book_alt_1.47_24.npz,6139,"[650, 536, 767, 642]",,False,[],True,0.0023900309460654287,dining table,0.7618765234947205,,,,
+book_1,2,-24,04_book_1_1.47_-24.npz,5998,"[747, 450, 792, 593]",,False,[],True,0.0002623241923441693,dining table,0.7265135645866394,,,,
+book_alt,2,-24,05_book_alt_1.47_-24.npz,5724,"[649, 527, 765, 619]",,False,[],True,0.0016191866700803366,dining table,0.7659600973129272,,,,

@@ -1,0 +1,635 @@
+{
+  "branches": [
+    {
+      "branch": "P0",
+      "method": "A1_8x3",
+      "confirmed": 3,
+      "missing": 1,
+      "wrong": 0,
+      "unscored": 3,
+      "duplicate": 0,
+      "recall": 0.75,
+      "localized": 3,
+      "precision": 1.0,
+      "xy_mean": 0.3659216624721096,
+      "xy_median": 0.38722968206559455,
+      "xy_p90": 0.4358437522101037,
+      "xyz_mean": 0.36982820553015383,
+      "xyz_median": 0.38826385218328613,
+      "xyz_p90": 0.43971178288673346,
+      "objects": [
+        {
+          "target": "laptop_1",
+          "id": 1,
+          "xyz": [
+            -0.28773299861357465,
+            -0.4021418827727386,
+            0.8652494675017602
+          ],
+          "error": [
+            -0.3865974986135746,
+            -0.022117882772738573,
+            0.028319467501760287
+          ],
+          "xy": 0.38722968206559455,
+          "xyz_error": 0.38826385218328613,
+          "n": 3,
+          "independent_angles": 1
+        },
+        {
+          "target": "bottle_1",
+          "id": 4,
+          "xyz": [
+            -0.5919628419984301,
+            -0.7612159234883875,
+            0.9341985948088409
+          ],
+          "error": [
+            -0.43196284199843005,
+            0.11878407651161249,
+            0.06419859480884094
+          ],
+          "xy": 0.447997269746231,
+          "xyz_error": 0.4525737655625953,
+          "n": 6,
+          "independent_angles": 2
+        },
+        {
+          "target": "cup_1",
+          "id": 7,
+          "xyz": [
+            -0.4391684289656479,
+            -0.3224971703130288,
+            0.8644048123768382
+          ],
+          "error": [
+            -0.2592604289656479,
+            -0.04135517031302882,
+            0.05696481237683826
+          ],
+          "xy": 0.2625380356045032,
+          "xyz_error": 0.26864699884458,
+          "n": 3,
+          "independent_angles": 1
+        }
+      ],
+      "visible": 21,
+      "true": 12,
+      "missed": 9,
+      "detection_wrong": 0,
+      "truncated": 0,
+      "detection_recall": 0.5714285714285714,
+      "depth_n": 12,
+      "depth_abs_error_m": 0.3211855888366699,
+      "depth_absrel": 0.2537601803271145,
+      "depth_bias_m": -0.3211855888366699,
+      "classification": "MEASURED_BELOW_TARGET"
+    },
+    {
+      "branch": "A2",
+      "method": "A2_8x1",
+      "confirmed": 0,
+      "missing": 4,
+      "wrong": 0,
+      "unscored": 0,
+      "duplicate": 0,
+      "recall": 0.0,
+      "localized": 0,
+      "precision": null,
+      "objects": [],
+      "visible": 7,
+      "true": 4,
+      "missed": 3,
+      "detection_wrong": 0,
+      "truncated": 0,
+      "detection_recall": 0.5714285714285714,
+      "depth_n": 4,
+      "depth_abs_error_m": 0.32040561735630035,
+      "depth_absrel": 0.2532066753836619,
+      "depth_bias_m": -0.32040561735630035,
+      "seconds": 0.8670354449996012,
+      "classification": "MEASURED_BELOW_TARGET"
+    },
+    {
+      "branch": "P1",
+      "method": "B1_36x1",
+      "confirmed": 3,
+      "missing": 1,
+      "wrong": 0,
+      "unscored": 4,
+      "duplicate": 0,
+      "recall": 0.75,
+      "localized": 3,
+      "precision": 1.0,
+      "xy_mean": 0.3540957477777667,
+      "xy_median": 0.37724857323752475,
+      "xy_p90": 0.4513814437588063,
+      "xyz_mean": 0.3577334653738349,
+      "xyz_median": 0.37821673889257035,
+      "xyz_p90": 0.4555446648964691,
+      "objects": [
+        {
+          "target": "laptop_1",
+          "id": 1,
+          "xyz": [
+            -0.27787833589332583,
+            -0.3995514579196232,
+            0.8639746957605855
+          ],
+          "error": [
+            -0.3767428358933258,
+            -0.01952745791962318,
+            0.027044695760585546
+          ],
+          "xy": 0.37724857323752475,
+          "xyz_error": 0.37821673889257035,
+          "n": 7,
+          "independent_angles": 7
+        },
+        {
+          "target": "bottle_1",
+          "id": 4,
+          "xyz": [
+            -0.6128139448174802,
+            -0.7543842351960168,
+            0.9384692654059126
+          ],
+          "error": [
+            -0.45281394481748016,
+            0.12561576480398318,
+            0.06846926540591258
+          ],
+          "xy": 0.4699146613891267,
+          "xyz_error": 0.4748766463974438,
+          "n": 7,
+          "independent_angles": 7
+        },
+        {
+          "target": "cup_1",
+          "id": 7,
+          "xyz": [
+            -0.39262206594723653,
+            -0.31325220507896145,
+            0.8540099162030121
+          ],
+          "error": [
+            -0.21271406594723652,
+            -0.03211020507896145,
+            0.04656991620301221
+          ],
+          "xy": 0.21512400870664866,
+          "xyz_error": 0.22010701083149037,
+          "n": 4,
+          "independent_angles": 4
+        }
+      ],
+      "visible": 30,
+      "true": 20,
+      "missed": 10,
+      "detection_wrong": 0,
+      "truncated": 4,
+      "detection_recall": 0.6666666666666666,
+      "depth_n": 20,
+      "depth_abs_error_m": 0.29506405889987947,
+      "depth_absrel": 0.23738139825299337,
+      "depth_bias_m": -0.29506405889987947,
+      "classification": "MEASURED_BELOW_TARGET"
+    },
+    {
+      "branch": "P2",
+      "method": "F5_angle_equal",
+      "confirmed": 3,
+      "missing": 1,
+      "wrong": 0,
+      "unscored": 4,
+      "duplicate": 0,
+      "recall": 0.75,
+      "localized": 3,
+      "precision": 1.0,
+      "xy_mean": 0.3549248331889216,
+      "xy_median": 0.36442924849885605,
+      "xy_p90": 0.4712922317376596,
+      "xyz_mean": 0.3585417424350535,
+      "xyz_median": 0.3652994419487702,
+      "xyz_p90": 0.47572834039961387,
+      "objects": [
+        {
+          "target": "laptop_1",
+          "id": 1,
+          "xyz": [
+            -0.2651536539296219,
+            -0.3973289348774002,
+            0.8621293080587935
+          ],
+          "error": [
+            -0.3640181539296219,
+            -0.017304934877400147,
+            0.025199308058793557
+          ],
+          "xy": 0.36442924849885605,
+          "xyz_error": 0.3652994419487702,
+          "n": 7,
+          "independent_angles": 7
+        },
+        {
+          "target": "bottle_1",
+          "id": 4,
+          "xyz": [
+            -0.6417364772260971,
+            -0.7537387145218203,
+            0.9430393408066088
+          ],
+          "error": [
+            -0.481736477226097,
+            0.12626128547817972,
+            0.07303934080660879
+          ],
+          "xy": 0.4980079775473605,
+          "xyz_error": 0.5033355650123248,
+          "n": 7,
+          "independent_angles": 7
+        },
+        {
+          "target": "cup_1",
+          "id": 7,
+          "xyz": [
+            -0.3800188171830201,
+            -0.31107581202040685,
+            0.8510814832740095
+          ],
+          "error": [
+            -0.2001108171830201,
+            -0.029933812020406847,
+            0.04364148327400952
+          ],
+          "xy": 0.20233727352054823,
+          "xyz_error": 0.20699022034406553,
+          "n": 4,
+          "independent_angles": 4
+        }
+      ],
+      "seconds": 0.00026078799965034705,
+      "paired": 3,
+      "xy_better": 2,
+      "xy_worse": 1,
+      "depth_n": 20,
+      "depth_abs_error_m": 0.29506405889987947,
+      "depth_absrel": 0.23738139825299337,
+      "depth_bias_m": -0.29506405889987947,
+      "classification": "FAIL_GAIN_GATE"
+    },
+    {
+      "branch": "P3",
+      "method": "P3_ground_rgb",
+      "confirmed": 3,
+      "missing": 1,
+      "wrong": 0,
+      "unscored": 4,
+      "duplicate": 0,
+      "recall": 0.75,
+      "localized": 3,
+      "precision": 1.0,
+      "xy_mean": 0.3540957477777667,
+      "xy_median": 0.37724857323752475,
+      "xy_p90": 0.4513814437588063,
+      "xyz_mean": 0.3577334653738349,
+      "xyz_median": 0.37821673889257035,
+      "xyz_p90": 0.4555446648964691,
+      "objects": [
+        {
+          "target": "laptop_1",
+          "id": 1,
+          "xyz": [
+            -0.27787833589332583,
+            -0.3995514579196232,
+            0.8639746957605855
+          ],
+          "error": [
+            -0.3767428358933258,
+            -0.01952745791962318,
+            0.027044695760585546
+          ],
+          "xy": 0.37724857323752475,
+          "xyz_error": 0.37821673889257035,
+          "n": 7,
+          "independent_angles": 7
+        },
+        {
+          "target": "bottle_1",
+          "id": 4,
+          "xyz": [
+            -0.6128139448174802,
+            -0.7543842351960168,
+            0.9384692654059126
+          ],
+          "error": [
+            -0.45281394481748016,
+            0.12561576480398318,
+            0.06846926540591258
+          ],
+          "xy": 0.4699146613891267,
+          "xyz_error": 0.4748766463974438,
+          "n": 7,
+          "independent_angles": 7
+        },
+        {
+          "target": "cup_1",
+          "id": 7,
+          "xyz": [
+            -0.39262206594723653,
+            -0.31325220507896145,
+            0.8540099162030121
+          ],
+          "error": [
+            -0.21271406594723652,
+            -0.03211020507896145,
+            0.04656991620301221
+          ],
+          "xy": 0.21512400870664866,
+          "xyz_error": 0.22010701083149037,
+          "n": 4,
+          "independent_angles": 4
+        }
+      ],
+      "seconds": 2.4368974250000974,
+      "paired": 3,
+      "xy_better": 0,
+      "xy_worse": 0,
+      "depth_n": 20,
+      "depth_abs_error_m": 0.29506405889987947,
+      "depth_absrel": 0.23738139825299337,
+      "depth_bias_m": -0.29506405889987947,
+      "floor_extra_cpu_s": 4.8088265590004085,
+      "classification": "FALLBACK_ALL_FRAMES"
+    },
+    {
+      "branch": "P4",
+      "method": "T2_every20",
+      "confirmed": 3,
+      "missing": 1,
+      "wrong": 0,
+      "unscored": 3,
+      "duplicate": 0,
+      "recall": 0.75,
+      "localized": 3,
+      "precision": 1.0,
+      "xy_mean": 0.3461217191822254,
+      "xy_median": 0.35031434080797225,
+      "xy_p90": 0.44599540829891493,
+      "xyz_mean": 0.3496677898056903,
+      "xyz_median": 0.35100560822955335,
+      "xyz_p90": 0.4501074791290024,
+      "objects": [
+        {
+          "target": "laptop_1",
+          "id": 1,
+          "xyz": [
+            -0.25105534796134976,
+            -0.39664439044156236,
+            0.8589481659743619
+          ],
+          "error": [
+            -0.3499198479613498,
+            -0.016620390441562327,
+            0.022018165974361903
+          ],
+          "xy": 0.35031434080797225,
+          "xyz_error": 0.35100560822955335,
+          "n": 6,
+          "independent_angles": 6
+        },
+        {
+          "target": "bottle_1",
+          "id": 4,
+          "xyz": [
+            -0.6128238963257755,
+            -0.7544163199759953,
+            0.9385059956542654
+          ],
+          "error": [
+            -0.45282389632577547,
+            0.12558368002400466,
+            0.0685059956542654
+          ],
+          "xy": 0.4699156751716506,
+          "xyz_error": 0.4748829468538647,
+          "n": 6,
+          "independent_angles": 6
+        },
+        {
+          "target": "cup_1",
+          "id": 7,
+          "xyz": [
+            -0.39548640739361324,
+            -0.31444200378546033,
+            0.8543151574787967
+          ],
+          "error": [
+            -0.21557840739361323,
+            -0.03330000378546033,
+            0.04687515747879678
+          ],
+          "xy": 0.21813514156705321,
+          "xyz_error": 0.22311481433365277,
+          "n": 4,
+          "independent_angles": 4
+        }
+      ],
+      "seconds": 2.317627372000061,
+      "paired": 3,
+      "xy_better": 1,
+      "xy_worse": 2,
+      "depth_calls": 18,
+      "depth_calls_saved": 18,
+      "depth_inference_est_s": 78.32574251000187,
+      "depth_inference_saved_est_s": 76.79572088999882,
+      "depth_n": 17,
+      "depth_abs_error_m": 0.2843988699282053,
+      "depth_absrel": 0.22299998574701246,
+      "depth_bias_m": -0.2843988699282053,
+      "propagated": 14,
+      "propagated_wrong_known_id": 0,
+      "propagated_unknown_gt": 7,
+      "depth_age_p90_s": 5.4,
+      "ambiguous_rejected": 0,
+      "fresh_observations": 40,
+      "stops": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "classification": "MEASURED_BELOW_TARGET"
+    },
+    {
+      "branch": "P5",
+      "method": "V_quality",
+      "confirmed": 3,
+      "missing": 1,
+      "wrong": 0,
+      "unscored": 4,
+      "duplicate": 0,
+      "recall": 0.75,
+      "localized": 3,
+      "precision": 1.0,
+      "xy_mean": 0.3540957477777667,
+      "xy_median": 0.37724857323752475,
+      "xy_p90": 0.4513814437588063,
+      "xyz_mean": 0.3577334653738349,
+      "xyz_median": 0.37821673889257035,
+      "xyz_p90": 0.4555446648964691,
+      "objects": [
+        {
+          "target": "laptop_1",
+          "id": 1,
+          "xyz": [
+            -0.27787833589332583,
+            -0.3995514579196232,
+            0.8639746957605855
+          ],
+          "error": [
+            -0.3767428358933258,
+            -0.01952745791962318,
+            0.027044695760585546
+          ],
+          "xy": 0.37724857323752475,
+          "xyz_error": 0.37821673889257035,
+          "n": 7,
+          "independent_angles": 7
+        },
+        {
+          "target": "bottle_1",
+          "id": 4,
+          "xyz": [
+            -0.6128139448174802,
+            -0.7543842351960168,
+            0.9384692654059126
+          ],
+          "error": [
+            -0.45281394481748016,
+            0.12561576480398318,
+            0.06846926540591258
+          ],
+          "xy": 0.4699146613891267,
+          "xyz_error": 0.4748766463974438,
+          "n": 7,
+          "independent_angles": 7
+        },
+        {
+          "target": "cup_1",
+          "id": 7,
+          "xyz": [
+            -0.39262206594723653,
+            -0.31325220507896145,
+            0.8540099162030121
+          ],
+          "error": [
+            -0.21271406594723652,
+            -0.03211020507896145,
+            0.04656991620301221
+          ],
+          "xy": 0.21512400870664866,
+          "xyz_error": 0.22010701083149037,
+          "n": 4,
+          "independent_angles": 4
+        }
+      ],
+      "seconds": 2.385524493000048,
+      "paired": 3,
+      "xy_better": 0,
+      "xy_worse": 0,
+      "depth_calls": 12,
+      "depth_calls_saved": 24,
+      "depth_inference_est_s": 48.73601417599912,
+      "depth_inference_saved_est_s": 106.38544922400158,
+      "depth_n": 20,
+      "depth_abs_error_m": 0.29506405889987947,
+      "depth_absrel": 0.23738139825299337,
+      "depth_bias_m": -0.29506405889987947,
+      "stops": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "visible": 30,
+      "true": 20,
+      "missed": 10,
+      "detection_wrong": 0,
+      "truncated": 4,
+      "detection_recall": 0.6666666666666666,
+      "classification": "MEASURED_COST_SAVINGS"
+    },
+    {
+      "branch": "P6",
+      "classification": "NOT TESTED",
+      "reason": "only one branch passed the locked XY-gain gate; no nonconflicting pair advanced to an independent layout",
+      "candidates": [
+        "T2_every20"
+      ]
+    }
+  ],
+  "runtime": [
+    {
+      "scan": "scan_8x3",
+      "stops": 8,
+      "frames": 24,
+      "scan_s": 180.06824202999996,
+      "configured_settle_s": 12.0,
+      "capture_service_s": 159.19966355200086,
+      "controller_other_s": 8.868578477999108,
+      "yolo_s": 14.358294511000167,
+      "depth_s": 106.94912704000126,
+      "post_s": 1.98752178599716,
+      "replay_assoc_sqlite_s": 1.6205921730006594,
+      "offline_query_checks_s": 0.028266808999433124,
+      "confirmed_unscoped": 6,
+      "device_peak_sampled_mib": 1665,
+      "wire_projection_missing": 1,
+      "observations": 56
+    },
+    {
+      "scan": "scan_36x1",
+      "stops": 36,
+      "frames": 36,
+      "scan_s": 308.5100471300002,
+      "configured_settle_s": 54.0,
+      "capture_service_s": 233.45083719299964,
+      "controller_other_s": 21.05920993700056,
+      "yolo_s": 18.59756232699874,
+      "depth_s": 155.1214634000007,
+      "post_s": 2.964326317000996,
+      "replay_assoc_sqlite_s": 2.213639588996557,
+      "offline_query_checks_s": 0.03204083899981924,
+      "confirmed_unscoped": 7,
+      "device_peak_sampled_mib": 3329,
+      "wire_projection_missing": 0,
+      "observations": 79
+    }
+  ],
+  "positive": [
+    "T2_every20"
+  ]
+}

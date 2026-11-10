@@ -1,0 +1,67 @@
+[INFO] [launch]: All log files can be found below /mnt/d/loc3d_ws/data/eval/multiview_36deg_geometry_fullbatch_20261110_231819/scan_8x3/ros/2026-11-10-23-19-05-012319-DESKTOP-4VQ2MIR-1537
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gz-1]: process started with pid [1549]
+[INFO] [parameter_bridge-2]: process started with pid [1550]
+[INFO] [pan_tf_node-3]: process started with pid [1551]
+[INFO] [python-4]: process started with pid [1552]
+[INFO] [object_db_node-5]: process started with pid [1553]
+[INFO] [scan_controller_node-6]: process started with pid [1554]
+[parameter_bridge-2] [INFO] [1794327547.329139569] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794327547.330653272] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image (gz.msgs.Image) -> /camera/image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794327547.369986347] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/depth_image (gz.msgs.Image) -> /camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794327547.371477370] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/segmentation/labels_map (gz.msgs.Image) -> /camera/segmentation/labels_map (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794327547.372476447] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794327547.376245166] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794327547.377592322] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/pan_cmd (std_msgs/msg/Float64) -> /pan_cmd (gz.msgs.Double)] (Lazy 0)
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="default"]/model[@name="camera_rig"]/link[@name="pan_link"]/sensor[@name="rgbd"]/gz_frame_id:/mnt/d/loc3d_ws/data/eval/multiview_36deg_geometry_fullbatch_20261110_231819/scan_8x3/kitchen_controlled.sdf:L446]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[object_db_node-5] [INFO] [1794327553.242167230] [object_db]: object_db_node sẵn sàng, db_dir=/mnt/d/loc3d_ws/data/eval/multiview_36deg_geometry_fullbatch_20261110_231819/scan_8x3/db
+[scan_controller_node-6] [INFO] [1794327553.243389861] [scan_controller]: scan_controller sẵn sàng (/scan/run)
+[python-4] /mnt/d/loc3d_ws/.venv/lib/python3.12/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+[python-4]   warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+[python-4] /mnt/d/loc3d_ws/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+[python-4]   warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[python-4] /mnt/d/loc3d_ws/.venv/lib/python3.12/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+[python-4]   warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[python-4] xFormers not available
+[python-4] xFormers not available
+[python-4] xFormers not available
+[python-4] xFormers not available
+[python-4] Creating new Ultralytics Settings v0.0.8 file ✅ 
+[python-4] View Ultralytics Settings with 'yolo settings' or at '/mnt/d/loc3d_ws/data/eval/multiview_36deg_geometry_fullbatch_20261110_231819/scan_8x3/ultralytics/Ultralytics/settings.json'
+[python-4] Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+[python-4] [INFO] [1794327685.674823139] [perception_node]: Models loaded: 11 lớp, device=cuda:0
+[scan_controller_node-6] [INFO] [1794327693.427859457] [scan_controller]: [scan_1794327693] bắt đầu: 8 điểm dừng, step=45.0°
+[parameter_bridge-2] [INFO] [1794327693.429115021] [ros_gz_bridge]: Passing message from ROS std_msgs/msg/Float64 to Gazebo gz.msgs.Double (showing msg only once per type)
+[python-4] [INFO] [1794327709.593121777] [perception_node]: [scan_1794327693][stop 0] capture: 3 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794327729.852895115] [perception_node]: [scan_1794327693][stop 0] 24 vật / 3 khung, yolo=4343ms depth=10768ms
+[scan_controller_node-6] [INFO] [1794327729.974177006] [scan_controller]: [scan_1794327693][stop 0] yaw=0° 24 quan sát
+[object_db_node-5] [INFO] [1794327730.322274303] [object_db]: mở DB /mnt/d/loc3d_ws/data/eval/multiview_36deg_geometry_fullbatch_20261110_231819/scan_8x3/db/scan_1794327693.sqlite
+[object_db_node-5] [INFO] [1794327731.917038438] [object_db]: [scan_1794327693][stop 0] ghi 24 quan sát
+[python-4] [INFO] [1794327736.290099519] [perception_node]: [scan_1794327693][stop 1] capture: 3 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794327751.354107142] [perception_node]: [scan_1794327693][stop 1] 16 vật / 3 khung, yolo=1077ms depth=9989ms
+[scan_controller_node-6] [INFO] [1794327751.567045652] [scan_controller]: [scan_1794327693][stop 1] yaw=45° 16 quan sát
+[object_db_node-5] [INFO] [1794327752.568524031] [object_db]: [scan_1794327693][stop 1] ghi 16 quan sát
+[python-4] [INFO] [1794327763.573059638] [perception_node]: [scan_1794327693][stop 2] capture: 3 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794327778.468761089] [perception_node]: [scan_1794327693][stop 2] 0 vật / 3 khung, yolo=858ms depth=10064ms
+[object_db_node-5] [INFO] [1794327778.524580851] [object_db]: [scan_1794327693][stop 2] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794327778.539567800] [scan_controller]: [scan_1794327693][stop 2] yaw=90° 0 quan sát
+[python-4] [INFO] [1794327784.392313124] [perception_node]: [scan_1794327693][stop 3] capture: 3 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794327798.506918760] [perception_node]: [scan_1794327693][stop 3] 0 vật / 3 khung, yolo=523ms depth=9418ms
+[object_db_node-5] [INFO] [1794327798.571797062] [object_db]: [scan_1794327693][stop 3] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794327798.617926028] [scan_controller]: [scan_1794327693][stop 3] yaw=135° 0 quan sát
+[python-4] [INFO] [1794327822.738546397] [perception_node]: [scan_1794327693][stop 4] capture: 3 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794327838.586890050] [perception_node]: [scan_1794327693][stop 4] 0 vật / 3 khung, yolo=622ms depth=9760ms
+[object_db_node-5] [INFO] [1794327838.730413362] [object_db]: [scan_1794327693][stop 4] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794327838.734004132] [scan_controller]: [scan_1794327693][stop 4] yaw=180° 0 quan sát
+[python-4] [ERROR] [1794327865.755658540] [perception_node]: audit sync: obtained 2/3 exact RGB/depth/panoptic triplets
+[scan_controller_node-6] [WARN] [1794327865.814374407] [scan_controller]: [scan_1794327693] capture thất bại ở điểm 5 -> bỏ
+[python-4] [INFO] [1794327884.366192524] [perception_node]: [scan_1794327693][stop 6] capture: 3 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794327901.473576467] [perception_node]: [scan_1794327693][stop 6] 3 vật / 3 khung, yolo=853ms depth=10080ms
+[scan_controller_node-6] [INFO] [1794327901.585398528] [scan_controller]: [scan_1794327693][stop 6] yaw=270° 3 quan sát
+[object_db_node-5] [INFO] [1794327901.842350882] [object_db]: [scan_1794327693][stop 6] ghi 3 quan sát
+[python-4] [INFO] [1794327911.868523068] [perception_node]: [scan_1794327693][stop 7] capture: 3 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794327928.529070577] [perception_node]: [scan_1794327693][stop 7] 15 vật / 3 khung, yolo=1162ms depth=10833ms
+[scan_controller_node-6] [INFO] [1794327928.655051309] [scan_controller]: [scan_1794327693][stop 7] yaw=315° 15 quan sát
+[object_db_node-5] [INFO] [1794327929.956748320] [object_db]: [scan_1794327693][stop 7] ghi 15 quan sát
+[object_db_node-5] [INFO] [1794327930.462341257] [object_db]: [scan_1794327693] finalize: merged=0 confirmed=6 rejected=6
+[scan_controller_node-6] [INFO] [1794327930.563221016] [scan_controller]: [scan_1794327693] xong 8 điểm trong 237.1s; bỏ 1 điểm [5]; objects=6

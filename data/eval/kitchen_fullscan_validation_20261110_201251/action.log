@@ -1,0 +1,54 @@
+Waiting for an action server to become available...
+Sending goal:
+     step_deg: 45.0
+frames_per_stop: 3
+settle_time_s: 1.5
+
+Goal accepted with ID: a7297c501bb945eab5b08af53bbdb537
+
+Feedback:
+    stop_index: 0
+n_stops: 8
+yaw_rad: 0.0
+
+Feedback:
+    stop_index: 1
+n_stops: 8
+yaw_rad: 0.7853981633974483
+
+Feedback:
+    stop_index: 2
+n_stops: 8
+yaw_rad: 1.5707963267948966
+
+Feedback:
+    stop_index: 3
+n_stops: 8
+yaw_rad: 2.356194490192345
+
+Feedback:
+    stop_index: 4
+n_stops: 8
+yaw_rad: 3.141592653589793
+
+Feedback:
+    stop_index: 5
+n_stops: 8
+yaw_rad: 3.9269908169872414
+
+Feedback:
+    stop_index: 6
+n_stops: 8
+yaw_rad: 4.71238898038469
+
+Feedback:
+    stop_index: 7
+n_stops: 8
+yaw_rad: 5.497787143782138
+
+Result:
+    scan_id: scan_1794316856
+n_objects: 5
+duration_s: 231.65454648699995
+
+Goal finished with status: SUCCEEDED

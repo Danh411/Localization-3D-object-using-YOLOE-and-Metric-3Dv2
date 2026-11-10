@@ -1,0 +1,2 @@
+# Preserve exact bytes, including formatting in archived scripts and logs.
+* -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

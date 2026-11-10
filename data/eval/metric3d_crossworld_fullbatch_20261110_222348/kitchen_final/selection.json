@@ -1,0 +1,12 @@
+{
+  "cup_book_changes": {
+    "cup_1": [
+      -0.18,
+      -0.28
+    ]
+  },
+  "alternate_book": false,
+  "cup_final_pose_reason": "Moved within full-frame band to avoid overlap with laptop footprint",
+  "world_sha256": "382828dc19552d6dad05b437e5ec20ebb99e9ff8cd3bf34c3aa6a2f439e597c6",
+  "probe_sha256": "e9b2bcf286daa5cb3f4ba66f2f324af85217a93cdc2cac7b4e7ca611b2bc5730"
+}

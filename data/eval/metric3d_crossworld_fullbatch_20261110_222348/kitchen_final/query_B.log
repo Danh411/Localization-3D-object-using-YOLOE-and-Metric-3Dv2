@@ -1,0 +1,18 @@
+[scan mới nhất] scan_1794324951
+
+== Số quan sát theo lớp ==
+  bottle         obs=  6  objects=1
+  chair          obs= 20  objects=4
+  cup            obs=  3  objects=1
+  dining table   obs=  9  objects=3
+  laptop         obs=  3  objects=1
+  oven           obs=  3  objects=1
+  person         obs= 12  objects=2
+
+== Vật (confirmed) ==
+  id=  4 bottle        (-0.27,-0.85, 0.87) n_obs=6 conf=0.86 status=confirmed
+  id=  5 chair         ( 0.54,-1.69, 0.68) n_obs=6 conf=0.86 status=confirmed
+  id=  7 cup           (-0.06,-0.26, 0.78) n_obs=3 conf=0.59 status=confirmed
+  id=  1 laptop        ( 0.15,-0.37, 0.78) n_obs=3 conf=0.96 status=confirmed
+  id=  2 person        ( 0.29,-1.24, 0.90) n_obs=6 conf=0.94 status=confirmed
+  id=  3 person        ( 1.97, 0.89, 1.11) n_obs=6 conf=0.92 status=confirmed

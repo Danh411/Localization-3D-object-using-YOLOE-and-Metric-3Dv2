@@ -1,0 +1,13 @@
+sensors synchronized {'rgb': 1, 'depth': 1, 'labels': 1, 'K': 1, 'pose': 2, 'joint': 2}
+1 book_1 1.47 0 GT 1.4105315208435059 pixels 4588 issues []
+2 book_alt 1.47 0 GT 1.4588932991027832 pixels 6193 issues []
+3 book_1 1.47 24 GT 1.4420421123504639 pixels 8496 issues []
+4 book_alt 1.47 24 GT 1.4164422750473022 pixels 6139 issues []
+5 book_1 1.47 -24 GT 1.4204845428466797 pixels 5998 issues []
+6 book_alt 1.47 -24 GT 1.4976931810379028 pixels 5724 issues []
+7 cup_1 0.97 0 GT 0.9217567443847656 pixels 11488 issues ['cut_frame']
+8 cup_1 1.42 0 GT 1.3711180686950684 pixels 5028 issues []
+9 cup_1 0.97 0 GT 0.9217267036437988 pixels 11488 issues ['cut_frame']
+10 cup_1 1.42 0 GT 1.3712375164031982 pixels 5028 issues []
+11 cup_1 0.97 0 GT 0.9218928813934326 pixels 11488 issues ['cut_frame']
+12 cup_1 1.42 0 GT 1.3712854385375977 pixels 5028 issues []

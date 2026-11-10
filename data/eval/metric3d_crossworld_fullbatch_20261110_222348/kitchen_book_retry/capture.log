@@ -1,0 +1,7 @@
+sensors synchronized {'rgb': 1, 'depth': 1, 'labels': 1, 'K': 1, 'pose': 2, 'joint': 3}
+1 book_1 1.47 0 GT 1.4573105573654175 pixels 11570 issues []
+2 book_alt 1.47 0 GT 1.4589085578918457 pixels 11900 issues []
+3 book_1 1.47 24 GT 1.4545258283615112 pixels 11059 issues []
+4 book_alt 1.47 24 GT 1.4565255641937256 pixels 10986 issues []
+5 book_1 1.47 -24 GT 1.456360101699829 pixels 11734 issues []
+6 book_alt 1.47 -24 GT 1.4578332901000977 pixels 11720 issues []

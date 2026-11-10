@@ -1,0 +1,68 @@
+{
+  "cup_edge": {
+    "result": {
+      "merged_pairs": [],
+      "confirmed": 2,
+      "rejected": 4
+    },
+    "objects": [
+      {
+        "object_id": 6,
+        "scan_id": "cup_edge",
+        "class_name": "cup",
+        "x": -0.7097864209101433,
+        "y": -0.3129972833420969,
+        "z": 0.8743624178808667,
+        "weight_sum": 0.754129986679375,
+        "n_obs": 3,
+        "conf_sum": 1.5932254791259766,
+        "conf_mean": 0.5310751597086588,
+        "first_seen_stop": 0,
+        "last_seen_stop": 0,
+        "seen_untruncated": 0,
+        "status": "rejected",
+        "created_at": "2026-11-10T15:28:34.049712+00:00",
+        "updated_at": "2026-11-10T15:28:48.010936+00:00"
+      }
+    ],
+    "confirmed": false
+  },
+  "cup_full": {
+    "result": {
+      "merged_pairs": [],
+      "confirmed": 3,
+      "rejected": 3
+    },
+    "objects": [
+      {
+        "object_id": 6,
+        "scan_id": "cup_full",
+        "class_name": "cup",
+        "x": -0.3488094573927715,
+        "y": -0.2881232697934718,
+        "z": 0.8718068781356698,
+        "weight_sum": 1.1315500816120698,
+        "n_obs": 3,
+        "conf_sum": 1.4818677306175232,
+        "conf_mean": 0.49395591020584106,
+        "first_seen_stop": 0,
+        "last_seen_stop": 0,
+        "seen_untruncated": 1,
+        "status": "confirmed",
+        "created_at": "2026-11-10T15:28:36.855546+00:00",
+        "updated_at": "2026-11-10T15:28:48.080297+00:00"
+      }
+    ],
+    "confirmed": true
+  },
+  "book_1": {
+    "n": 3,
+    "correct": 0,
+    "wrong": 0
+  },
+  "book_alt": {
+    "n": 3,
+    "correct": 0,
+    "wrong": 0
+  }
+}

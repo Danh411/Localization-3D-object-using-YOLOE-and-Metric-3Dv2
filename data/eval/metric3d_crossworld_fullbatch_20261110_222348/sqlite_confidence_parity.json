@@ -1,0 +1,127 @@
+{
+  "rows": 59,
+  "objects": 12,
+  "old_sha256": "3d96a67f1ec1e064e7df603b8585cd6c28bfca15b3f4c1fed6ff9c05e76d005b",
+  "details": [
+    {
+      "object_id": 1,
+      "class_name": "laptop",
+      "status": "confirmed",
+      "n": 3,
+      "sum_before": 0.9570174217224121,
+      "sum_after": 2.8701139092445374,
+      "mean_before": 0.6382040778795878,
+      "mean_after": 0.9567046364148458
+    },
+    {
+      "object_id": 2,
+      "class_name": "person",
+      "status": "confirmed",
+      "n": 6,
+      "sum_before": 0.9388914108276367,
+      "sum_after": 5.636029601097107,
+      "mean_before": 0.3136522173881531,
+      "mean_after": 0.9393382668495178
+    },
+    {
+      "object_id": 3,
+      "class_name": "person",
+      "status": "confirmed",
+      "n": 6,
+      "sum_before": 0.9036423563957214,
+      "sum_after": 5.511658728122711,
+      "mean_before": 0.3060917258262634,
+      "mean_after": 0.9186097880204519
+    },
+    {
+      "object_id": 4,
+      "class_name": "bottle",
+      "status": "confirmed",
+      "n": 6,
+      "sum_before": 0.8941095471382141,
+      "sum_after": 5.179523766040802,
+      "mean_before": 0.2880214949448903,
+      "mean_after": 0.8632539610068003
+    },
+    {
+      "object_id": 5,
+      "class_name": "chair",
+      "status": "confirmed",
+      "n": 6,
+      "sum_before": 0.8709158301353455,
+      "sum_after": 5.166078627109528,
+      "mean_before": 0.2874689797560374,
+      "mean_after": 0.8610131045182546
+    },
+    {
+      "object_id": 6,
+      "class_name": "chair",
+      "status": "rejected",
+      "n": 6,
+      "sum_before": 0.7748110890388489,
+      "sum_after": 4.335804104804993,
+      "mean_before": 0.24144325653711954,
+      "mean_after": 0.7226340174674988
+    },
+    {
+      "object_id": 7,
+      "class_name": "cup",
+      "status": "rejected",
+      "n": 5,
+      "sum_before": 0.5742506980895996,
+      "sum_after": 2.4202799797058105,
+      "mean_before": 0.18557453751564026,
+      "mean_after": 0.4840559959411621
+    },
+    {
+      "object_id": 8,
+      "class_name": "dining table",
+      "status": "rejected",
+      "n": 4,
+      "sum_before": 0.412465900182724,
+      "sum_after": 2.5947645604610443,
+      "mean_before": 0.28807029873132706,
+      "mean_after": 0.6486911401152611
+    },
+    {
+      "object_id": 9,
+      "class_name": "chair",
+      "status": "rejected",
+      "n": 3,
+      "sum_before": 0.679889976978302,
+      "sum_after": 2.0453218817710876,
+      "mean_before": 0.45485373338063556,
+      "mean_after": 0.6817739605903625
+    },
+    {
+      "object_id": 10,
+      "class_name": "dining table",
+      "status": "rejected",
+      "n": 3,
+      "sum_before": 0.5396307706832886,
+      "sum_after": 1.622669756412506,
+      "mean_before": 0.359325647354126,
+      "mean_after": 0.5408899188041687
+    },
+    {
+      "object_id": 11,
+      "class_name": "oven",
+      "status": "rejected",
+      "n": 3,
+      "sum_before": 0.41563358902931213,
+      "sum_after": 1.2372370958328247,
+      "mean_before": 0.27686134974161786,
+      "mean_after": 0.4124123652776082
+    },
+    {
+      "object_id": 12,
+      "class_name": "chair",
+      "status": "rejected",
+      "n": 6,
+      "sum_before": 0.6379916667938232,
+      "sum_after": 4.291811048984528,
+      "mean_before": 0.24003596107165018,
+      "mean_after": 0.7153018414974213
+    }
+  ]
+}

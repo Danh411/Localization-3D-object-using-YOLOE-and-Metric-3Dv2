@@ -1,0 +1,19 @@
+Waiting for an action server to become available...
+Sending goal:
+     step_deg: 45.0
+frames_per_stop: 3
+settle_time_s: 1.5
+
+Goal accepted with ID: 36bb2f5fd1404bffa4b24d7206ee94a7
+
+Feedback:
+    stop_index: 2
+n_stops: 8
+yaw_rad: 1.5707963267948966
+
+Result:
+    scan_id: scan_1794316511
+n_objects: 0
+duration_s: 150.86203520499998
+
+Goal finished with status: CANCELED

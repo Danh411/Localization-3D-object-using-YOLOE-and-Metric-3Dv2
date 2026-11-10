@@ -1,0 +1,4 @@
+Stopped stale evaluation Gazebo PID 1549
+Stopped stale evaluation Gazebo PID 2298
+Stopped stale evaluation Gazebo PID 816
+Ended orphan PID 816 from completed prior batch after SIGTERM and SIGINT

@@ -1,0 +1,21 @@
+F
+=================================== FAILURES ===================================
+_ TestAssociate.test_confidence_tracks_all_observations_across_merge_and_update _
+
+self = <test_association.TestAssociate testMethod=test_confidence_tracks_all_observations_across_merge_and_update>
+
+    def test_confidence_tracks_all_observations_across_merge_and_update(self):
+        settings = {**ASSOC, "radius_m": 0.1}
+        for x, conf in ((0.0, 0.9), (0.01, 0.7), (0.2, 0.8), (0.21, 0.6)):
+            association.add_observation(
+                self.conn, "s1", obs("cup", (x, 0, 0), conf=conf), settings, FUS)
+        objects = queries.list_objects(self.conn, "s1", status=None)
+        self.assertEqual(len(objects), 2)
+        for obj, total in zip(objects, (1.6, 1.4), strict=True):
+>           self.assertAlmostEqual(obj["conf_sum"], total)
+E           AssertionError: 0.9 != 1.6 within 7 places (0.7000000000000001 difference)
+
+tests/test_association.py:133: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_association.py::TestAssociate::test_confidence_tracks_all_observations_across_merge_and_update
+1 failed, 14 deselected in 0.83s

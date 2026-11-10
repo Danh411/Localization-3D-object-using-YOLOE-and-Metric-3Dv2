@@ -1,0 +1,5 @@
+target,visible,true_detections,false_class,missed_visible,depth_rejected,truncated,valid_observations,visible_stops,visibility_status,A_confirmed,B_confirmed,A_XY_m,B_XY_m,A_XYZ_m,B_XYZ_m,A_conf_mean,B_conf_mean
+laptop_1,6,3,0,3,0,0,3,"[0, 1]","{'visible': 3, 'edge_cut_gt': 3, 'frustum_uncertain': 6, 'outside_fov': 12}",True,True,0.38660830380066874,0.04881124889280261,0.3876370854871635,0.07668792561658282,0.960823118686676,0.960823118686676
+book_1,3,0,0,3,0,0,0,[0],"{'edge_cut_gt': 3, 'outside_fov': 21}",False,False,,,,,,
+cup_1,6,3,0,3,0,0,3,"[0, 1]","{'visible': 3, 'edge_cut_gt': 3, 'outside_fov': 18}",True,True,0.26235804179636907,0.11962842993995558,0.2684622018840762,0.12351531483974017,0.592690130074819,0.592690130074819
+bottle_1,6,6,0,0,0,0,6,"[0, 7]","{'visible': 6, 'outside_fov': 18}",True,True,0.44953919655797897,0.11557106826150415,0.45415012277100825,0.11560996227548014,0.8613064587116241,0.8613064587116241

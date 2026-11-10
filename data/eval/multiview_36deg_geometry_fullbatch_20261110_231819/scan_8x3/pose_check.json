@@ -1,0 +1,77 @@
+{
+  "final_gazebo_pose.txt": {
+    "stamp_ns": 141052000000,
+    "models": {
+      "camera_rig": {
+        "position": [
+          -1.5,
+          -0.5,
+          1.1
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "translation_error_m": 0.0
+      },
+      "laptop_1": {
+        "position": [
+          0.1,
+          -0.38,
+          0.74
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "translation_error_m": 0.0
+      },
+      "book_1": {
+        "position": [
+          -0.56,
+          -0.64,
+          0.74
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "translation_error_m": 0.0
+      },
+      "cup_1": {
+        "position": [
+          -0.18,
+          -0.28,
+          0.74
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "translation_error_m": 0.0
+      },
+      "bottle_1": {
+        "position": [
+          -0.16,
+          -0.88,
+          0.87
+        ],
+        "quaternion": [
+          0.7071066656470943,
+          0.0,
+          0.0,
+          0.7071068967259818
+        ],
+        "translation_error_m": 0.0
+      }
+    }
+  }
+}

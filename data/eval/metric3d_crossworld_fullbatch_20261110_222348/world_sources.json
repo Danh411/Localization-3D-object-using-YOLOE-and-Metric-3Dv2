@@ -1,0 +1,14 @@
+{
+  "aws": {
+    "commit": "e50bde2df22004f6eb231932fc6b5d4c321b8818",
+    "world": "/mnt/d/loc3d_ws/data/eval/metric3d_depth_calibration_20261110_184655/easynav/playground_kobuki/easynav_playground_kobuki_worlds/worlds/small_house.world",
+    "world_source_sha256": "4c7bb5e50051e89411ab56dd8046c1f9ba4e30d6320c31f1dc95f03c98051eaf",
+    "world_copy_sha256": "ccf0cb6e9e014829d086858514d1da70f737167a43de58b2d5afe8df1d7f0a88"
+  },
+  "tiffany": {
+    "commit": "65979b3c8ae390047e58625709bf303ddbcd5c17",
+    "world": "/mnt/d/loc3d_ws/data/eval/metric3d_depth_calibration_20261110_184655/tiffany/src/hexapod_ws/worlds/living_room.sdf",
+    "world_source_sha256": "0b882f30d3592ed521f07521c0d37593d7415bce3517038fbdf7820bc285d800",
+    "world_copy_sha256": "46671e335c29bf918950f2fb59ceb8546db23ea2f12806466e5f748f0e4d2291"
+  }
+}

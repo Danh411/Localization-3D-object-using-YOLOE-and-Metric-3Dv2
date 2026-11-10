@@ -1,0 +1,8 @@
+object_id,n_obs,inliers,independent_bins,accepted
+1,7,5,3,True
+2,6,4,3,True
+3,7,7,4,True
+4,7,6,3,True
+5,6,3,3,False
+7,4,4,2,False
+11,3,2,1,False

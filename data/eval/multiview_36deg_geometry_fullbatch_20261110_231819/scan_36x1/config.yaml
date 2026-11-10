@@ -1,0 +1,47 @@
+camera:
+  width: 1280
+  height: 720
+  hfov_deg: 70.0
+  clip_near: 0.1
+  clip_far: 10.0
+  noise_stddev: 0.007
+  base_xyz:
+  - -1.5
+  - -0.5
+  - 1.1
+  t_offset_m: 0.05
+scan:
+  step_deg: 10
+  frames_per_stop: 1
+  settle_time_s: 1.5
+  timeout_per_stop_s: 60
+  yaw_start_deg: 0
+yoloe:
+  model: yoloe-v8s-seg
+  conf: 0.35
+  iou: 0.5
+  imgsz: 640
+depth:
+  model: metric3d_vit_small
+  input_size:
+  - 616
+  - 1064
+  canonical_focal: 1000.0
+  max_m: 10.0
+  fp16: true
+fusion:
+  mask_erode_ratio: 0.05
+  min_valid_ratio: 0.3
+  border_px: 8
+  truncated_weight: 0.3
+  range_floor_m: 0.5
+assoc:
+  radius_m: 0.35
+  merge_radius_m: 0.25
+  min_obs: 3
+  min_conf_to_create: 0.4
+approach:
+  standoff_m: 0.6
+eval:
+  match_radius_m: 0.5
+seed: 42

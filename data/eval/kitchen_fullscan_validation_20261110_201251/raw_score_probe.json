@@ -1,0 +1,30 @@
+[
+  {
+    "instance_gt": "book_1",
+    "stop": 0,
+    "frame": 0,
+    "box_candidates": 32,
+    "max_box_iou": 0.9662395096061991,
+    "threshold": 0.35,
+    "best_target_score": 0.186890110373497,
+    "box_iou_of_best_score": 0.955723409872584,
+    "top_class_at_that_box": "book",
+    "top_class_score": 0.186890110373497,
+    "above_threshold_for_target": 0,
+    "above_threshold_and_target_argmax": 0
+  },
+  {
+    "instance_gt": "cup_1",
+    "stop": 1,
+    "frame": 0,
+    "box_candidates": 34,
+    "max_box_iou": 0.9818831303209168,
+    "threshold": 0.35,
+    "best_target_score": 0.34114357829093933,
+    "box_iou_of_best_score": 0.9636664682024376,
+    "top_class_at_that_box": "cup",
+    "top_class_score": 0.34114357829093933,
+    "above_threshold_for_target": 0,
+    "above_threshold_and_target_argmax": 0
+  }
+]

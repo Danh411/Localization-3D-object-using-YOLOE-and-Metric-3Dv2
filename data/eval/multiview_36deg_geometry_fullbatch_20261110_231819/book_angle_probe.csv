@@ -1,0 +1,3 @@
+status,stop,frame,stamp_ns,instance_gt,visibility,visible_pixels,gt_valid_pixels,gt_bbox,detected,wrong_class,duplicate_detection,passed_depth,truncated,best_overlap_class,best_overlap_iou,best_overlap_conf
+correct_detection,33,0,195400000000,book_1,edge_cut_gt,12796,12796,"[225, 512, 292, 719]",True,0,0,1,1,book,0.9675394273465013,0.3806089758872986
+correct_detection,34,0,200000000000,book_1,edge_cut_gt,11943,11943,"[413, 505, 474, 719]",True,0,0,1,1,book,0.9481724386147324,0.3987143635749817

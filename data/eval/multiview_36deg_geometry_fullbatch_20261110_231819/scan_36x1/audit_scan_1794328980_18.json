@@ -1,0 +1,45 @@
+{
+  "scan_id": "scan_1794328980",
+  "stop_index": 18,
+  "command_yaw_rad": 3.141592653589793,
+  "elapsed_s": 6.652224890999605,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "stamp_ns": 117900000000,
+      "file": "scan_1794328980_18_0.npz",
+      "K": [
+        914.0147013559828,
+        914.0147013559828,
+        640.0,
+        360.0
+      ],
+      "tf": {
+        "translation": [
+          -1.5499999816872576,
+          -0.5000427933862388,
+          1.1
+        ],
+        "quaternion": [
+          -0.49978598726735585,
+          -0.5002139211689277,
+          0.5002139211689278,
+          0.49978598726735596
+        ]
+      },
+      "sensor_transport": "gazebo_native_exact",
+      "camera_info_stamp_ns": 117900000000,
+      "timings_ms": {
+        "yolo_ms": 375.08246200013673,
+        "depth_ms": 4594.393336000394,
+        "post_ms": 0.0015069999790284783
+      },
+      "joint_yaw_rad": 3.142448521649644,
+      "joint_skew_ns": -2000000,
+      "depth_exact_stamp": true,
+      "label_exact_stamp": true,
+      "detections": [],
+      "world": []
+    }
+  ]
+}
