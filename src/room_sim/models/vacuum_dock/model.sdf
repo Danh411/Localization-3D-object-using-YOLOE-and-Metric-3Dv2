@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="vacuum_dock">
+    <static>true</static>
+    <link name="link">
+      <visual name="core">
+        <pose>0 -0.17 0.375 0 0 0</pose>
+        <geometry><box><size>0.43 0.34 0.41</size></box></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="side0">
+        <pose>-0.215 -0.1625 0.29 0 0 0</pose>
+        <geometry><box><size>0.03 0.325 0.58</size></box></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="side1">
+        <pose>0.215 -0.1625 0.29 0 0 0</pose>
+        <geometry><box><size>0.03 0.325 0.58</size></box></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="tube1">
+        <pose>-0.215 -0.325 0.29 0 0 0</pose>
+        <geometry><cylinder><radius>0.015</radius><length>0.5806</length></cylinder></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="tube3">
+        <pose>0.215 -0.325 0.29 0 0 0</pose>
+        <geometry><cylinder><radius>0.015</radius><length>0.5806</length></cylinder></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="back_spacer">
+        <pose>0 -0.05 0.085 0 0 0</pose>
+        <geometry><box><size>0.43 0.1 0.17</size></box></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.55</roughness></metal></pbr><ambient>0.130 0.130 0.140 1</ambient><diffuse>0.130 0.130 0.140 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <!-- IR beacon. It sits at the back of the bay on the centreline, at the
+           height of the robot's rear receivers (floor clearance 0.0125 plus half
+           the body cylinder, 0.03325). Recessed in the bay, its light escapes
+           through the mouth in a wedge of about +-40 degrees, so the robot has
+           to be parked roughly in front of the dock to see it at all. Purely
+           cosmetic here: ir_beacon_sim computes what the receivers would see. -->
+      <visual name="ir_beacon">
+        <pose>0 -0.105 0.0458 0 0 0</pose>
+        <geometry><box><size>0.024 0.008 0.012</size></box></geometry>
+        <material><ambient>0.25 0.05 0.05 1</ambient><diffuse>0.60 0.10 0.10 1</diffuse><specular>0.3 0.3 0.3 1</specular><emissive>0.25 0.02 0.02 1</emissive></material>
+      </visual>
+      <visual name="contact0">
+        <pose>-0.045 -0.103 0.022 0 0 0</pose>
+        <geometry><box><size>0.032 0.006 0.018</size></box></geometry>
+        <material><pbr><metal><metalness>0.70</metalness><roughness>0.20</roughness></metal></pbr><ambient>0.720 0.550 0.300 1</ambient><diffuse>0.720 0.550 0.300 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="contact1">
+        <pose>0.045 -0.103 0.022 0 0 0</pose>
+        <geometry><box><size>0.032 0.006 0.018</size></box></geometry>
+        <material><pbr><metal><metalness>0.70</metalness><roughness>0.20</roughness></metal></pbr><ambient>0.720 0.550 0.300 1</ambient><diffuse>0.720 0.550 0.300 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <collision name="core">
+        <pose>0 -0.17 0.375 0 0 0</pose>
+        <geometry><box><size>0.43 0.34 0.41</size></box></geometry>
+      </collision>
+      <collision name="side0">
+        <pose>-0.215 -0.17 0.29 0 0 0</pose>
+        <geometry><box><size>0.03 0.34 0.58</size></box></geometry>
+      </collision>
+      <collision name="side1">
+        <pose>0.215 -0.17 0.29 0 0 0</pose>
+        <geometry><box><size>0.03 0.34 0.58</size></box></geometry>
+      </collision>
+      <collision name="back_spacer">
+        <pose>0 -0.05 0.085 0 0 0</pose>
+        <geometry><box><size>0.43 0.1 0.17</size></box></geometry>
+      </collision>
+    </link>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>

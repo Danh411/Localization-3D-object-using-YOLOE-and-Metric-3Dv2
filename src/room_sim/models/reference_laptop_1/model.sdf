@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+    <model name="Travel_Mate_P_series_Notebook">
+        <link name="link_0">
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/laptop_textured.glb</uri>
+                    </mesh>
+                </geometry>
+            <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>model://reference_laptop_1/meshes/laptop_original_albedo.png</albedo_map><roughness>0.8</roughness><metalness>0</metalness></metal></pbr></material></visual>
+            <collision name="collision_0">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/model.obj</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

@@ -1,0 +1,692 @@
+{
+  "scan_id": "scan_1794293592",
+  "frames": 24,
+  "database_observations": 60,
+  "same_scene_configuration_as_textured_scan": true,
+  "frame_checks": [
+    {
+      "stop": 0,
+      "frame": 0,
+      "stamp_ns": 41200000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [
+        [
+          "laptop_1",
+          1,
+          8405
+        ],
+        [
+          "book_1",
+          1,
+          2369
+        ],
+        [
+          "cup_1",
+          1,
+          5828
+        ],
+        [
+          "bottle_1",
+          1,
+          11934
+        ]
+      ],
+      "missed": [
+        "book_1"
+      ]
+    },
+    {
+      "stop": 0,
+      "frame": 1,
+      "stamp_ns": 41600000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [
+        [
+          "laptop_1",
+          1,
+          8405
+        ],
+        [
+          "book_1",
+          1,
+          2369
+        ],
+        [
+          "cup_1",
+          1,
+          5828
+        ],
+        [
+          "bottle_1",
+          1,
+          11934
+        ]
+      ],
+      "missed": [
+        "book_1"
+      ]
+    },
+    {
+      "stop": 0,
+      "frame": 2,
+      "stamp_ns": 43000000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [
+        [
+          "laptop_1",
+          1,
+          8405
+        ],
+        [
+          "book_1",
+          1,
+          2369
+        ],
+        [
+          "cup_1",
+          1,
+          5828
+        ],
+        [
+          "bottle_1",
+          1,
+          11934
+        ]
+      ],
+      "missed": [
+        "book_1"
+      ]
+    },
+    {
+      "stop": 1,
+      "frame": 0,
+      "stamp_ns": 50200000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [
+        [
+          "cup_1",
+          1,
+          7966
+        ]
+      ],
+      "missed": [
+        "cup_1"
+      ]
+    },
+    {
+      "stop": 1,
+      "frame": 1,
+      "stamp_ns": 53100000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [
+        [
+          "cup_1",
+          1,
+          7966
+        ]
+      ],
+      "missed": [
+        "cup_1"
+      ]
+    },
+    {
+      "stop": 1,
+      "frame": 2,
+      "stamp_ns": 53400000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [
+        [
+          "cup_1",
+          1,
+          7968
+        ]
+      ],
+      "missed": [
+        "cup_1"
+      ]
+    },
+    {
+      "stop": 2,
+      "frame": 0,
+      "stamp_ns": 60900000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 4000000,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 2,
+      "frame": 1,
+      "stamp_ns": 63100000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": -1000000,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 2,
+      "frame": 2,
+      "stamp_ns": 64100000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": -1000000,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 3,
+      "frame": 0,
+      "stamp_ns": 70700000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": -1000000,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 3,
+      "frame": 1,
+      "stamp_ns": 70800000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 3,
+      "frame": 2,
+      "stamp_ns": 71400000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 4,
+      "frame": 0,
+      "stamp_ns": 79900000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": -1000000,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 4,
+      "frame": 1,
+      "stamp_ns": 80400000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 4,
+      "frame": 2,
+      "stamp_ns": 80600000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": -2000000,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 5,
+      "frame": 0,
+      "stamp_ns": 89800000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 5,
+      "frame": 1,
+      "stamp_ns": 90200000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": -2000000,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 5,
+      "frame": 2,
+      "stamp_ns": 91300000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": -1000000,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 6,
+      "frame": 0,
+      "stamp_ns": 99800000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 6,
+      "frame": 1,
+      "stamp_ns": 100500000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 1000000,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 6,
+      "frame": 2,
+      "stamp_ns": 101200000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [],
+      "missed": []
+    },
+    {
+      "stop": 7,
+      "frame": 0,
+      "stamp_ns": 110700000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 4000000,
+      "visible": [
+        [
+          "bottle_1",
+          1,
+          16971
+        ]
+      ],
+      "missed": []
+    },
+    {
+      "stop": 7,
+      "frame": 1,
+      "stamp_ns": 111000000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": -1000000,
+      "visible": [
+        [
+          "bottle_1",
+          1,
+          16971
+        ]
+      ],
+      "missed": []
+    },
+    {
+      "stop": 7,
+      "frame": 2,
+      "stamp_ns": 111200000000,
+      "exact_gt_depth": true,
+      "exact_panoptic": true,
+      "tf": true,
+      "joint_skew_ns": 0,
+      "visible": [
+        [
+          "bottle_1",
+          1,
+          16969
+        ]
+      ],
+      "missed": []
+    }
+  ],
+  "semantic_iou_threshold": 0.5,
+  "scope": "Four labeled props; other kitchen objects are not scored unless predicted as a target or overlapping one.",
+  "detection_status": {
+    "unscored": 45,
+    "true_detection": 12,
+    "false_class": 3
+  },
+  "visible_instances": 18,
+  "missed_instances": 6,
+  "confirmed_objects": [
+    {
+      "id": 1,
+      "class": "person",
+      "n_observations": 6,
+      "true_instance_votes": {},
+      "wrong_label_instance_votes": {},
+      "unresolved_observations": 6,
+      "scored": false,
+      "semantic_instance": null,
+      "xy_error_m": null,
+      "localized_within_0p5m": false,
+      "match_status": "unscored"
+    },
+    {
+      "id": 2,
+      "class": "laptop",
+      "n_observations": 3,
+      "true_instance_votes": {
+        "laptop_1": 3
+      },
+      "wrong_label_instance_votes": {},
+      "unresolved_observations": 0,
+      "scored": true,
+      "semantic_instance": "laptop_1",
+      "xy_error_m": 0.4237143721127524,
+      "localized_within_0p5m": true,
+      "match_status": "localized"
+    },
+    {
+      "id": 3,
+      "class": "person",
+      "n_observations": 6,
+      "true_instance_votes": {},
+      "wrong_label_instance_votes": {},
+      "unresolved_observations": 6,
+      "scored": false,
+      "semantic_instance": null,
+      "xy_error_m": null,
+      "localized_within_0p5m": false,
+      "match_status": "unscored"
+    },
+    {
+      "id": 4,
+      "class": "chair",
+      "n_observations": 6,
+      "true_instance_votes": {},
+      "wrong_label_instance_votes": {},
+      "unresolved_observations": 6,
+      "scored": false,
+      "semantic_instance": null,
+      "xy_error_m": null,
+      "localized_within_0p5m": false,
+      "match_status": "unscored"
+    },
+    {
+      "id": 5,
+      "class": "bottle",
+      "n_observations": 6,
+      "true_instance_votes": {
+        "bottle_1": 6
+      },
+      "wrong_label_instance_votes": {},
+      "unresolved_observations": 0,
+      "scored": true,
+      "semantic_instance": "bottle_1",
+      "xy_error_m": 0.45715151102253576,
+      "localized_within_0p5m": true,
+      "match_status": "localized"
+    },
+    {
+      "id": 6,
+      "class": "cup",
+      "n_observations": 3,
+      "true_instance_votes": {
+        "cup_1": 3
+      },
+      "wrong_label_instance_votes": {},
+      "unresolved_observations": 0,
+      "scored": true,
+      "semantic_instance": "cup_1",
+      "xy_error_m": 0.2403222089521385,
+      "localized_within_0p5m": true,
+      "match_status": "localized"
+    },
+    {
+      "id": 9,
+      "class": "bottle",
+      "n_observations": 3,
+      "true_instance_votes": {},
+      "wrong_label_instance_votes": {
+        "book_1": 3
+      },
+      "unresolved_observations": 0,
+      "scored": true,
+      "semantic_instance": null,
+      "xy_error_m": null,
+      "localized_within_0p5m": false,
+      "match_status": "wrong_class_evidence"
+    }
+  ],
+  "naive_class_and_xy_matches": [
+    {
+      "instance_gt": "laptop_1",
+      "object_id": 2,
+      "xy_m": 0.4237143721127524
+    },
+    {
+      "instance_gt": "cup_1",
+      "object_id": 6,
+      "xy_m": 0.2403222089521385
+    },
+    {
+      "instance_gt": "bottle_1",
+      "object_id": 9,
+      "xy_m": 0.3705275932569319
+    }
+  ],
+  "confirmed_semantically_localized": 3,
+  "targets": {
+    "book": {
+      "visible_frames": 3,
+      "true_detections": 0,
+      "false_class_on_instance": 3,
+      "db_true_observations": 0,
+      "true_mask_iou_mean": null,
+      "depth": {},
+      "xyz_decompositions": 0,
+      "false_class_confidence": [
+        0.4643208384513855,
+        0.4664575159549713,
+        0.46471986174583435
+      ],
+      "false_class_iou": [
+        0.9358135731807032,
+        0.9358135731807032,
+        0.9358135731807032
+      ]
+    },
+    "bottle": {
+      "visible_frames": 6,
+      "true_detections": 6,
+      "false_class_on_instance": 0,
+      "db_true_observations": 6,
+      "true_mask_iou_mean": 0.9582469971220391,
+      "depth": {
+        "same_mask": {
+          "mae_m": 0.3638326106467437,
+          "bias_m": -0.347236677975776,
+          "absrel": 0.29996685693614844,
+          "rmse_m": 0.3839896303378944,
+          "pixels": 79504
+        },
+        "instance_intersection": {
+          "mae_m": 0.3632604077644241,
+          "bias_m": -0.346675723765241,
+          "absrel": 0.2999028675678686,
+          "rmse_m": 0.38240355842741275,
+          "pixels": 79453
+        }
+      },
+      "xyz_decompositions": 5,
+      "false_class_confidence": [],
+      "false_class_iou": [],
+      "max_tf_rotation_delta_deg": 4.093160325912782e-06,
+      "max_tf_translation_delta_m": 3.5719563107813027e-09,
+      "median_world_xyz_m": 0.3374169694879695,
+      "median_world_xy_m": 0.3347686066912924,
+      "median_components_xyz_norm_m": {
+        "production_tf_replay": 0.0,
+        "tf_vs_rig_joint_geometry": 3.1401849173675503e-16,
+        "production_support_vs_instance_support": 4.317932084221771e-05,
+        "depth_along_same_ray": 0.29735677788424225,
+        "median_proxy_vs_gt_surface_sample": 0.01273284403042143,
+        "gt_surface_sample_vs_mesh_center": 0.05334996320645204,
+        "mesh_center_vs_yaml_reference": 0.0
+      },
+      "median_components_xy_norm_m": {
+        "production_tf_replay": 0.0,
+        "tf_vs_rig_joint_geometry": 2.220446049250313e-16,
+        "production_support_vs_instance_support": 4.252321785371278e-05,
+        "depth_along_same_ray": 0.2928384884156716,
+        "median_proxy_vs_gt_surface_sample": 0.012554411686478383,
+        "gt_surface_sample_vs_mesh_center": 0.052731818292220456,
+        "mesh_center_vs_yaml_reference": 0.0
+      },
+      "max_cam_backprojection_delta_m": 0.0,
+      "median_signed_depth_bias_m": -0.282403826713562,
+      "stops_with_true_detections": [
+        0,
+        7
+      ]
+    },
+    "cup": {
+      "visible_frames": 6,
+      "true_detections": 3,
+      "false_class_on_instance": 0,
+      "db_true_observations": 3,
+      "true_mask_iou_mean": 0.9172189452993096,
+      "depth": {
+        "same_mask": {
+          "mae_m": 0.2020669261270788,
+          "bias_m": -0.1742108251708714,
+          "absrel": 0.15512965342927848,
+          "rmse_m": 0.2334476775675426,
+          "pixels": 17458
+        },
+        "instance_intersection": {
+          "mae_m": 0.19967000720672234,
+          "bias_m": -0.1711020808427754,
+          "absrel": 0.15494938054035348,
+          "rmse_m": 0.23033807195489306,
+          "pixels": 17023
+        }
+      },
+      "xyz_decompositions": 3,
+      "false_class_confidence": [],
+      "false_class_iou": [],
+      "max_tf_rotation_delta_deg": 1.799193426557978e-14,
+      "max_tf_translation_delta_m": 0.0,
+      "median_world_xyz_m": 0.24587554647937787,
+      "median_world_xy_m": 0.24051569167371745,
+      "median_components_xyz_norm_m": {
+        "production_tf_replay": 0.0,
+        "tf_vs_rig_joint_geometry": 3.1401849173675503e-16,
+        "production_support_vs_instance_support": 0.0006509548011838382,
+        "depth_along_same_ray": 0.1961753499294896,
+        "median_proxy_vs_gt_surface_sample": 0.011107353862930665,
+        "gt_surface_sample_vs_mesh_center": 0.06127845010228869,
+        "mesh_center_vs_yaml_reference": 0.001145743426775826
+      },
+      "median_components_xy_norm_m": {
+        "production_tf_replay": 0.0,
+        "tf_vs_rig_joint_geometry": 2.220446049250313e-16,
+        "production_support_vs_instance_support": 0.0006364044290382914,
+        "depth_along_same_ray": 0.19179040861775332,
+        "median_proxy_vs_gt_surface_sample": 0.010951848152194346,
+        "gt_surface_sample_vs_mesh_center": 0.06013785922495202,
+        "mesh_center_vs_yaml_reference": 0.0011456997861569193
+      },
+      "max_cam_backprojection_delta_m": 0.0,
+      "median_signed_depth_bias_m": -0.18697446584701538,
+      "stops_with_true_detections": [
+        0
+      ]
+    },
+    "laptop": {
+      "visible_frames": 3,
+      "true_detections": 3,
+      "false_class_on_instance": 0,
+      "db_true_observations": 3,
+      "true_mask_iou_mean": 0.8890243672366772,
+      "depth": {
+        "same_mask": {
+          "mae_m": 0.39784589292464273,
+          "bias_m": -0.3972227581759806,
+          "absrel": 0.230753251652378,
+          "rmse_m": 0.4021988775507601,
+          "pixels": 23514
+        },
+        "instance_intersection": {
+          "mae_m": 0.3966269468322217,
+          "bias_m": -0.39598435449470565,
+          "absrel": 0.23102812580405307,
+          "rmse_m": 0.4008958444802281,
+          "pixels": 22802
+        }
+      },
+      "xyz_decompositions": 3,
+      "false_class_confidence": [],
+      "false_class_iou": [],
+      "max_tf_rotation_delta_deg": 1.799193426557978e-14,
+      "max_tf_translation_delta_m": 0.0,
+      "median_world_xyz_m": 0.42376260067774857,
+      "median_world_xy_m": 0.42295366543999363,
+      "median_components_xyz_norm_m": {
+        "production_tf_replay": 0.0,
+        "tf_vs_rig_joint_geometry": 4.710277376051325e-16,
+        "production_support_vs_instance_support": 0.0021021489427086285,
+        "depth_along_same_ray": 0.3915088487867751,
+        "median_proxy_vs_gt_surface_sample": 0.19084413101908324,
+        "gt_surface_sample_vs_mesh_center": 0.16919705292782786,
+        "mesh_center_vs_yaml_reference": 0.0011359296853238885
+      },
+      "median_components_xy_norm_m": {
+        "production_tf_replay": 0.0,
+        "tf_vs_rig_joint_geometry": 3.3306690738754696e-16,
+        "production_support_vs_instance_support": 0.0020694957315523,
+        "depth_along_same_ray": 0.38542744282677055,
+        "median_proxy_vs_gt_surface_sample": 0.1871784172807326,
+        "gt_surface_sample_vs_mesh_center": 0.14941258195058246,
+        "mesh_center_vs_yaml_reference": 0.0011357536044406934
+      },
+      "max_cam_backprojection_delta_m": 0.0,
+      "median_signed_depth_bias_m": -0.3850902318954468,
+      "stops_with_true_detections": [
+        0
+      ]
+    }
+  }
+}

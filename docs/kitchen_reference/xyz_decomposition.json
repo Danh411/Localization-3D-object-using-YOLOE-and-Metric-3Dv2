@@ -1,0 +1,1437 @@
+[
+  {
+    "stop": 0,
+    "frame": 0,
+    "stamp_ns": 41200000000,
+    "class": "laptop",
+    "confidence": 0.9258520007133484,
+    "semantic_status": "true_detection",
+    "instance_gt": "laptop_1",
+    "mask_iou": 0.8889964504678929,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 2,
+    "object_id": 2,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 7839,
+      "invalid_predictions": 0,
+      "mae_m": 0.39521579630506604,
+      "rmse_m": 0.39961544810570726,
+      "bias_m": -0.3946147020381086,
+      "absrel": 0.22925120803697893,
+      "median_gt_m": 1.7152857780456543,
+      "median_pred_m": 1.3288828134536743
+    },
+    "instance_intersection": {
+      "pixels": 7601,
+      "invalid_predictions": 0,
+      "mae_m": 0.3940610159480122,
+      "rmse_m": 0.3983854773734663,
+      "bias_m": -0.3934411004160191,
+      "absrel": 0.2295544966370477,
+      "median_gt_m": 1.709753394126892,
+      "median_pred_m": 1.3268276453018188
+    },
+    "instance_pixel_fraction": 0.9696389845643577,
+    "pred_depth_m": 1.3288828134536743,
+    "gt_median_same_mask_m": 1.7152857780456543,
+    "gt_surface_depth_m": 1.709753394126892,
+    "gt_depth_at_representative_pixel_m": null,
+    "p_cam_pred_m": [
+      -0.05555984306040681,
+      0.23722457762382948,
+      1.3288828134536743
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      -0.07148382783490603,
+      0.30521542054452955,
+      1.709753394126892
+    ],
+    "p_cam_gt_surface_sample_m": [
+      -0.07849492281988539,
+      0.3408332175073971,
+      1.8880398273468018
+    ],
+    "reference_world_m": [
+      0.3,
+      -0.44,
+      0.83695
+    ],
+    "actual_world_m": [
+      -0.12111718654632564,
+      -0.4444401569395929,
+      0.8627754223761709
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 0.0,
+    "tf_rotation_delta_deg": 1.799193426557978e-14,
+    "world_xyz_error_m": 0.42193169143742765,
+    "world_xy_error_m": 0.42114059386188485,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tf_vs_rig_joint_geometry": [
+        0.0,
+        3.3306690738754696e-16,
+        3.3306690738754696e-16
+      ],
+      "production_support_vs_instance_support": [
+        0.0020551681518554688,
+        8.592542459261165e-05,
+        -0.0003668768922541754
+      ],
+      "depth_along_same_ray": [
+        -0.38292574882507324,
+        -0.016009910199091835,
+        0.06835771981295424
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        -0.17828643321990967,
+        -0.0070110949849793575,
+        0.03561779696286754
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        0.13917532734680182,
+        0.01851892281988543,
+        -0.07776321750739701
+      ],
+      "mesh_center_vs_yaml_reference": [
+        -0.0011355000000000115,
+        -2.4000000000024002e-05,
+        -2.0000000000020002e-05
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 4.710277376051325e-16,
+      "production_support_vs_instance_support": 0.0020894252714712064,
+      "depth_along_same_ray": 0.3893086490123902,
+      "median_proxy_vs_gt_surface_sample": 0.18194459371922478,
+      "gt_surface_sample_vs_mesh_center": 0.160498723489008,
+      "mesh_center_vs_yaml_reference": 0.0011359296853238885
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 3.3306690738754696e-16,
+      "production_support_vs_instance_support": 0.0020569636144065462,
+      "depth_along_same_ray": 0.3832602853646932,
+      "median_proxy_vs_gt_surface_sample": 0.17842423524612824,
+      "gt_surface_sample_vs_mesh_center": 0.1404020022809444,
+      "mesh_center_vs_yaml_reference": 0.0011357536044406934
+    }
+  },
+  {
+    "stop": 0,
+    "frame": 0,
+    "stamp_ns": 41200000000,
+    "class": "bottle",
+    "confidence": 0.845249354839325,
+    "semantic_status": "true_detection",
+    "instance_gt": "bottle_1",
+    "mask_iou": 0.9589722675367047,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 5,
+    "object_id": 5,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 11064,
+      "invalid_predictions": 0,
+      "mae_m": 0.2761383677037488,
+      "rmse_m": 0.30936151180569244,
+      "bias_m": -0.239121636746159,
+      "absrel": 0.2100301114135567,
+      "median_gt_m": 1.309553325176239,
+      "median_pred_m": 1.0312239527702332
+    },
+    "instance_intersection": {
+      "pixels": 11051,
+      "invalid_predictions": 0,
+      "mae_m": 0.27521358919450034,
+      "rmse_m": 0.30653022377792083,
+      "bias_m": -0.23819358806654983,
+      "absrel": 0.2098942577667486,
+      "median_gt_m": 1.3095262050628662,
+      "median_pred_m": 1.0311830043792725
+    },
+    "instance_pixel_fraction": 0.9988250180766449,
+    "pred_depth_m": 1.031224012374878,
+    "gt_median_same_mask_m": 1.309553325176239,
+    "gt_surface_depth_m": 1.3095262050628662,
+    "gt_depth_at_representative_pixel_m": 1.2931557893753052,
+    "p_cam_pred_m": [
+      0.2829091796154404,
+      0.18856770969493955,
+      1.031224012374878
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      0.35925946245768564,
+      0.23945753232173875,
+      1.3095262050628662
+    ],
+    "p_cam_gt_surface_sample_m": [
+      0.3551169392042263,
+      0.23627302329524222,
+      1.2931557893753052
+    ],
+    "reference_world_m": [
+      -0.1,
+      -0.87,
+      0.87
+    ],
+    "actual_world_m": [
+      -0.418775987625122,
+      -0.7829091796154402,
+      0.9114322903050608
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 0.0,
+    "tf_rotation_delta_deg": 1.799193426557978e-14,
+    "world_xyz_error_m": 0.3330459066878776,
+    "world_xy_error_m": 0.33045868316875504,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tf_vs_rig_joint_geometry": [
+        0.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16
+      ],
+      "production_support_vs_instance_support": [
+        4.100799560546875e-05,
+        -1.1250260132822376e-05,
+        -7.498645995168696e-06
+      ],
+      "depth_along_same_ray": [
+        -0.27834320068359375,
+        0.07636153310237809,
+        0.050897321272794366
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        0.016370415687561035,
+        -0.004142523253459318,
+        -0.0031845090264965292
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        -0.056844210624694774,
+        0.014883060795773617,
+        -0.006273023295242153
+      ],
+      "mesh_center_vs_yaml_reference": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 3.1401849173675503e-16,
+      "production_support_vs_instance_support": 4.317932084221771e-05,
+      "depth_along_same_ray": 0.2930811464718926,
+      "median_proxy_vs_gt_surface_sample": 0.017184065480230035,
+      "gt_surface_sample_vs_mesh_center": 0.05909416723719869,
+      "mesh_center_vs_yaml_reference": 0.0
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 2.220446049250313e-16,
+      "production_support_vs_instance_support": 4.252321785371278e-05,
+      "depth_along_same_ray": 0.28862782455011665,
+      "median_proxy_vs_gt_surface_sample": 0.016886414915220922,
+      "gt_surface_sample_vs_mesh_center": 0.05876027382675608,
+      "mesh_center_vs_yaml_reference": 0.0
+    }
+  },
+  {
+    "stop": 0,
+    "frame": 0,
+    "stamp_ns": 41200000000,
+    "class": "cup",
+    "confidence": 0.7814785242080688,
+    "semantic_status": "true_detection",
+    "instance_gt": "cup_1",
+    "mask_iou": 0.917468833833044,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 6,
+    "object_id": 6,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 5819,
+      "invalid_predictions": 0,
+      "mae_m": 0.19971649129277222,
+      "rmse_m": 0.23153567908787498,
+      "bias_m": -0.17176090497129826,
+      "absrel": 0.15329464037452856,
+      "median_gt_m": 1.28151535987854,
+      "median_pred_m": 1.0972583293914795
+    },
+    "instance_intersection": {
+      "pixels": 5675,
+      "invalid_predictions": 0,
+      "mae_m": 0.19732900275007745,
+      "rmse_m": 0.22840245599763592,
+      "bias_m": -0.1686640588197414,
+      "absrel": 0.1531119469601167,
+      "median_gt_m": 1.2811139822006226,
+      "median_pred_m": 1.0965240001678467
+    },
+    "instance_pixel_fraction": 0.975253479979378,
+    "pred_depth_m": 1.0972583293914795,
+    "gt_median_same_mask_m": 1.28151535987854,
+    "gt_surface_depth_m": 1.2811139822006226,
+    "gt_depth_at_representative_pixel_m": 1.2697441577911377,
+    "p_cam_pred_m": [
+      -0.2506406191744571,
+      0.24206106066427271,
+      1.0972583293914795
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      -0.2926377436659739,
+      0.28262060178234716,
+      1.2811139822006226
+    ],
+    "p_cam_gt_surface_sample_m": [
+      -0.2903416417532995,
+      0.2806172805462512,
+      1.2697441577911377
+    ],
+    "reference_world_m": [
+      -0.12,
+      -0.2,
+      0.80745
+    ],
+    "actual_world_m": [
+      -0.35274167060852046,
+      -0.24935938082554265,
+      0.8579389393357276
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 0.0,
+    "tf_rotation_delta_deg": 1.799193426557978e-14,
+    "world_xyz_error_m": 0.2432162961406426,
+    "world_xy_error_m": 0.2379181239694151,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tf_vs_rig_joint_geometry": [
+        0.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16
+      ],
+      "production_support_vs_instance_support": [
+        0.0007343292236328125,
+        0.00016773874151526647,
+        -0.00016199695731444752
+      ],
+      "depth_along_same_ray": [
+        -0.18458998203277588,
+        -0.042164863233032035,
+        0.04072153807538889
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        0.011369824409484863,
+        0.0022961019126743754,
+        -0.0020033212360959785
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        -0.06034784220886227,
+        -0.008516358246700467,
+        0.011942719453748918
+      ],
+      "mesh_center_vs_yaml_reference": [
+        9.200000000000874e-05,
+        -0.0011420000000000041,
+        -1.0000000000065512e-05
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 3.1401849173675503e-16,
+      "production_support_vs_instance_support": 0.0007704665523339955,
+      "depth_along_same_ray": 0.19367390330539158,
+      "median_proxy_vs_gt_surface_sample": 0.011771078415799371,
+      "gt_surface_sample_vs_mesh_center": 0.06210490290631518,
+      "mesh_center_vs_yaml_reference": 0.001145743426775826
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 2.220446049250313e-16,
+      "production_support_vs_instance_support": 0.0007532434494147922,
+      "depth_along_same_ray": 0.1893444933403684,
+      "median_proxy_vs_gt_surface_sample": 0.011599353046437751,
+      "gt_surface_sample_vs_mesh_center": 0.060945799010693774,
+      "mesh_center_vs_yaml_reference": 0.0011456997861569193
+    }
+  },
+  {
+    "stop": 0,
+    "frame": 1,
+    "stamp_ns": 41600000000,
+    "class": "laptop",
+    "confidence": 0.9223862886428833,
+    "semantic_status": "true_detection",
+    "instance_gt": "laptop_1",
+    "mask_iou": 0.8891758123520551,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 11,
+    "object_id": 2,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 7835,
+      "invalid_predictions": 0,
+      "mae_m": 0.40117006178638626,
+      "rmse_m": 0.40534416440391585,
+      "bias_m": -0.4005390893142544,
+      "absrel": 0.23266390810475912,
+      "median_gt_m": 1.7161394357681274,
+      "median_pred_m": 1.3229939937591553
+    },
+    "instance_intersection": {
+      "pixels": 7598,
+      "invalid_predictions": 0,
+      "mae_m": 0.39993017947997,
+      "rmse_m": 0.40401587004572187,
+      "bias_m": -0.3992795254500736,
+      "absrel": 0.23293320486687402,
+      "median_gt_m": 1.7100435495376587,
+      "median_pred_m": 1.3208858966827393
+    },
+    "instance_pixel_fraction": 0.9697511167836631,
+    "pred_depth_m": 1.3229939937591553,
+    "gt_median_same_mask_m": 1.7161394357681274,
+    "gt_surface_depth_m": 1.7100435495376587,
+    "gt_depth_at_representative_pixel_m": null,
+    "p_cam_pred_m": [
+      -0.05533189800372154,
+      0.23615184601564324,
+      1.3229939937591553
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      -0.0715195652522099,
+      0.30523943638097606,
+      1.7100435495376587
+    ],
+    "p_cam_gt_surface_sample_m": [
+      -0.07887066497857782,
+      0.3424647295122458,
+      1.8970775604248047
+    ],
+    "reference_world_m": [
+      0.3,
+      -0.44,
+      0.83695
+    ],
+    "actual_world_m": [
+      -0.12700600624084468,
+      -0.44466810199627815,
+      0.8638481539843572
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 0.0,
+    "tf_rotation_delta_deg": 1.799193426557978e-14,
+    "world_xyz_error_m": 0.42787782278329184,
+    "world_xy_error_m": 0.4270315217194205,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tf_vs_rig_joint_geometry": [
+        0.0,
+        3.3306690738754696e-16,
+        3.3306690738754696e-16
+      ],
+      "production_support_vs_instance_support": [
+        0.0021080970764160156,
+        8.816745424729266e-05,
+        -0.00037629121411297817
+      ],
+      "depth_along_same_ray": [
+        -0.38915765285491943,
+        -0.01627583470273565,
+        0.0694638815794458
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        -0.187034010887146,
+        -0.007351099726367924,
+        0.037225293131269765
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        0.14821306042480475,
+        0.018894664978577835,
+        -0.07939472951224569
+      ],
+      "mesh_center_vs_yaml_reference": [
+        -0.0011355000000000115,
+        -2.4000000000024002e-05,
+        -2.0000000000020002e-05
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 4.710277376051325e-16,
+      "production_support_vs_instance_support": 0.00214323163969759,
+      "depth_along_same_ray": 0.3956435421119673,
+      "median_proxy_vs_gt_surface_sample": 0.19084413101908324,
+      "gt_surface_sample_vs_mesh_center": 0.16919705292782786,
+      "mesh_center_vs_yaml_reference": 0.0011359296853238885
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 3.3306690738754696e-16,
+      "production_support_vs_instance_support": 0.002109939995256311,
+      "depth_along_same_ray": 0.3894978582365001,
+      "median_proxy_vs_gt_surface_sample": 0.1871784172807326,
+      "gt_surface_sample_vs_mesh_center": 0.14941258195058246,
+      "mesh_center_vs_yaml_reference": 0.0011357536044406934
+    }
+  },
+  {
+    "stop": 0,
+    "frame": 1,
+    "stamp_ns": 41600000000,
+    "class": "bottle",
+    "confidence": 0.839745044708252,
+    "semantic_status": "true_detection",
+    "instance_gt": "bottle_1",
+    "mask_iou": 0.9591287322564855,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 14,
+    "object_id": 5,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 11064,
+      "invalid_predictions": 0,
+      "mae_m": 0.27899441852443735,
+      "rmse_m": 0.3128198331770829,
+      "bias_m": -0.24326403089950505,
+      "absrel": 0.21222706365169136,
+      "median_gt_m": 1.3094223737716675,
+      "median_pred_m": 1.0270676016807556
+    },
+    "instance_intersection": {
+      "pixels": 11051,
+      "invalid_predictions": 0,
+      "mae_m": 0.27809386765317196,
+      "rmse_m": 0.3101064189413414,
+      "bias_m": -0.24238234175329196,
+      "absrel": 0.21210011291495967,
+      "median_gt_m": 1.3094145059585571,
+      "median_pred_m": 1.0270106792449951
+    },
+    "instance_pixel_fraction": 0.9988250180766449,
+    "pred_depth_m": 1.0270676612854004,
+    "gt_median_same_mask_m": 1.3094223737716675,
+    "gt_surface_depth_m": 1.3094145059585571,
+    "gt_depth_at_representative_pixel_m": 1.299864649772644,
+    "p_cam_pred_m": [
+      0.28176891342418886,
+      0.18780768704590725,
+      1.0270676612854004
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      0.3592288185805216,
+      0.23943710723075776,
+      1.3094145059585571
+    ],
+    "p_cam_gt_surface_sample_m": [
+      0.35695927714171666,
+      0.23749880192297484,
+      1.299864649772644
+    ],
+    "reference_world_m": [
+      -0.1,
+      -0.87,
+      0.87
+    ],
+    "actual_world_m": [
+      -0.42293233871459956,
+      -0.7817689134241886,
+      0.9121923129540931
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 0.0,
+    "tf_rotation_delta_deg": 1.799193426557978e-14,
+    "world_xyz_error_m": 0.3374169694879695,
+    "world_xy_error_m": 0.3347686066912924,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tf_vs_rig_joint_geometry": [
+        0.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16
+      ],
+      "production_support_vs_instance_support": [
+        5.698204040527344e-05,
+        -1.5632628905526413e-05,
+        -1.0419630190910967e-05
+      ],
+      "depth_along_same_ray": [
+        -0.282403826713562,
+        0.07747553778523825,
+        0.051639839815041416
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        0.009549856185913086,
+        -0.002269541438804923,
+        -0.0019383053077829115
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        -0.05013535022735591,
+        0.013040722858283282,
+        -0.007498801922974807
+      ],
+      "mesh_center_vs_yaml_reference": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 3.1401849173675503e-16,
+      "production_support_vs_instance_support": 5.999917256564008e-05,
+      "depth_along_same_ray": 0.29735677788424225,
+      "median_proxy_vs_gt_surface_sample": 0.010005378502598219,
+      "gt_surface_sample_vs_mesh_center": 0.05234353661500337,
+      "mesh_center_vs_yaml_reference": 0.0
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 2.220446049250313e-16,
+      "production_support_vs_instance_support": 5.908749457580778e-05,
+      "depth_along_same_ray": 0.2928384884156716,
+      "median_proxy_vs_gt_surface_sample": 0.00981583269590895,
+      "gt_surface_sample_vs_mesh_center": 0.05180360793502889,
+      "mesh_center_vs_yaml_reference": 0.0
+    }
+  },
+  {
+    "stop": 0,
+    "frame": 1,
+    "stamp_ns": 41600000000,
+    "class": "cup",
+    "confidence": 0.7780768275260925,
+    "semantic_status": "true_detection",
+    "instance_gt": "cup_1",
+    "mask_iou": 0.9168769716088329,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 15,
+    "object_id": 6,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 5821,
+      "invalid_predictions": 0,
+      "mae_m": 0.20436504285086923,
+      "rmse_m": 0.23585479840329807,
+      "bias_m": -0.17625620414907223,
+      "absrel": 0.15690838011339053,
+      "median_gt_m": 1.2816972732543945,
+      "median_pred_m": 1.0927680730819702
+    },
+    "instance_intersection": {
+      "pixels": 5674,
+      "invalid_predictions": 0,
+      "mae_m": 0.20196078563812211,
+      "rmse_m": 0.23282466323359666,
+      "bias_m": -0.17312371301155172,
+      "absrel": 0.15673395638359955,
+      "median_gt_m": 1.2812742590904236,
+      "median_pred_m": 1.0921476483345032
+    },
+    "instance_pixel_fraction": 0.9747466071121801,
+    "pred_depth_m": 1.0927680730819702,
+    "gt_median_same_mask_m": 1.2816972732543945,
+    "gt_surface_depth_m": 1.2812742590904236,
+    "gt_depth_at_representative_pixel_m": 1.270534634590149,
+    "p_cam_pred_m": [
+      -0.24960947840626188,
+      0.24106036594014674,
+      1.0927680730819702
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      -0.29266795707614,
+      0.2826440938148268,
+      1.2812742590904236
+    ],
+    "p_cam_gt_surface_sample_m": [
+      -0.2905223933875437,
+      0.2807919782980088,
+      1.270534634590149
+    ],
+    "reference_world_m": [
+      -0.12,
+      -0.2,
+      0.80745
+    ],
+    "actual_world_m": [
+      -0.35723192691802974,
+      -0.25039052159373787,
+      0.8589396340598536
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 0.0,
+    "tf_rotation_delta_deg": 1.799193426557978e-14,
+    "world_xyz_error_m": 0.2479301801543088,
+    "world_xy_error_m": 0.24252462105058606,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tf_vs_rig_joint_geometry": [
+        0.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16
+      ],
+      "production_support_vs_instance_support": [
+        0.000620424747467041,
+        0.00014171707741134076,
+        -0.0001368632744191689
+      ],
+      "depth_along_same_ray": [
+        -0.1891266107559204,
+        -0.04320019574728948,
+        0.041720591149099234
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        0.010739624500274658,
+        0.002145563688596308,
+        -0.0018521155168180203
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        -0.05955736540985104,
+        -0.008335606612456276,
+        0.011768021701991316
+      ],
+      "mesh_center_vs_yaml_reference": [
+        9.200000000000874e-05,
+        -0.0011420000000000041,
+        -1.0000000000065512e-05
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 3.1401849173675503e-16,
+      "production_support_vs_instance_support": 0.0006509548011838382,
+      "depth_along_same_ray": 0.19843321177276715,
+      "median_proxy_vs_gt_surface_sample": 0.011107353862930665,
+      "gt_surface_sample_vs_mesh_center": 0.06127845010228869,
+      "mesh_center_vs_yaml_reference": 0.001145743426775826
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 2.220446049250313e-16,
+      "production_support_vs_instance_support": 0.0006364044290382914,
+      "depth_along_same_ray": 0.19399776238046035,
+      "median_proxy_vs_gt_surface_sample": 0.010951848152194346,
+      "gt_surface_sample_vs_mesh_center": 0.06013785922495202,
+      "mesh_center_vs_yaml_reference": 0.0011456997861569193
+    }
+  },
+  {
+    "stop": 0,
+    "frame": 2,
+    "stamp_ns": 43000000000,
+    "class": "laptop",
+    "confidence": 0.9229922890663147,
+    "semantic_status": "true_detection",
+    "instance_gt": "laptop_1",
+    "mask_iou": 0.8889008388900839,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 20,
+    "object_id": 2,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 7840,
+      "invalid_predictions": 0,
+      "mae_m": 0.3971536052166199,
+      "rmse_m": 0.4016176900786186,
+      "bias_m": -0.39651626552246055,
+      "absrel": 0.2303456657591009,
+      "median_gt_m": 1.7144613862037659,
+      "median_pred_m": 1.3270698189735413
+    },
+    "instance_intersection": {
+      "pixels": 7603,
+      "invalid_predictions": 0,
+      "mae_m": 0.3958911424120304,
+      "rmse_m": 0.40026709366029456,
+      "bias_m": -0.3952339356249451,
+      "absrel": 0.23059754111104958,
+      "median_gt_m": 1.710092306137085,
+      "median_pred_m": 1.3250020742416382
+    },
+    "instance_pixel_fraction": 0.9697704081632653,
+    "pred_depth_m": 1.3270697593688965,
+    "gt_median_same_mask_m": 1.7144613862037659,
+    "gt_surface_depth_m": 1.710092306137085,
+    "gt_depth_at_representative_pixel_m": null,
+    "p_cam_pred_m": [
+      -0.05554863292425658,
+      0.23687866789705048,
+      1.3270697593688965
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      -0.07158123309612563,
+      0.305247244614624,
+      1.710092306137085
+    ],
+    "p_cam_gt_surface_sample_m": [
+      -0.07911116493891113,
+      0.3435090056557983,
+      1.902862310409546
+    ],
+    "reference_world_m": [
+      0.3,
+      -0.44,
+      0.83695
+    ],
+    "actual_world_m": [
+      -0.12293024063110347,
+      -0.4444513670757431,
+      0.86312133210295
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 0.0,
+    "tf_rotation_delta_deg": 1.799193426557978e-14,
+    "world_xyz_error_m": 0.42376260067774857,
+    "world_xy_error_m": 0.42295366543999363,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tf_vs_rig_joint_geometry": [
+        0.0,
+        2.7755575615628914e-16,
+        3.3306690738754696e-16
+      ],
+      "production_support_vs_instance_support": [
+        0.0020676851272583008,
+        8.654939299621717e-05,
+        -0.0003690766782361299
+      ],
+      "depth_along_same_ray": [
+        -0.3850902318954468,
+        -0.016119149564865265,
+        0.06873765339580964
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        -0.19277000427246094,
+        -0.007529931842785498,
+        0.03826176104117429
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        0.15399781040954597,
+        0.019135164938911153,
+        -0.0804390056557982
+      ],
+      "mesh_center_vs_yaml_reference": [
+        -0.0011355000000000115,
+        -2.4000000000024002e-05,
+        -2.0000000000020002e-05
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 4.335559509131367e-16,
+      "production_support_vs_instance_support": 0.0021021489427086285,
+      "depth_along_same_ray": 0.3915088487867751,
+      "median_proxy_vs_gt_surface_sample": 0.1966746978610455,
+      "gt_surface_sample_vs_mesh_center": 0.1747910574917016,
+      "mesh_center_vs_yaml_reference": 0.0011359296853238885
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 2.7755575615628914e-16,
+      "production_support_vs_instance_support": 0.0020694957315523,
+      "depth_along_same_ray": 0.38542744282677055,
+      "median_proxy_vs_gt_surface_sample": 0.1929170143371538,
+      "gt_surface_sample_vs_mesh_center": 0.1551820870724898,
+      "mesh_center_vs_yaml_reference": 0.0011357536044406934
+    }
+  },
+  {
+    "stop": 0,
+    "frame": 2,
+    "stamp_ns": 43000000000,
+    "class": "bottle",
+    "confidence": 0.8404194712638855,
+    "semantic_status": "true_detection",
+    "instance_gt": "bottle_1",
+    "mask_iou": 0.9588806396344945,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 23,
+    "object_id": 5,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 11060,
+      "invalid_predictions": 0,
+      "mae_m": 0.27785785670306323,
+      "rmse_m": 0.312712548711797,
+      "bias_m": -0.2414540172269935,
+      "absrel": 0.211323065204412,
+      "median_gt_m": 1.309653401374817,
+      "median_pred_m": 1.0293177366256714
+    },
+    "instance_intersection": {
+      "pixels": 11047,
+      "invalid_predictions": 0,
+      "mae_m": 0.2769300444499285,
+      "rmse_m": 0.30992879522397554,
+      "bias_m": -0.24053968090034236,
+      "absrel": 0.21118741106378444,
+      "median_gt_m": 1.3096325397491455,
+      "median_pred_m": 1.0292580127716064
+    },
+    "instance_pixel_fraction": 0.9988245931283906,
+    "pred_depth_m": 1.0293177366256714,
+    "gt_median_same_mask_m": 1.309653401374817,
+    "gt_surface_depth_m": 1.3096325397491455,
+    "gt_depth_at_representative_pixel_m": 1.2973815202713013,
+    "p_cam_pred_m": [
+      0.2823938441546136,
+      0.188254620662429,
+      1.0293177366256714
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      0.35929835285081335,
+      0.23952213024704622,
+      1.3096325397491455
+    ],
+    "p_cam_gt_surface_sample_m": [
+      0.35627737836709916,
+      0.2370451083159584,
+      1.2973815202713013
+    ],
+    "reference_world_m": [
+      -0.1,
+      -0.87,
+      0.87
+    ],
+    "actual_world_m": [
+      -0.42068226337432857,
+      -0.7823938441546134,
+      0.9117453793375713
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 0.0,
+    "tf_rotation_delta_deg": 1.799193426557978e-14,
+    "world_xyz_error_m": 0.3350442198888471,
+    "world_xy_error_m": 0.3324333806718098,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tf_vs_rig_joint_geometry": [
+        0.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16
+      ],
+      "production_support_vs_instance_support": [
+        5.9723854064941406e-05,
+        -1.6385269715035733e-05,
+        -1.0923052320421789e-05
+      ],
+      "depth_along_same_ray": [
+        -0.28037452697753906,
+        0.07692089396591478,
+        0.051278432636937626
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        0.012251019477844238,
+        -0.0030209744837141894,
+        -0.002477021931087814
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        -0.05261847972869868,
+        0.013722621632900833,
+        -0.007045108315958282
+      ],
+      "mesh_center_vs_yaml_reference": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 3.1401849173675503e-16,
+      "production_support_vs_instance_support": 6.288663514610682e-05,
+      "depth_along_same_ray": 0.29522225011014197,
+      "median_proxy_vs_gt_surface_sample": 0.012858825868828815,
+      "gt_surface_sample_vs_mesh_center": 0.05483291260386244,
+      "mesh_center_vs_yaml_reference": 0.0
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 2.220446049250313e-16,
+      "production_support_vs_instance_support": 6.193073395338445e-05,
+      "depth_along_same_ray": 0.29073475765101475,
+      "median_proxy_vs_gt_surface_sample": 0.01261799370255712,
+      "gt_surface_sample_vs_mesh_center": 0.0543784401526858,
+      "mesh_center_vs_yaml_reference": 0.0
+    }
+  },
+  {
+    "stop": 0,
+    "frame": 2,
+    "stamp_ns": 43000000000,
+    "class": "cup",
+    "confidence": 0.7767165899276733,
+    "semantic_status": "true_detection",
+    "instance_gt": "cup_1",
+    "mask_iou": 0.9173110304560518,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 24,
+    "object_id": 6,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 5818,
+      "invalid_predictions": 0,
+      "mae_m": 0.20211846322773985,
+      "rmse_m": 0.2329308227160102,
+      "bias_m": -0.1746147328039427,
+      "absrel": 0.15518533801803305,
+      "median_gt_m": 1.281502902507782,
+      "median_pred_m": 1.0947255492210388
+    },
+    "instance_intersection": {
+      "pixels": 5674,
+      "invalid_predictions": 0,
+      "mae_m": 0.19972064581646817,
+      "rmse_m": 0.22976516914851067,
+      "bias_m": -0.17151890038015308,
+      "absrel": 0.15500256211124977,
+      "median_gt_m": 1.2811123728752136,
+      "median_pred_m": 1.0941379070281982
+    },
+    "instance_pixel_fraction": 0.9752492265383294,
+    "pred_depth_m": 1.0947256088256836,
+    "gt_median_same_mask_m": 1.281502902507782,
+    "gt_surface_depth_m": 1.2811123728752136,
+    "gt_depth_at_representative_pixel_m": 1.2779091596603394,
+    "p_cam_pred_m": [
+      -0.25006245101287505,
+      0.24149134338580813,
+      1.0947256088256836
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      -0.2926378056760228,
+      0.2826073908015052,
+      1.2811123728752136
+    ],
+    "p_cam_gt_surface_sample_m": [
+      -0.29220866357267666,
+      0.28242177053435735,
+      1.2779091596603394
+    ],
+    "reference_world_m": [
+      -0.12,
+      -0.2,
+      0.80745
+    ],
+    "actual_world_m": [
+      -0.35527439117431636,
+      -0.24993754898712472,
+      0.8585086566141922
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 0.0,
+    "tf_rotation_delta_deg": 1.799193426557978e-14,
+    "world_xyz_error_m": 0.24587554647937787,
+    "world_xy_error_m": 0.24051569167371745,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tf_vs_rig_joint_geometry": [
+        0.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16
+      ],
+      "production_support_vs_instance_support": [
+        0.0005877017974853516,
+        0.0001342456509275669,
+        -0.0001296442646822049
+      ],
+      "depth_along_same_ray": [
+        -0.18697446584701538,
+        -0.042709600314075336,
+        0.04124569168037928
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        0.0032032132148742676,
+        0.00042914210334615843,
+        -0.00018562026714785684
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        -0.05218284033966061,
+        -0.006649336427323321,
+        0.0101382294656428
+      ],
+      "mesh_center_vs_yaml_reference": [
+        9.200000000000874e-05,
+        -0.0011420000000000041,
+        -1.0000000000065512e-05
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 3.1401849173675503e-16,
+      "production_support_vs_instance_support": 0.0006166221962640243,
+      "depth_along_same_ray": 0.1961753499294896,
+      "median_proxy_vs_gt_surface_sample": 0.003237158125329306,
+      "gt_surface_sample_vs_mesh_center": 0.05357281211152041,
+      "mesh_center_vs_yaml_reference": 0.001145743426775826
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 2.220446049250313e-16,
+      "production_support_vs_instance_support": 0.0006028393629819467,
+      "depth_along_same_ray": 0.19179040861775332,
+      "median_proxy_vs_gt_surface_sample": 0.003231831964197629,
+      "gt_surface_sample_vs_mesh_center": 0.05260477640707391,
+      "mesh_center_vs_yaml_reference": 0.0011456997861569193
+    }
+  },
+  {
+    "stop": 7,
+    "frame": 0,
+    "stamp_ns": 110700000000,
+    "class": "bottle",
+    "confidence": 0.8106406331062317,
+    "semantic_status": "true_detection",
+    "instance_gt": "bottle_1",
+    "mask_iou": 0.9572556649118792,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 48,
+    "object_id": 5,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 15452,
+      "invalid_predictions": 0,
+      "mae_m": 0.42845508683045663,
+      "rmse_m": 0.4312265920006789,
+      "bias_m": -0.426036709250794,
+      "absrel": 0.3660266732021541,
+      "median_gt_m": 1.1664175391197205,
+      "median_pred_m": 0.7365024089813232
+    },
+    "instance_intersection": {
+      "pixels": 15448,
+      "invalid_predictions": 0,
+      "mae_m": 0.4280690666594881,
+      "rmse_m": 0.43017510769932066,
+      "bias_m": -0.42565006288159146,
+      "absrel": 0.3659524725506343,
+      "median_gt_m": 1.1664144396781921,
+      "median_pred_m": 0.736484706401825
+    },
+    "instance_pixel_fraction": 0.9997411338338079
+  },
+  {
+    "stop": 7,
+    "frame": 1,
+    "stamp_ns": 111000000000,
+    "class": "bottle",
+    "confidence": 0.8156704902648926,
+    "semantic_status": "true_detection",
+    "instance_gt": "bottle_1",
+    "mask_iou": 0.957407831463247,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 53,
+    "object_id": 5,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 15438,
+      "invalid_predictions": 0,
+      "mae_m": 0.42681115414753745,
+      "rmse_m": 0.42974839812720134,
+      "bias_m": -0.4241314503964032,
+      "absrel": 0.36464849285139384,
+      "median_gt_m": 1.1664077043533325,
+      "median_pred_m": 0.738003134727478
+    },
+    "instance_intersection": {
+      "pixels": 15434,
+      "invalid_predictions": 0,
+      "mae_m": 0.4264298326783466,
+      "rmse_m": 0.42871610245998487,
+      "bias_m": -0.4237494344335618,
+      "absrel": 0.36457561572526387,
+      "median_gt_m": 1.166398286819458,
+      "median_pred_m": 0.7379960715770721
+    },
+    "instance_pixel_fraction": 0.9997408990801917,
+    "pred_depth_m": 0.738003134727478,
+    "gt_median_same_mask_m": 1.1664077043533325,
+    "gt_surface_depth_m": 1.166398286819458,
+    "gt_depth_at_representative_pixel_m": 1.1575790643692017,
+    "p_cam_pred_m": [
+      -0.445549728708705,
+      0.151865719021354,
+      0.738003134727478
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      -0.7041818873176099,
+      0.24002054484297464,
+      1.166398286819458
+    ],
+    "p_cam_gt_surface_sample_m": [
+      -0.699095586300568,
+      0.23809777214584563,
+      1.1575790643692017
+    ],
+    "reference_world_m": [
+      -0.1,
+      -0.87,
+      0.87
+    ],
+    "actual_world_m": [
+      -0.6270601092907023,
+      -0.7396652838881184,
+      0.9481342809786462
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 3.5719563107813027e-09,
+    "tf_rotation_delta_deg": 4.093160325912782e-06,
+    "world_xyz_error_m": 0.5485293637477778,
+    "world_xy_error_m": 0.5429359971759948,
+    "components_world_m": {
+      "production_tf_replay": [
+        1.1102230246251565e-16,
+        0.0,
+        -1.1102230246251565e-16
+      ],
+      "tf_vs_rig_joint_geometry": [
+        -1.7121475792691854e-08,
+        -6.236206218090956e-08,
+        2.220446049250313e-16
+      ],
+      "production_support_vs_instance_support": [
+        8.015244253510538e-06,
+        -1.956338381555325e-06,
+        -1.4534496731444246e-06
+      ],
+      "depth_along_same_ray": [
+        -0.48614969193382956,
+        0.11865805600485503,
+        0.08815627927129377
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        0.009840169794782265,
+        -0.0026115514685568883,
+        -0.0019227726971290104
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        -0.05075858527443286,
+        0.01429023027602716,
+        -0.008097772145845505
+      ],
+      "mesh_center_vs_yaml_reference": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 1.5700924586837752e-16,
+      "tf_vs_rig_joint_geometry": 6.466971263872574e-08,
+      "production_support_vs_instance_support": 8.377584154095012e-06,
+      "depth_along_same_ray": 0.508126742847852,
+      "median_proxy_vs_gt_surface_sample": 0.010360801007059814,
+      "gt_surface_sample_vs_mesh_center": 0.05334996320645204,
+      "mesh_center_vs_yaml_reference": 0.0
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 1.1102230246251565e-16,
+      "tf_vs_rig_joint_geometry": 6.466971263872574e-08,
+      "production_support_vs_instance_support": 8.25053939488687e-06,
+      "depth_along_same_ray": 0.5004210799139148,
+      "median_proxy_vs_gt_surface_sample": 0.010180822297980988,
+      "gt_surface_sample_vs_mesh_center": 0.052731818292220456,
+      "mesh_center_vs_yaml_reference": 0.0
+    }
+  },
+  {
+    "stop": 7,
+    "frame": 2,
+    "stamp_ns": 111200000000,
+    "class": "bottle",
+    "confidence": 0.8178800344467163,
+    "semantic_status": "true_detection",
+    "instance_gt": "bottle_1",
+    "mask_iou": 0.9578368469294225,
+    "truncated": false,
+    "depth_filter_pass": true,
+    "depth_reject_reason": null,
+    "valid_depth_ratio": 1.0,
+    "obs_id": 58,
+    "object_id": 5,
+    "sqlite_status": "confirmed",
+    "same_mask": {
+      "pixels": 15426,
+      "invalid_predictions": 0,
+      "mae_m": 0.42146066611307414,
+      "rmse_m": 0.4241402529991209,
+      "bias_m": -0.4193081697044585,
+      "absrel": 0.360053864955876,
+      "median_gt_m": 1.1666292548179626,
+      "median_pred_m": 0.7432909309864044
+    },
+    "instance_intersection": {
+      "pixels": 15422,
+      "invalid_predictions": 0,
+      "mae_m": 0.4210837305233708,
+      "rmse_m": 0.42311907061222975,
+      "bias_m": -0.4189306758223395,
+      "absrel": 0.3599819457514432,
+      "median_gt_m": 1.1666262745857239,
+      "median_pred_m": 0.7432863116264343
+    },
+    "instance_pixel_fraction": 0.9997406975236613,
+    "pred_depth_m": 0.743290901184082,
+    "gt_median_same_mask_m": 1.1666292548179626,
+    "gt_surface_depth_m": 1.1666262745857239,
+    "gt_depth_at_representative_pixel_m": 1.1772881746292114,
+    "p_cam_pred_m": [
+      -0.44877422082435237,
+      0.15292837034992232,
+      0.743290901184082
+    ],
+    "p_cam_gt_surface_proxy_m": [
+      -0.7043699802276515,
+      0.24002749757273162,
+      1.1666262745857239
+    ],
+    "p_cam_gt_surface_sample_m": [
+      -0.7109984898833935,
+      0.24215165959796736,
+      1.1772881746292114
+    ],
+    "reference_world_m": [
+      -0.1,
+      -0.87,
+      0.87
+    ],
+    "actual_world_m": [
+      -0.621040338134503,
+      -0.7411196134520139,
+      0.947071629650078
+    ],
+    "camera_backprojection_delta_m": 0.0,
+    "tf_translation_delta_m": 3.995900422160614e-13,
+    "tf_rotation_delta_deg": 4.5783947258675333e-10,
+    "world_xyz_error_m": 0.5422483048355193,
+    "world_xy_error_m": 0.5367431303706416,
+    "components_world_m": {
+      "production_tf_replay": [
+        0.0,
+        0.0,
+        1.1102230246251565e-16
+      ],
+      "tf_vs_rig_joint_geometry": [
+        1.9266810369344967e-12,
+        7.023603920686128e-12,
+        1.1102230246251565e-16
+      ],
+      "production_support_vs_instance_support": [
+        5.208339522637373e-06,
+        -1.271141077244389e-06,
+        -9.442784387192482e-07
+      ],
+      "depth_along_same_ray": [
+        -0.48041629059591706,
+        0.11724982184980248,
+        0.08710007150124802
+      ],
+      "median_proxy_vs_gt_surface_sample": [
+        -0.012234201013610783,
+        0.0028173708226198967,
+        0.002124162025235743
+      ],
+      "gt_surface_sample_vs_mesh_center": [
+        -0.028395054866424324,
+        0.008814465009617356,
+        -0.012151659597967268
+      ],
+      "mesh_center_vs_yaml_reference": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "components_xyz_norm_m": {
+      "production_tf_replay": 1.1102230246251565e-16,
+      "tf_vs_rig_joint_geometry": 7.283070222446471e-12,
+      "production_support_vs_instance_support": 5.443736032464707e-06,
+      "depth_along_same_ray": 0.5021292218635294,
+      "median_proxy_vs_gt_surface_sample": 0.01273284403042143,
+      "gt_surface_sample_vs_mesh_center": 0.0321191028090432,
+      "mesh_center_vs_yaml_reference": 0.0
+    },
+    "components_xy_norm_m": {
+      "production_tf_replay": 0.0,
+      "tf_vs_rig_joint_geometry": 7.283070221600266e-12,
+      "production_support_vs_instance_support": 5.3612125700558196e-06,
+      "depth_along_same_ray": 0.4945172726950506,
+      "median_proxy_vs_gt_surface_sample": 0.012554411686478383,
+      "gt_surface_sample_vs_mesh_center": 0.029731699148770767,
+      "mesh_center_vs_yaml_reference": 0.0
+    }
+  }
+]

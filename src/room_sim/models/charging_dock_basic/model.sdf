@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="charging_dock_basic">
+    <static>true</static>
+    <link name="link">
+      <visual name="core">
+        <pose>0 -0.024 0.049 0 0 0</pose>
+        <geometry><box><size>0.196 0.048 0.098</size></box></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="side0">
+        <pose>-0.104 -0.024 0.049 0 0 0</pose>
+        <geometry><box><size>0.012 0.024 0.098</size></box></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="side1">
+        <pose>0.104 -0.024 0.049 0 0 0</pose>
+        <geometry><box><size>0.012 0.024 0.098</size></box></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="tube0">
+        <pose>-0.098 -0.012 0.049 0 0 0</pose>
+        <geometry><cylinder><radius>0.012</radius><length>0.0986</length></cylinder></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="tube1">
+        <pose>-0.098 -0.036 0.049 0 0 0</pose>
+        <geometry><cylinder><radius>0.012</radius><length>0.0986</length></cylinder></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="tube2">
+        <pose>0.098 -0.012 0.049 0 0 0</pose>
+        <geometry><cylinder><radius>0.012</radius><length>0.0986</length></cylinder></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="tube3">
+        <pose>0.098 -0.036 0.049 0 0 0</pose>
+        <geometry><cylinder><radius>0.012</radius><length>0.0986</length></cylinder></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="plate">
+        <pose>0 -0.0965 0.00075 0 0 0</pose>
+        <geometry><box><size>0.18 0.097 0.0015</size></box></geometry>
+        <material><pbr><metal><metalness>0.00</metalness><roughness>0.35</roughness></metal></pbr><ambient>0.880 0.880 0.870 1</ambient><diffuse>0.880 0.880 0.870 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="contact0">
+        <pose>-0.045 -0.051 0.022 0 0 0</pose>
+        <geometry><box><size>0.032 0.006 0.018</size></box></geometry>
+        <material><pbr><metal><metalness>0.70</metalness><roughness>0.20</roughness></metal></pbr><ambient>0.720 0.550 0.300 1</ambient><diffuse>0.720 0.550 0.300 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <visual name="contact1">
+        <pose>0.045 -0.051 0.022 0 0 0</pose>
+        <geometry><box><size>0.032 0.006 0.018</size></box></geometry>
+        <material><pbr><metal><metalness>0.70</metalness><roughness>0.20</roughness></metal></pbr><ambient>0.720 0.550 0.300 1</ambient><diffuse>0.720 0.550 0.300 1</diffuse><specular>0.35 0.35 0.35 1</specular><emissive>0 0 0 1</emissive></material>
+      </visual>
+      <collision name="panel">
+        <pose>0 -0.024 0.049 0 0 0</pose>
+        <geometry><box><size>0.22 0.048 0.098</size></box></geometry>
+      </collision>
+    </link>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>

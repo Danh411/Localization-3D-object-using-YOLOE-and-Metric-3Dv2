@@ -57,11 +57,51 @@ def mat(c): return f"<material><ambient>{c[0]} {c[1]} {c[2]} 1</ambient><diffuse
 def geom(shape, s):
     if shape == "box": return f"<box><size>{s[0]} {s[1]} {s[2]}</size></box>"
     return f"<cylinder><radius>{s[0]}</radius><length>{s[1]}</length></cylinder>"
-def static_model(name, pose, shape, size, rgb):
-    g = geom(shape, size)
-    return f"""    <model name="{name}"><static>true</static><pose>{pose[0]} {pose[1]} {pose[2]} 0 0 0</pose>
+def static_model(name, pose, shape, size, rgb, rpy=(0, 0, 0)):
+    g = geom(shape, size); r = " ".join(f"{v}" for v in rpy)
+    return f"""    <model name="{name}"><static>true</static><pose>{pose[0]} {pose[1]} {pose[2]} {r}</pose>
       <link name="link"><collision name="c"><geometry>{g}</geometry></collision>
       <visual name="v"><geometry>{g}</geometry>{mat(rgb)}</visual></link></model>"""
+
+# Vật trang trí (không nằm trong GT): chỉ để phòng trông thật, cho Metric3D có ngữ cảnh indoor.
+def _decor():
+    out = []
+    # len chân tường (baseboard) tối màu quanh phòng
+    X, Y, t, h = ROOM["x"], ROOM["y"], 0.05, 0.09
+    for n, p, s in [("bb_s", (X/2, 0.025, h/2), (X, 0.05, h)),
+                    ("bb_n", (X/2, Y-0.025, h/2), (X, 0.05, h)),
+                    ("bb_w", (0.025, Y/2, h/2), (0.05, Y, h)),
+                    ("bb_e", (X-0.025, Y/2, h/2), (0.05, Y, h))]:
+        out.append(static_model(n, p, "box", s, (0.28, 0.25, 0.24)))
+    # thảm trung tâm (màu ấm)
+    out.append(static_model("rug", (2.5, 2.0, 0.015), "box", (2.6, 1.9, 0.03), (0.55, 0.20, 0.18)))
+    # giá sách áp tường tây (cao, có kệ)
+    out.append(static_model("bookshelf", (0.45, 1.05, 0.95), "box", (0.35, 1.1, 1.9), (0.42, 0.30, 0.20)))
+    for i, z in enumerate([0.55, 0.95, 1.35]):
+        out.append(static_model(f"shelf{i}", (0.45, 1.05, z), "box", (0.33, 1.05, 0.03), (0.30, 0.20, 0.12)))
+    # vài cuốn sách đứng trên kệ (màu khác nhau, chỉ trang trí)
+    shelf_books = [(0.45,0.85,0.62,(0.16,0.03,0.22),(0.7,0.2,0.2)),
+                   (0.45,0.95,0.62,(0.14,0.03,0.20),(0.2,0.4,0.7)),
+                   (0.45,1.20,1.02,(0.18,0.03,0.22),(0.2,0.6,0.3)),
+                   (0.45,0.72,1.42,(0.15,0.03,0.19),(0.75,0.6,0.2))]
+    for i,(x,y,z,s,c) in enumerate(shelf_books):
+        out.append(static_model(f"deco_book{i}", (x,y,z), "box", s, c))
+    # tủ thấp áp tường nam + khung tranh trên tường
+    out.append(static_model("cabinet", (2.3, 0.45, 0.45), "box", (1.4, 0.5, 0.9), (0.45, 0.32, 0.22)))
+    out.append(static_model("picture", (0.051, 2.0, 1.6), "box", (0.02, 0.7, 0.5), (0.1, 0.1, 0.12)))
+    out.append(static_model("picture_in", (0.06, 2.0, 1.6), "box", (0.01, 0.6, 0.4), (0.6, 0.5, 0.4)))
+    # rèm ở tường bắc (vải rủ, 2 cánh)
+    out.append(static_model("curtain_l", (2.0, 3.96, 1.7), "box", (0.9, 0.05, 1.8), (0.55, 0.45, 0.55)))
+    out.append(static_model("curtain_r", (3.6, 3.96, 1.7), "box", (0.6, 0.05, 1.8), (0.55, 0.45, 0.55)))
+    out.append(static_model("curtain_rod", (2.8, 3.9, 2.55), "cyl", (0.02, 1.9), (0.15, 0.12, 0.10), rpy=(0, math.pi/2, 0)))
+    # đèn trần (chao đèn hình nón + bóng sáng trang trí)
+    out.append(static_model("lamp_shade", (2.5, 2.0, 2.45), "cyl", (0.28, 0.18), (0.20, 0.20, 0.22)))
+    # ghế sofa thấp áp tường tây-nam
+    out.append(static_model("sofa_seat", (0.55, 1.9, 0.28), "box", (0.6, 1.4, 0.45), (0.35, 0.45, 0.5)))
+    out.append(static_model("sofa_back", (0.30, 1.9, 0.7), "box", (0.15, 1.4, 0.7), (0.33, 0.43, 0.48)))
+    # chậu cây trang trí góc (khác potted_plant trong GT)
+    out.append(static_model("deco_pot", (4.55, 0.55, 0.2), "cyl", (0.14, 0.4), (0.4, 0.55, 0.25)))
+    return out
 
 def fuel_model(name, pose, asset):
     p = " ".join(f"{value:.6f}" for value in (*pose, *asset["rpy"]))
@@ -74,11 +114,17 @@ def fuel_model(name, pose, asset):
 
 def room_walls():
     X, Y, H, t = ROOM["x"], ROOM["y"], ROOM["h"], 0.1
+    # tường 2 tông: dưới 1.1 m đậm hơn (wainscot), trên sáng. Sàn gỗ 2 tông.
     walls = [("wall_s", (X/2, -t/2, H/2), (X, t, H)), ("wall_n", (X/2, Y+t/2, H/2), (X, t, H)),
              ("wall_w", (-t/2, Y/2, H/2), (t, Y, H)), ("wall_e", (X+t/2, Y/2, H/2), (t, Y, H))]
-    out = [static_model(n, p, "box", s, (0.85, 0.82, 0.75)) for n, p, s in walls]
-    out.append(static_model("floor", (X/2, Y/2, -0.05), "box", (X, Y, 0.1), (0.55, 0.45, 0.35)))
-    out.append(static_model("ceiling", (X/2, Y/2, H+0.05), "box", (X, Y, 0.1), (0.95, 0.95, 0.95)))
+    out = [static_model(n, p, "box", s, (0.86, 0.83, 0.78)) for n, p, s in walls]
+    out.append(static_model("floor", (X/2, Y/2, -0.05), "box", (X, Y, 0.1), (0.62, 0.5, 0.38)))
+    # tấm gỗ giả trên mặt sàn (vân) — các dải nhẹ khác nhau
+    for i in range(4):
+        shade = 0.66 - i * 0.02
+        out.append(static_model(f"floor_plank{i}", (0.625 + i * 1.25, Y/2, 0.005),
+                                "box", (1.25, Y, 0.011), (shade, shade * 0.82, shade * 0.6)))
+    out.append(static_model("ceiling", (X/2, Y/2, H+0.05), "box", (X, Y, 0.1), (0.93, 0.93, 0.92)))
     return out
 
 RIG = f"""    <model name="camera_rig">
@@ -125,12 +171,25 @@ def main():
       '    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>',
       '    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>',
       '    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"><render_engine>ogre2</render_engine></plugin>',
-      '    <scene><ambient>0.35 0.35 0.35 1</ambient></scene>']
+      '    <scene><ambient>0.18 0.18 0.18 1</ambient></scene>']
     for i, (x, y) in enumerate([(1.5, 1.0), (3.5, 1.0), (2.5, 3.0)]):
-        parts.append(f'    <light type="point" name="lamp{i}"><pose>{x} {y} 2.5 0 0 0</pose><diffuse>0.8 0.8 0.75 1</diffuse>'
-                     f'<specular>0.1 0.1 0.1 1</specular><attenuation><range>8</range><constant>0.5</constant><linear>0.05</linear><quadratic>0.01</quadratic></attenuation></light>')
+        parts.append(f'    <light type="point" name="lamp{i}"><pose>{x} {y} 2.5 0 0 0</pose><diffuse>0.5 0.48 0.44 1</diffuse>'
+                     f'<specular>0.05 0.05 0.05 1</specular><attenuation><range>8</range><constant>0.6</constant><linear>0.08</linear><quadratic>0.02</quadratic></attenuation></light>')
+    # ánh sáng chung dịu từ cửa sổ phía bắc
+    parts.append('    <light type="directional" name="window_sun"><pose>0 0 5 0 0 0</pose>'
+                 '<diffuse>0.22 0.20 0.17 1</diffuse><specular>0.03 0.03 0.03 1</specular>'
+                 '<direction>-0.3 -0.6 -0.7</direction></light>')
     parts += room_walls()
-    parts.append(static_model(TABLE["name"], TABLE["pose"], "box", TABLE["size"], (0.6, 0.45, 0.3)))
+    parts += _decor()
+    # bàn: mặt + 4 chân (thay khối đặc)
+    tx, ty, tz = TABLE["pose"]; tsx, tsy, _ = TABLE["size"]
+    parts.append(static_model("table_top", (tx, ty, tz + 0.34), "box",
+                              (tsx, tsy, 0.04), (0.55, 0.42, 0.28)))
+    leg = 0.04
+    for li, (lx, ly) in enumerate([(tx-tsx/2+leg, ty-tsy/2+leg), (tx+tsx/2-leg, ty-tsy/2+leg),
+                                   (tx-tsx/2+leg, ty+tsy/2-leg), (tx+tsx/2-leg, ty+tsy/2-leg)]):
+        parts.append(static_model(f"table_leg{li}", (lx, ly, 0.34), "box",
+                                  (leg, leg, 0.68), (0.45, 0.32, 0.20)))
     parts.append(static_model(MARKER["name"], MARKER["pose"], "cyl", (MARKER["r"], MARKER["length"]), (1.0, 0.0, 1.0)))
     for n, c, shp, pose, size, rgb in OBJECTS:
         asset = FUEL_ASSETS.get(n)

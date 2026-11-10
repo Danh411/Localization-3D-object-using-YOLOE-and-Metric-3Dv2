@@ -1,0 +1,9 @@
+# Điểm tiếp cận để robot tiến đến vật (spec mục 5.7 / A7).
+int32 object_id
+float64 standoff_m
+---
+bool success
+float64 x
+float64 y
+float64 yaw_rad            # hướng robot nên nhìn về phía vật
+bool already_close

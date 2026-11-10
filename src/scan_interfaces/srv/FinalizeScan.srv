@@ -1,0 +1,7 @@
+# Kết thúc một lần quét: hợp nhất vật, chốt trạng thái, đóng file DB.
+string scan_id
+---
+bool success
+int32 confirmed
+int32 rejected
+int32 merged_pairs

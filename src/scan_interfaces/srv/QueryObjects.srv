@@ -1,0 +1,12 @@
+# Truy vấn vật (spec mục 3.3). class_name rỗng = tất cả; max_range_m = 0 không giới hạn.
+string class_name
+float64 max_range_m
+int32 min_observations
+---
+int32[] object_id
+string[] class_name
+float64[] x
+float64[] y
+float64[] z
+float32[] confidence
+int32[] n_observations

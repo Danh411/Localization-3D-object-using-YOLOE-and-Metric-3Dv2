@@ -7,3 +7,5 @@ __pycache__/
 *.pt
 *.ts
 *.pth
+.venv-wsl/
+.torch_hub/

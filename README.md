@@ -1,9 +1,9 @@
 # loc3d_ws
 
 Pipeline thử nghiệm nhận diện và định vị vật thể 3D trong Gazebo bằng YOLOE
-(segmentation) và Metric3D v2. Workspace ROS 2/Gazebo này ưu tiên quét camera
-quay 360° rồi chụp các ảnh tĩnh độc lập; hiện không xử lý video, không ghép ảnh,
-không tracking và không hợp nhất kết quả giữa các góc nhìn.
+(segmentation) và Metric3D v2. Workspace ROS 2/Gazebo này hỗ trợ quét camera
+quay 360° theo kiểu dừng–chụp–xử lý, gộp các quan sát trùng nhau và lưu vật
+đã hợp nhất vào SQLite.
 
 > **Tình trạng:** pipeline capture → mask → depth → so sánh Gazebo GT đã chạy
 > end-to-end. Benchmark hiện tại là baseline nghiên cứu, chưa phải hệ thống đo
@@ -22,6 +22,9 @@ không tracking và không hợp nhất kết quả giữa các góc nhìn.
      `tools/run_images.py` chuyển tiếp sang hệ world để đánh giá.
 3. So sánh ước lượng với depth của Gazebo và so mask với panoptic GT; ghi kết
    quả từng ảnh, ảnh overlay, bảng CSV, JSON summary và báo cáo Markdown.
+4. Với chế độ scan đầy đủ, các quan sát được chiếu về `world`, gộp theo lớp và
+   khoảng cách bằng `object_db.association`, chốt `confirmed/rejected`, rồi lưu
+   `scans`, `observations`, `objects`, `gt_objects` trong một file SQLite.
 
 Metric3D **không chạy trong lúc camera capture**. Gazebo depth được lưu cùng
 RGB tại thời điểm chụp, còn inference chạy sau khi capture kết thúc. Mỗi ảnh
@@ -69,6 +72,10 @@ benchmark khác, không phải kết quả semantic mới nhất.
   ảnh tương ứng. Nếu detection sai vật hoặc sai lớp thì số depth đó cũng không
   phải sai số của vật thể mà prediction ghi tên.
 
+## Mốc đánh giá bếp có texture
+
+Xem [cấu hình và kết quả mốc bếp](docs/kitchen_reference/README.md) để chạy cảnh bốn vật và phân rã sai số định vị.
+
 ## Môi trường đã kiểm chứng
 
 Môi trường phát triển/chạy benchmark hiện có:
@@ -101,7 +108,7 @@ chưa chứng nhận tương thích với Jetson hoặc các cấu hình GPU kh�
    Chọn đúng PyTorch build cho máy nếu CUDA không tương thích với ví dụ trên.
    `requirements-perception.txt` ghim Ultralytics và khai báo OpenCV, NumPy và
    PyYAML; PyTorch được cài riêng.
-3. Đảm bảo model weights `yoloe-11s-seg.pt` có sẵn ở repo root. Weights và
+3. Đảm bảo model weights `yoloe-v8s-seg.pt` có sẵn ở repo root. Weights và
    Metric3D model cache không được lưu trong Git. Lần đầu chạy có thể cần mạng
    để tải Metric3D v2 từ Torch Hub.
 4. Build ROS package:
@@ -123,7 +130,47 @@ chưa chứng nhận tương thích với Jetson hoặc các cấu hình GPU kh�
    Fuel, trước tiên tải các asset về Fuel cache; lệnh `gz sdf -k` không tự fetch
    remote includes.
 
-## Chạy pipeline
+## Quét đầy đủ và SQLite
+
+Sau khi cài dependency perception và có weights, chạy toàn bộ ROS pipeline bằng
+một lệnh:
+
+```bash
+source /opt/ros/jazzy/setup.bash
+source install/setup.bash
+LOC3D_WS_ROOT=/mnt/d/loc3d_ws ros2 launch loc3d_bringup sim_scan.launch.py
+```
+
+Action `scan_interfaces/action/RunScan` điều phối 8 điểm dừng mặc định. Mỗi
+điểm dừng gửi `/pan_cmd`, đợi sai số yaw dưới 0.5°, settle, gọi
+`/perception/capture`; perception chỉ dùng RGB + `camera_info`, còn depth Gazebo
+chỉ dùng cho đánh giá offline. `object_db_node` nhận `/db/observations`, gộp vật
+và tạo `data/db/<scan_id>.sqlite`. Kết thúc scan gọi `/db/finalize_scan`.
+
+Truy vấn và đánh giá:
+
+```bash
+python3 tools/query_db.py data/db/<scan_id>.sqlite --all --stats
+python3 tools/query_db.py data/db/<scan_id>.sqlite --near 2.0 2.0 --radius 1.5
+python3 tools/query_db.py data/db/<scan_id>.sqlite --approach 1 --cam 2.0 2.0
+python3 tools/eval_scan.py data/db/<scan_id>.sqlite --gt config/gt_objects.yaml
+python3 tools/plot_topdown.py data/db/<scan_id>.sqlite --gt config/gt_objects.yaml \
+  --errors --out data/eval/topdown.png
+```
+
+Nếu đã có capture RGB offline, dùng pipeline không cần ROS controller:
+
+```bash
+python3 tools/run_scan.py --images data/eval/scan_panoptic/capture \
+  --depth-dir data/eval/scan_panoptic/capture/depth_gt \
+  --db data/db/offline.sqlite
+```
+
+Các tham số launch `config`, `classes`, `gt`, `db_dir` có thể truyền lại khi
+workspace không nằm ở `/mnt/d/loc3d_ws`. `LOC3D_WS_ROOT` chỉ là default tiện lợi;
+không chứa đường dẫn hay model weights trong Git.
+
+## Giao diện ROS và cấu trúc mới
 
 Mở terminal có ROS environment đã source:
 
@@ -182,6 +229,8 @@ Trong mỗi thư mục run:
   `instance_segmentation_metrics.csv`: kết quả mask từng ảnh/lớp.
 - `perception/timings.csv`, `run_metadata.json`: timing và thông tin cấu hình.
 - `accuracy_summary.json`, `accuracy_report.md`: tổng hợp cuối lượt scan.
+- `data/db/<scan_id>.sqlite`: scan chính thức. `objects` chỉ gồm vật confirmed,
+  `observations` giữ mọi sample đã gộp, `gt_objects` là ground truth của cảnh.
 
 Các file trong `data/` không commit mặc định; sao lưu/chia sẻ dataset riêng nếu
 cần để tránh đưa lượng lớn ảnh và dữ liệu mô phỏng vào Git.
@@ -192,16 +241,31 @@ cần để tránh đưa lượng lớn ảnh và dữ liệu mô phỏng vào G
 - `config/classes.yaml`: danh sách lớp YOLOE.
 - `config/gt_objects.yaml`: tọa độ/kích thước object GT; được sinh bởi
   `tools/gen_scene.py`.
+- `src/scan_interfaces/`: msg/srv/action: `ObjectObservation`, `Capture`,
+  `QueryObjects`, `GetApproachPoint`, `FinalizeScan`, `RunScan`.
 - `src/room_sim/`: Gazebo world, ROS 2 launch, bridge và node TF.
 - `src/perception/perception/core/`: YOLOE, Metric3D, mask/depth fusion, geometry
   và xử lý một ảnh.
+- `src/perception/perception/node/perception_node.py`: service `/perception/capture`,
+  chạy tuần tự YOLOE rồi Metric3D trên ảnh mới nhất.
+- `src/object_db/object_db/`: `db.py`, `association.py`, `approach.py`,
+  `queries.py`, `object_db_node.py` và `schema.sql` cho SQLite.
+- `src/scan_controller/`: action `/scan/run` điều phối pan, settle, capture,
+  publish `/db/observations`, gọi `/db/finalize_scan`.
+- `src/loc3d_bringup/launch/sim_scan.launch.py`: launch đầy đủ.
+- `src/loc3d_bringup/launch/hil_scan.launch.py`: tách Gazebo máy chính và
+  perception trên Xavier.
 - `tools/gen_scene.py`: sinh SDF world và object GT đồng bộ.
 - `tools/capture_scan.py`: quay camera và lưu RGB/depth/panoptic GT.
 - `tools/run_images.py`: inference từng ảnh và ghi kết quả mask/depth.
+- `tools/run_scan.py`: pipeline scan offline, ghi SQLite và evaluate nhanh.
+- `tools/query_db.py`: truy vấn objects, nearest, radius, stats và approach.
+- `tools/eval_scan.py`: Hungarian matching vs GT; e_xy/e_3d/recall/precision/
+  dup/fp theo mục 9.
+- `tools/plot_topdown.py`: vẽ bản đồ top-down GT, estimates và error arrows.
 - `tools/segmentation_gt.py`: decode Gazebo panoptic maps và metric segmentation.
 - `tools/scan_evaluate.py`: điều phối live scan/replay và viết report.
-- `tests/`: unit tests cho geometry, fusion và đánh giá segmentation.
-- `docs/`: giả định, quyết định kỹ thuật và conventions đã xác minh.
+- `tests/`: unit tests cho geometry, fusion, association, approach và DB.
 
 ## Test và kiểm tra
 
@@ -216,9 +280,10 @@ Kiểm tra SDF sau khi các model include đã có trong Fuel cache:
 gz sdf -k src/room_sim/worlds/room.sdf
 ```
 
-Đã chạy thành công 31 tests và build `room_sim` trong môi trường phát triển ở
-trên. Kiểm thử đơn vị không thay thế live Gazebo smoke test hoặc đánh giá chất
-lượng nhận diện.
+Đã chạy thành công **58 tests** trong WSL Python 3.12 và build toàn bộ các
+package ROS (`scan_interfaces`, `room_sim`, `perception`, `object_db`,
+`scan_controller`, `loc3d_bringup`). Kiểm thử đơn vị không thay thế live Gazebo
+smoke test hoặc đánh giá chất lượng nhận diện.
 
 ## Hạn chế và việc tiếp theo
 

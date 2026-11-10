@@ -1,0 +1,61 @@
+stop,frame,stamp_ns,class,confidence,semantic_status,instance_gt,mask_iou,truncated,depth_filter_pass,depth_reject_reason,valid_depth_ratio,obs_id,object_id,sqlite_status
+0,0,41200000000,person,0.926449179649353,unscored,,0.0,False,True,,1.0,1,1,confirmed
+0,0,41200000000,laptop,0.9258520007133484,true_detection,laptop_1,0.8889964504678929,False,True,,1.0,2,2,confirmed
+0,0,41200000000,person,0.9121119379997253,unscored,,0.0,False,True,,1.0,3,3,confirmed
+0,0,41200000000,chair,0.8575888276100159,unscored,,0.0,True,True,,1.0,4,4,confirmed
+0,0,41200000000,bottle,0.845249354839325,true_detection,bottle_1,0.9589722675367047,False,True,,1.0,5,5,confirmed
+0,0,41200000000,cup,0.7814785242080688,true_detection,cup_1,0.917468833833044,False,True,,1.0,6,6,confirmed
+0,0,41200000000,chair,0.7602413296699524,unscored,,0.0,True,True,,1.0,7,7,rejected
+0,0,41200000000,dining table,0.610575258731842,unscored,,0.00021548738629192384,True,True,,1.0,8,8,rejected
+0,0,41200000000,bottle,0.4643208384513855,false_class,book_1,0.9358135731807032,False,True,,1.0,9,9,confirmed
+0,1,41600000000,person,0.9234541058540344,unscored,,0.0,False,True,,1.0,10,1,confirmed
+0,1,41600000000,laptop,0.9223862886428833,true_detection,laptop_1,0.8891758123520551,False,True,,1.0,11,2,confirmed
+0,1,41600000000,person,0.9105547070503235,unscored,,0.0,False,True,,1.0,12,3,confirmed
+0,1,41600000000,chair,0.8566819429397583,unscored,,0.0,True,True,,1.0,13,4,confirmed
+0,1,41600000000,bottle,0.839745044708252,true_detection,bottle_1,0.9591287322564855,False,True,,1.0,14,5,confirmed
+0,1,41600000000,cup,0.7780768275260925,true_detection,cup_1,0.9168769716088329,False,True,,1.0,15,6,confirmed
+0,1,41600000000,chair,0.7610136866569519,unscored,,0.0,True,True,,1.0,16,7,rejected
+0,1,41600000000,dining table,0.6089974045753479,unscored,,0.00021553383111384806,True,True,,1.0,17,8,rejected
+0,1,41600000000,bottle,0.4664575159549713,false_class,book_1,0.9358135731807032,False,True,,1.0,18,9,confirmed
+0,2,43000000000,person,0.924045205116272,unscored,,0.0,False,True,,1.0,19,1,confirmed
+0,2,43000000000,laptop,0.9229922890663147,true_detection,laptop_1,0.8889008388900839,False,True,,1.0,20,2,confirmed
+0,2,43000000000,person,0.908972978591919,unscored,,0.0,False,True,,1.0,21,3,confirmed
+0,2,43000000000,chair,0.8564168214797974,unscored,,0.0,True,True,,1.0,22,4,confirmed
+0,2,43000000000,bottle,0.8404194712638855,true_detection,bottle_1,0.9588806396344945,False,True,,1.0,23,5,confirmed
+0,2,43000000000,cup,0.7767165899276733,true_detection,cup_1,0.9173110304560518,False,True,,1.0,24,6,confirmed
+0,2,43000000000,chair,0.7583072185516357,unscored,,0.0,True,True,,1.0,25,7,rejected
+0,2,43000000000,dining table,0.6030623912811279,unscored,,0.00020016321000200163,True,True,,1.0,26,8,rejected
+0,2,43000000000,bottle,0.46471986174583435,false_class,book_1,0.9358135731807032,False,True,,1.0,27,9,confirmed
+1,0,50200000000,person,0.9284700155258179,unscored,,0.0,False,True,,1.0,28,3,confirmed
+1,0,50200000000,chair,0.6889528036117554,unscored,,0.0,True,True,,1.0,29,10,rejected
+1,0,50200000000,chair,0.6785861849784851,unscored,,0.0,True,True,,1.0,30,7,rejected
+1,0,50200000000,dining table,0.6064165234565735,unscored,,0.0015101177891875567,True,True,,1.0,31,11,rejected
+1,0,50200000000,oven,0.40401363372802734,unscored,,0.0,True,True,,1.0,32,12,rejected
+1,1,53100000000,person,0.9335076212882996,unscored,,0.0,False,True,,1.0,33,3,confirmed
+1,1,53100000000,chair,0.6843664646148682,unscored,,0.0,True,True,,1.0,34,10,rejected
+1,1,53100000000,chair,0.6696178317070007,unscored,,0.0,True,True,,1.0,35,7,rejected
+1,1,53100000000,dining table,0.6125960350036621,unscored,,0.0015435205690893228,True,True,,1.0,36,11,rejected
+1,1,53100000000,oven,0.42176392674446106,unscored,,0.0,True,True,,1.0,37,12,rejected
+1,2,53400000000,person,0.9317911267280579,unscored,,0.0,False,True,,1.0,38,3,confirmed
+1,2,53400000000,chair,0.678652286529541,unscored,,0.0,True,True,,1.0,39,10,rejected
+1,2,53400000000,chair,0.6736048460006714,unscored,,0.0,True,True,,1.0,40,7,rejected
+1,2,53400000000,dining table,0.6112743020057678,unscored,,0.0014101531023368251,True,True,,1.0,41,11,rejected
+1,2,53400000000,oven,0.416936457157135,unscored,,0.0,True,True,,1.0,42,12,rejected
+6,0,99800000000,chair,0.6365852355957031,unscored,,0.0,True,True,,1.0,43,13,rejected
+6,1,100500000000,chair,0.6346140503883362,unscored,,0.0,True,True,,1.0,44,13,rejected
+6,2,101200000000,chair,0.6336894631385803,unscored,,0.0,True,True,,1.0,45,13,rejected
+7,0,110700000000,person,0.928335428237915,unscored,,0.0,False,True,,1.0,46,1,confirmed
+7,0,110700000000,chair,0.8400184512138367,unscored,,0.0,False,True,,1.0,47,4,confirmed
+7,0,110700000000,bottle,0.8106406331062317,true_detection,bottle_1,0.9572556649118792,False,True,,1.0,48,5,confirmed
+7,0,110700000000,chair,0.7906728982925415,unscored,,0.0,True,True,,1.0,49,13,rejected
+7,0,110700000000,dining table,0.7169478535652161,unscored,,0.000427883094897029,True,True,,1.0,50,8,rejected
+7,1,111000000000,person,0.9303842782974243,unscored,,0.0,False,True,,1.0,51,1,confirmed
+7,1,111000000000,chair,0.8405025601387024,unscored,,0.0,False,True,,1.0,52,4,confirmed
+7,1,111000000000,bottle,0.8156704902648926,true_detection,bottle_1,0.957407831463247,False,True,,1.0,53,5,confirmed
+7,1,111000000000,chair,0.7869303226470947,unscored,,0.0,True,True,,1.0,54,13,rejected
+7,1,111000000000,dining table,0.7192946672439575,unscored,,0.0004279467857475114,True,True,,1.0,55,8,rejected
+7,2,111200000000,person,0.9303204417228699,unscored,,0.0,False,True,,1.0,56,1,confirmed
+7,2,111200000000,chair,0.8411552906036377,unscored,,0.0,False,True,,1.0,57,4,confirmed
+7,2,111200000000,bottle,0.8178800344467163,true_detection,bottle_1,0.9578368469294225,False,True,,1.0,58,5,confirmed
+7,2,111200000000,chair,0.7926502227783203,unscored,,0.0,True,True,,1.0,59,13,rejected
+7,2,111200000000,dining table,0.719217836856842,unscored,,0.00039077764751856197,True,True,,1.0,60,8,rejected

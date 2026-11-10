@@ -1,0 +1,10 @@
+# Xử lý một điểm dừng (spec mục 3.3). Trả quan sát + timing từng khâu.
+string scan_id
+int32 stop_index
+float64 yaw_rad
+int32 n_frames
+---
+bool success
+string message
+scan_interfaces/ObjectObservationArray observations
+float32[] timings_ms          # thứ tự: lấy ảnh, YOLOE, Metric3D, tính 3D

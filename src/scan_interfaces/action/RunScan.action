@@ -1,0 +1,15 @@
+# Chạy trọn một lần quét (spec mục 3.3 / 5.5).
+# Goal
+float64 step_deg
+int32 frames_per_stop
+float64 settle_time_s
+---
+# Result
+string scan_id
+int32 n_objects
+float64 duration_s
+---
+# Feedback
+int32 stop_index
+int32 n_stops
+float64 yaw_rad

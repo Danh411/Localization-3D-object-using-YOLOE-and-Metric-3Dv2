@@ -404,16 +404,18 @@ def write_markdown_report(path, summary):
     surface_xy = summary["world_surface_xy_error"]
     surface_xyz = summary["world_surface_xyz_error"]
     center_xy = summary["object_center_xy_diagnostic"]
+    def _fmt(v):
+        return "n/a" if v is None else f"{v:.3f} m"
     lines.extend([
         "",
         "## Same-pixel 3D point comparison",
         "",
         f"XY error: {surface_xy['observations']} observations; median "
-        f"{'n/a' if surface_xy['median_m'] is None else f'{surface_xy['median_m']:.3f} m'}; "
-        f"p95 {'n/a' if surface_xy['p95_m'] is None else f'{surface_xy['p95_m']:.3f} m'}.",
-        f"3D error median: {'n/a' if surface_xyz['median_m'] is None else f'{surface_xyz['median_m']:.3f} m'}.",
+        f"{_fmt(surface_xy['median_m'])}; "
+        f"p95 {_fmt(surface_xy['p95_m'])}.",
+        f"3D error median: {_fmt(surface_xyz['median_m'])}.",
         f"XY error to nearest same-class object center (not the same reference): median "
-        f"{'n/a' if center_xy['median_m'] is None else f'{center_xy['median_m']:.3f} m'}.",
+        f"{_fmt(center_xy['median_m'])}.",
         "",
         "## Signals to investigate",
         "",

@@ -32,6 +32,14 @@ class Metric3DDepth:
         with torch.autocast(device_type="cuda" if self.use_cuda else "cpu", dtype=torch.float16, enabled=self.fp16):
             out = self.model.inference({"input": x})
         pred = (out[0] if isinstance(out, (tuple, list)) else out).float().squeeze()
+        # Some GPUs produce non-finite values in Metric3D's FP16 attention path.
+        # Retry the same frame in FP32; never pass NaN depth to fusion.
+        if not torch.isfinite(pred).all():
+            with torch.autocast(device_type="cuda" if self.use_cuda else "cpu", enabled=False):
+                out = self.model.inference({"input": x.float()})
+            pred = (out[0] if isinstance(out, (tuple, list)) else out).float().squeeze()
+        if not torch.isfinite(pred).all():
+            raise RuntimeError("Metric3D returned non-finite depth in FP16 and FP32")
         if tuple(pred.shape) != (th, tw):
             pred = F.interpolate(pred[None, None], size=(th, tw), mode="bilinear", align_corners=False)[0, 0]
         pred = pred[pt:th - (pad_h - pt), pl:tw - (pad_w - pl)]
