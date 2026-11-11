@@ -1,0 +1,104 @@
+Waiting for an action server to become available...
+Sending goal:
+     step_deg: 20.0
+frames_per_stop: 1
+settle_time_s: 1.5
+
+Goal accepted with ID: d76835c77a07489789f4ffd6db4885df
+
+Feedback:
+    stop_index: 0
+n_stops: 18
+yaw_rad: 0.0
+
+Feedback:
+    stop_index: 1
+n_stops: 18
+yaw_rad: 0.3490658503988659
+
+Feedback:
+    stop_index: 2
+n_stops: 18
+yaw_rad: 0.6981317007977318
+
+Feedback:
+    stop_index: 3
+n_stops: 18
+yaw_rad: 1.0471975511965976
+
+Feedback:
+    stop_index: 4
+n_stops: 18
+yaw_rad: 1.3962634015954636
+
+Feedback:
+    stop_index: 5
+n_stops: 18
+yaw_rad: 1.7453292519943295
+
+Feedback:
+    stop_index: 6
+n_stops: 18
+yaw_rad: 2.0943951023931953
+
+Feedback:
+    stop_index: 7
+n_stops: 18
+yaw_rad: 2.443460952792061
+
+Feedback:
+    stop_index: 8
+n_stops: 18
+yaw_rad: 2.792526803190927
+
+Feedback:
+    stop_index: 9
+n_stops: 18
+yaw_rad: 3.141592653589793
+
+Feedback:
+    stop_index: 10
+n_stops: 18
+yaw_rad: 3.490658503988659
+
+Feedback:
+    stop_index: 11
+n_stops: 18
+yaw_rad: 3.839724354387525
+
+Feedback:
+    stop_index: 12
+n_stops: 18
+yaw_rad: 4.1887902047863905
+
+Feedback:
+    stop_index: 13
+n_stops: 18
+yaw_rad: 4.537856055185257
+
+Feedback:
+    stop_index: 14
+n_stops: 18
+yaw_rad: 4.886921905584122
+
+Feedback:
+    stop_index: 15
+n_stops: 18
+yaw_rad: 5.235987755982989
+
+Feedback:
+    stop_index: 16
+n_stops: 18
+yaw_rad: 5.585053606381854
+
+Feedback:
+    stop_index: 17
+n_stops: 18
+yaw_rad: 5.934119456780721
+
+Result:
+    scan_id: scan_1794364355
+n_objects: 5
+duration_s: 164.34400221099997
+
+Goal finished with status: SUCCEEDED

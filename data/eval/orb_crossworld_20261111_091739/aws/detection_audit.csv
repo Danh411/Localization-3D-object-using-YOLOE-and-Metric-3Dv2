@@ -1,0 +1,26 @@
+stop,frame,stamp_ns,det_index,predicted_class,confidence,mask,instance_gt,best_iou,matched_iou,status,truncated,depth_pass,depth_reject_reason,valid_depth_ratio,A_obs_id,A_initial_object_id,A_created,A_weight,B_obs_id,B_initial_object_id,B_created,B_weight,A_final_object_id,B_final_object_id,A_final_status,A_association_note,B_final_status,B_association_note
+0,0,7400000000,0,chair,0.8714511394500732,mask_0,,0.0,,unresolved,False,True,,1.0,1,1,True,0.026565043911437318,1,1,True,0.014111761392340575,1,1,confirmed,confirmed,rejected,min_obs
+0,0,7400000000,1,chair,0.8249805569648743,mask_1,,0.0,,unresolved,False,True,,1.0,2,2,True,0.022915784198693064,2,2,True,0.01217321750165255,2,2,confirmed,confirmed,rejected,min_obs
+1,0,9400000000,0,chair,0.8659477233886719,mask_0,,0.0,,unresolved,False,True,,1.0,3,1,False,0.02401061894718231,3,3,True,0.012754812230741847,1,3,confirmed,confirmed,rejected,min_obs
+1,0,9400000000,1,chair,0.8243274092674255,mask_1,,0.0,,unresolved,False,True,,1.0,4,3,True,0.019213063940770332,4,4,True,0.010206274925660655,3,4,rejected,min_obs,rejected,min_obs
+1,0,9400000000,2,chair,0.8043695688247681,mask_2,,0.0,,unresolved,True,True,,1.0,5,4,True,0.019772045401628375,5,5,True,0.010503214614945211,4,5,rejected,min_obs,rejected,min_obs
+1,0,9400000000,3,chair,0.38305020332336426,mask_3,,0.0,,unresolved,False,True,,1.0,6,,False,0.01802462423715693,6,,False,0.009574958274717944,,,,no_nearby_object_and_below_create_conf,,no_nearby_object_and_below_create_conf
+2,0,11000000000,0,chair,0.8381422758102417,mask_0,,0.0,,unresolved,False,True,,1.0,7,5,True,0.09360601027570645,7,6,True,0.04972495391420333,5,6,confirmed,confirmed,rejected,min_obs
+2,0,11000000000,1,chair,0.6495237350463867,mask_1,,0.0,,unresolved,True,True,,1.0,8,2,False,0.005951073220433911,8,7,True,0.003161301535856716,2,7,confirmed,confirmed,rejected,min_obs
+3,0,12700000000,0,bottle,0.8479557037353516,mask_0,bottle_1,0.9535314420405758,0.9535314420405758,true,False,True,,1.0,9,6,True,1.4270899301178888,9,8,True,0.7580920497042805,6,8,confirmed,confirmed,rejected,min_obs
+3,0,12700000000,1,chair,0.7839393615722656,mask_1,,0.0,,unresolved,False,True,,1.0,10,5,False,0.10534635102212779,10,9,True,0.05596160613310743,5,9,confirmed,confirmed,rejected,min_obs
+4,0,14400000000,0,bottle,0.8527032136917114,mask_0,bottle_1,0.95013357079252,0.95013357079252,true,False,True,,1.0,11,6,False,0.8575267545417983,11,8,False,0.4555314476350828,6,8,confirmed,confirmed,rejected,min_obs
+4,0,14400000000,1,chair,0.6807805299758911,mask_1,,0.0,,unresolved,False,True,,1.0,12,5,False,0.09026407766329753,12,9,False,0.04794967182301468,5,9,confirmed,confirmed,rejected,min_obs
+4,0,14400000000,2,cup,0.5599683523178101,mask_2,cup_1,0.9416774938645879,0.9416774938645879,true,False,True,,1.0,13,7,True,0.8072217888939698,13,10,True,0.42880865353418174,7,10,rejected,min_obs,rejected,min_obs
+5,0,15700000000,0,bottle,0.8240101337432861,mask_0,bottle_1,0.944422231107557,0.944422231107557,true,False,True,,1.0,14,6,False,0.5922097825965795,14,11,True,0.3145909595254721,6,11,confirmed,confirmed,rejected,min_obs
+5,0,15700000000,1,cup,0.5820498466491699,mask_1,cup_1,0.938212927756654,0.938212927756654,true,False,True,,1.0,15,7,False,0.5551623262074373,15,10,False,0.29491080337586933,7,10,rejected,min_obs,rejected,min_obs
+5,0,15700000000,2,chair,0.4663103520870209,mask_2,,0.3829032482437226,,unresolved,True,True,,1.0,16,8,True,0.06250319614193436,16,12,True,0.03320265945735007,8,12,rejected,min_obs,rejected,min_obs
+5,0,15700000000,3,dining table,0.3604220151901245,mask_3,,0.0017539529583514943,,unresolved,True,True,,1.0,17,,False,0.08998046961085235,17,,False,0.04779901575224619,,,,no_nearby_object_and_below_create_conf,,no_nearby_object_and_below_create_conf
+11,0,23900000000,0,person,0.5886817574501038,mask_0,,0.0,,unresolved,False,True,,1.0,18,9,True,0.02628814142636469,18,13,True,0.013964665244066454,9,13,rejected,min_obs,rejected,min_obs
+12,0,25200000000,0,person,0.6748361587524414,mask_0,,0.0,,unresolved,False,True,,1.0,19,10,True,0.02536220985032808,19,14,True,0.013472796228480558,10,14,rejected,min_obs,rejected,min_obs
+13,0,26600000000,0,person,0.8147646188735962,mask_0,,0.0,,unresolved,False,True,,1.0,20,11,True,0.047976846167355244,20,15,True,0.025486043287250276,11,15,rejected,min_obs,rejected,min_obs
+13,0,26600000000,1,person,0.7701985239982605,mask_1,,0.0,,unresolved,False,True,,1.0,21,10,False,0.031223271328447034,21,14,False,0.016586284612249348,10,14,rejected,min_obs,rejected,min_obs
+14,0,27900000000,0,person,0.8037508726119995,mask_0,,0.0,,unresolved,False,True,,1.0,22,12,True,0.03781187522840676,22,16,True,0.020086250142085222,12,16,rejected,min_obs,rejected,min_obs
+15,0,29400000000,0,person,0.8426374197006226,mask_0,,0.0,,unresolved,False,True,,1.0,23,12,False,0.034980150754156274,23,17,True,0.018581994959904036,12,17,rejected,min_obs,rejected,min_obs
+17,0,32200000000,0,chair,0.8445256948471069,mask_0,,0.0,,unresolved,False,True,,1.0,24,1,False,0.02506671897131443,24,1,False,0.013315826460913085,1,1,confirmed,confirmed,rejected,min_obs
+17,0,32200000000,1,chair,0.8102664351463318,mask_1,,0.0,,unresolved,False,True,,1.0,25,2,False,0.02418255802115971,25,7,False,0.012846147101403893,2,7,confirmed,confirmed,rejected,min_obs

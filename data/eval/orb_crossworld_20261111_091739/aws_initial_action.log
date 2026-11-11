@@ -1,0 +1,6 @@
+Waiting for an action server to become available...
+Sending goal:
+     step_deg: 20.0
+frames_per_stop: 1
+settle_time_s: 1.5
+

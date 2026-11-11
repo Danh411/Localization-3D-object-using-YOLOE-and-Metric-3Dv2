@@ -1,0 +1,109 @@
+[INFO] [launch]: All log files can be found below /mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/tiffany/ros/2026-11-11-09-30-49-887416-DESKTOP-4VQ2MIR-925
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gz-1]: process started with pid [937]
+[INFO] [parameter_bridge-2]: process started with pid [938]
+[INFO] [pan_tf_node-3]: process started with pid [939]
+[INFO] [python-4]: process started with pid [940]
+[INFO] [object_db_node-5]: process started with pid [941]
+[INFO] [scan_controller_node-6]: process started with pid [942]
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="default"]/model[@name="camera_rig"]/link[@name="pan_link"]/sensor[@name="rgbd"]/gz_frame_id:/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/tiffany/kitchen_controlled.sdf:L1547]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[parameter_bridge-2] [INFO] [1794364251.783904551] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794364251.785236366] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image (gz.msgs.Image) -> /camera/image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794364251.790512193] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/depth_image (gz.msgs.Image) -> /camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794364251.791123284] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/segmentation/labels_map (gz.msgs.Image) -> /camera/segmentation/labels_map (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794364251.791626384] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794364251.792383857] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1794364251.793035701] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/pan_cmd (std_msgs/msg/Float64) -> /pan_cmd (gz.msgs.Double)] (Lazy 0)
+[object_db_node-5] [INFO] [1794364253.926130761] [object_db]: object_db_node sẵn sàng, db_dir=/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/tiffany/db
+[scan_controller_node-6] [INFO] [1794364253.988115956] [scan_controller]: scan_controller sẵn sàng (/scan/run)
+[python-4] /mnt/d/loc3d_ws/.venv/lib/python3.12/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+[python-4]   warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+[python-4] /mnt/d/loc3d_ws/.venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+[python-4]   warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[python-4] /mnt/d/loc3d_ws/.venv/lib/python3.12/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+[python-4]   warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[python-4] xFormers not available
+[python-4] xFormers not available
+[python-4] xFormers not available
+[python-4] xFormers not available
+[python-4] Creating new Ultralytics Settings v0.0.8 file ✅ 
+[python-4] View Ultralytics Settings with 'yolo settings' or at '/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/tiffany/native_ultralytics/Ultralytics/settings.json'
+[python-4] Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+[python-4] [INFO] [1794364346.817689147] [perception_node]: Models loaded: 11 lớp, device=cuda:0
+[scan_controller_node-6] [INFO] [1794364355.727988109] [scan_controller]: [scan_1794364355] bắt đầu: 18 điểm dừng, step=20.0°
+[parameter_bridge-2] [INFO] [1794364355.728560409] [ros_gz_bridge]: Passing message from ROS std_msgs/msg/Float64 to Gazebo gz.msgs.Double (showing msg only once per type)
+[python-4] [INFO] [1794364357.567605946] [perception_node]: [scan_1794364355][stop 0] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364370.130019662] [perception_node]: [scan_1794364355][stop 0] 5 vật / 1 khung, yolo=5318ms depth=5652ms
+[scan_controller_node-6] [INFO] [1794364370.269114780] [scan_controller]: [scan_1794364355][stop 0] yaw=0° 5 quan sát
+[object_db_node-5] [INFO] [1794364370.581796893] [object_db]: mở DB /mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/tiffany/db/scan_1794364355.sqlite
+[object_db_node-5] [INFO] [1794364370.938216778] [object_db]: [scan_1794364355][stop 0] ghi 5 quan sát
+[python-4] [INFO] [1794364371.845279595] [perception_node]: [scan_1794364355][stop 1] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364378.947976554] [perception_node]: [scan_1794364355][stop 1] 4 vật / 1 khung, yolo=733ms depth=4851ms
+[scan_controller_node-6] [INFO] [1794364379.061455867] [scan_controller]: [scan_1794364355][stop 1] yaw=20° 4 quan sát
+[object_db_node-5] [INFO] [1794364379.308639824] [object_db]: [scan_1794364355][stop 1] ghi 4 quan sát
+[python-4] [INFO] [1794364381.413125940] [perception_node]: [scan_1794364355][stop 2] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364388.294230476] [perception_node]: [scan_1794364355][stop 2] 1 vật / 1 khung, yolo=701ms depth=5018ms
+[scan_controller_node-6] [INFO] [1794364388.396147112] [scan_controller]: [scan_1794364355][stop 2] yaw=40° 1 quan sát
+[object_db_node-5] [INFO] [1794364388.733361677] [object_db]: [scan_1794364355][stop 2] ghi 1 quan sát
+[python-4] [INFO] [1794364390.633732060] [perception_node]: [scan_1794364355][stop 3] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364396.852792668] [perception_node]: [scan_1794364355][stop 3] 1 vật / 1 khung, yolo=386ms depth=4636ms
+[scan_controller_node-6] [INFO] [1794364396.944983966] [scan_controller]: [scan_1794364355][stop 3] yaw=60° 1 quan sát
+[object_db_node-5] [INFO] [1794364396.991128085] [object_db]: [scan_1794364355][stop 3] ghi 1 quan sát
+[python-4] [INFO] [1794364399.222180860] [perception_node]: [scan_1794364355][stop 4] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364406.489011329] [perception_node]: [scan_1794364355][stop 4] 0 vật / 1 khung, yolo=630ms depth=4546ms
+[object_db_node-5] [INFO] [1794364406.535182910] [object_db]: [scan_1794364355][stop 4] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794364406.575960339] [scan_controller]: [scan_1794364355][stop 4] yaw=80° 0 quan sát
+[python-4] [INFO] [1794364408.801848199] [perception_node]: [scan_1794364355][stop 5] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364414.687962838] [perception_node]: [scan_1794364355][stop 5] 0 vật / 1 khung, yolo=325ms depth=4143ms
+[object_db_node-5] [INFO] [1794364414.790027949] [object_db]: [scan_1794364355][stop 5] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794364414.840628466] [scan_controller]: [scan_1794364355][stop 5] yaw=100° 0 quan sát
+[python-4] [INFO] [1794364417.109851286] [perception_node]: [scan_1794364355][stop 6] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364422.581991907] [perception_node]: [scan_1794364355][stop 6] 0 vật / 1 khung, yolo=190ms depth=4236ms
+[object_db_node-5] [INFO] [1794364422.649108862] [object_db]: [scan_1794364355][stop 6] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794364422.728394566] [scan_controller]: [scan_1794364355][stop 6] yaw=120° 0 quan sát
+[python-4] [INFO] [1794364425.046367074] [perception_node]: [scan_1794364355][stop 7] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364430.917997363] [perception_node]: [scan_1794364355][stop 7] 0 vật / 1 khung, yolo=546ms depth=4251ms
+[object_db_node-5] [INFO] [1794364430.998147193] [object_db]: [scan_1794364355][stop 7] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794364431.063277117] [scan_controller]: [scan_1794364355][stop 7] yaw=140° 0 quan sát
+[python-4] [INFO] [1794364433.330271761] [perception_node]: [scan_1794364355][stop 8] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364439.347414298] [perception_node]: [scan_1794364355][stop 8] 0 vật / 1 khung, yolo=498ms depth=4466ms
+[object_db_node-5] [INFO] [1794364439.412460577] [object_db]: [scan_1794364355][stop 8] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794364439.484809354] [scan_controller]: [scan_1794364355][stop 8] yaw=160° 0 quan sát
+[python-4] [INFO] [1794364441.610394373] [perception_node]: [scan_1794364355][stop 9] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364448.267790302] [perception_node]: [scan_1794364355][stop 9] 0 vật / 1 khung, yolo=592ms depth=4560ms
+[object_db_node-5] [INFO] [1794364448.327350603] [object_db]: [scan_1794364355][stop 9] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794364448.390067403] [scan_controller]: [scan_1794364355][stop 9] yaw=180° 0 quan sát
+[python-4] [INFO] [1794364450.629175023] [perception_node]: [scan_1794364355][stop 10] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364457.101252461] [perception_node]: [scan_1794364355][stop 10] 0 vật / 1 khung, yolo=418ms depth=4962ms
+[object_db_node-5] [INFO] [1794364457.166527278] [object_db]: [scan_1794364355][stop 10] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794364457.218418191] [scan_controller]: [scan_1794364355][stop 10] yaw=200° 0 quan sát
+[python-4] [INFO] [1794364459.441494176] [perception_node]: [scan_1794364355][stop 11] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364466.102297217] [perception_node]: [scan_1794364355][stop 11] 0 vật / 1 khung, yolo=636ms depth=4998ms
+[object_db_node-5] [INFO] [1794364466.178391320] [object_db]: [scan_1794364355][stop 11] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794364466.209513621] [scan_controller]: [scan_1794364355][stop 11] yaw=220° 0 quan sát
+[python-4] [INFO] [1794364468.466513304] [perception_node]: [scan_1794364355][stop 12] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364475.082919866] [perception_node]: [scan_1794364355][stop 12] 0 vật / 1 khung, yolo=505ms depth=5071ms
+[object_db_node-5] [INFO] [1794364475.133111870] [object_db]: [scan_1794364355][stop 12] ghi 0 quan sát
+[scan_controller_node-6] [INFO] [1794364475.250414679] [scan_controller]: [scan_1794364355][stop 12] yaw=240° 0 quan sát
+[python-4] [INFO] [1794364477.502615153] [perception_node]: [scan_1794364355][stop 13] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364484.145458721] [perception_node]: [scan_1794364355][stop 13] 1 vật / 1 khung, yolo=575ms depth=4974ms
+[scan_controller_node-6] [INFO] [1794364484.268780121] [scan_controller]: [scan_1794364355][stop 13] yaw=260° 1 quan sát
+[object_db_node-5] [INFO] [1794364484.281884622] [object_db]: [scan_1794364355][stop 13] ghi 1 quan sát
+[python-4] [INFO] [1794364486.428534193] [perception_node]: [scan_1794364355][stop 14] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364492.965141147] [perception_node]: [scan_1794364355][stop 14] 2 vật / 1 khung, yolo=536ms depth=4793ms
+[scan_controller_node-6] [INFO] [1794364493.093293970] [scan_controller]: [scan_1794364355][stop 14] yaw=280° 2 quan sát
+[object_db_node-5] [INFO] [1794364493.131154476] [object_db]: [scan_1794364355][stop 14] ghi 2 quan sát
+[python-4] [INFO] [1794364495.333748471] [perception_node]: [scan_1794364355][stop 15] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364501.860574612] [perception_node]: [scan_1794364355][stop 15] 2 vật / 1 khung, yolo=516ms depth=4710ms
+[scan_controller_node-6] [INFO] [1794364501.994020259] [scan_controller]: [scan_1794364355][stop 15] yaw=300° 2 quan sát
+[object_db_node-5] [INFO] [1794364502.077096189] [object_db]: [scan_1794364355][stop 15] ghi 2 quan sát
+[python-4] [INFO] [1794364504.301389378] [perception_node]: [scan_1794364355][stop 16] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364510.433554492] [perception_node]: [scan_1794364355][stop 16] 5 vật / 1 khung, yolo=537ms depth=4232ms
+[scan_controller_node-6] [INFO] [1794364510.554093478] [scan_controller]: [scan_1794364355][stop 16] yaw=320° 5 quan sát
+[object_db_node-5] [INFO] [1794364510.841578843] [object_db]: [scan_1794364355][stop 16] ghi 5 quan sát
+[python-4] [INFO] [1794364512.844902198] [perception_node]: [scan_1794364355][stop 17] capture: 1 frames, K=(914.0147013559828, 914.0147013559828, 640.0, 360.0), latest rgb exists=True
+[python-4] [INFO] [1794364518.536548471] [perception_node]: [scan_1794364355][stop 17] 6 vật / 1 khung, yolo=470ms depth=3786ms
+[scan_controller_node-6] [INFO] [1794364518.629688274] [scan_controller]: [scan_1794364355][stop 17] yaw=340° 6 quan sát
+[object_db_node-5] [INFO] [1794364518.924718085] [object_db]: [scan_1794364355][stop 17] ghi 6 quan sát
+[object_db_node-5] [INFO] [1794364519.195278195] [object_db]: [scan_1794364355] finalize: merged=0 confirmed=5 rejected=5
+[scan_controller_node-6] [INFO] [1794364519.291143799] [scan_controller]: [scan_1794364355] xong 18 điểm trong 164.3s; bỏ 0 điểm []; objects=5

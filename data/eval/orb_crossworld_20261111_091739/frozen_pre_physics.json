@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-11T02:21:01.220551+00:00",
+  "orb_identical_to_kitchen": true,
+  "files": {
+    "orb.py": "f13084ad7c875946bb9de7776d80f913a0573f28ac34c33a0dac0278cc5bd881",
+    "experiment.py": "a222e23de5da33ffe068fef90e9ef50e71eb786643e463636a40db91ce0a0e3a",
+    "PLAN.md": "e568c386ad4f2225ffd664950bd59eb93beb29258c717b03316a88f66a07bc84",
+    "aws/kitchen_controlled.sdf": "a3b797d5dcd81c763e474d85a2be8918cb6a8a09a118484a49aa25dae557f36c",
+    "aws/config.yaml": "c05b66acbf5bdfbb168ecb634347e4333b0b81a79ce3d8f40f3d3782143a25e2",
+    "aws/classes.yaml": "1572d9f82e5bc49d1181a70a67b70bc15adb1672e9df719c8e8e9fb5c19d9725",
+    "aws/gt.yaml": "551ed480d47533df828cfde28207a7babd02930af5c5d99797693b0ddc335fed",
+    "aws/mesh_centers.json": "285b6662b7cf38ff0481f6c5e7c97f9de19ccf0de919b63d3576dc58b56def19",
+    "aws/layout.json": "fd7d6b56057ebfaa8ac998bf928eb74e3dc3d653a2f90c220dbaae6fc6bd21b3",
+    "aws/audit.py": "84078b0eed644115ed2b1224d34640e224048aaa34a6c8f8e9f04b786afbcc54",
+    "aws/reference.launch.py": "3aebd67ae6c8f3240aed2dcdfe5e760b3a496491ee3b8ae32cb166b8c00d4459",
+    "aws/replay.py": "2327ac10692a0f7bfef0a37aa485d49e6a21bc7d4fef5979154f9565084ff9bf",
+    "tiffany/kitchen_controlled.sdf": "46785d78ebd51297fe229ba07ea913407f66784ee7b5f24bf334cfea40d049bd",
+    "tiffany/config.yaml": "af80c77b62b2f40487d3c8d5469564fb331a43e31049b034486f1a8fa8cf29f7",
+    "tiffany/classes.yaml": "1572d9f82e5bc49d1181a70a67b70bc15adb1672e9df719c8e8e9fb5c19d9725",
+    "tiffany/gt.yaml": "87b9e19096e9eaaaca3817bfeac0e02ded33c942f4414f22e2691ac67153e994",
+    "tiffany/mesh_centers.json": "6e5a40816cb8e8b4c0d83d45690679580f1b1f1e7c6be7a2e29879c533c62733",
+    "tiffany/layout.json": "c7e52dfb49c4a34f1fa5a962ad5ccb3fe0c91af89b972207874324802027c2e8",
+    "tiffany/audit.py": "84078b0eed644115ed2b1224d34640e224048aaa34a6c8f8e9f04b786afbcc54",
+    "tiffany/reference.launch.py": "d8258693333090e79043bdf7472cdb7a65ead82f9e1fd29428cbc9fad4d41b13",
+    "tiffany/replay.py": "2327ac10692a0f7bfef0a37aa485d49e6a21bc7d4fef5979154f9565084ff9bf",
+    "/mnt/d/loc3d_ws/data/eval/orb_ground_18angle_fullbatch_20261111_001408/orb.py": "f13084ad7c875946bb9de7776d80f913a0573f28ac34c33a0dac0278cc5bd881",
+    "/mnt/d/loc3d_ws/data/eval/orb_ground_18angle_fullbatch_20261111_001408/PLAN.md": "cbdd47d64b218fb5c822adfed7444e0e77663fb65c8b6dd799d6ea204565338f"
+  }
+}

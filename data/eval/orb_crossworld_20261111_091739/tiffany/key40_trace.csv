@@ -1,0 +1,9 @@
+stamp_ns,stop,det_index,decision,track,depth_age_s,same_gt,yaw_delta_deg
+78400000000,1,0,reused,0,9.2,True,20.012129495162416
+78400000000,1,2,no_track,,,,
+164200000000,15,0,no_track,,,,
+164200000000,15,1,no_track,,,,
+176000000000,17,1,no_track,,,,
+176000000000,17,2,no_track,,,,
+176000000000,17,3,reused,3,5.6,,20.00212703677084
+176000000000,17,4,reused,1,5.6,True,20.00212703677084

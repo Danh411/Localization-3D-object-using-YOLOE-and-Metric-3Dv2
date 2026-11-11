@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/test_diagnostic.py", line 4, in <module>
+    from experiment import pick,observation
+  File "/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/experiment.py", line 18
+    return scan.rot(f).T@(xyz-np.array(f['tf']['translation']), floor_height=s.cfg['camera'].get('floor_z_m', 0.))
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?

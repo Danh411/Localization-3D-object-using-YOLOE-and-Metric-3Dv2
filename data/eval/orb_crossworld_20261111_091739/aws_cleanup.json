@@ -1,0 +1,52 @@
+[
+  {
+    "pid": 478,
+    "args": [
+      "/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge",
+      "--ros-args",
+      "--params-file",
+      "/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/aws/native_tmp/launch_params_q6kau8ex"
+    ]
+  },
+  {
+    "pid": 479,
+    "args": [
+      "/usr/bin/python3",
+      "/mnt/d/loc3d_ws/install/room_sim/lib/room_sim/pan_tf_node",
+      "--ros-args",
+      "--params-file",
+      "/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/aws/native_tmp/launch_params_7y0t2rj6"
+    ]
+  },
+  {
+    "pid": 480,
+    "args": [
+      "/mnt/d/loc3d_ws/.venv/bin/python",
+      "/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/aws/audit.py",
+      "/mnt/d/loc3d_ws/install/perception/lib/perception/perception_node",
+      "--ros-args",
+      "--params-file",
+      "/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/aws/native_tmp/launch_params_xoz9v4n8"
+    ]
+  },
+  {
+    "pid": 481,
+    "args": [
+      "/usr/bin/python3",
+      "/mnt/d/loc3d_ws/install/object_db/lib/object_db/object_db_node",
+      "--ros-args",
+      "--params-file",
+      "/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/aws/native_tmp/launch_params_jjftb4rz"
+    ]
+  },
+  {
+    "pid": 482,
+    "args": [
+      "/usr/bin/python3",
+      "/mnt/d/loc3d_ws/install/scan_controller/lib/scan_controller/scan_controller_node",
+      "--ros-args",
+      "--params-file",
+      "/mnt/d/loc3d_ws/data/eval/orb_crossworld_20261111_091739/aws/native_tmp/launch_params_dpqnzzu5"
+    ]
+  }
+]

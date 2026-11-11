@@ -1,0 +1,148 @@
+header {
+  stamp {
+    nsec: 2000000
+  }
+}
+name: "camera_rig"
+id: 434
+pose {
+  position {
+    x: -2
+    y: 0.75
+    z: 0.36
+  }
+  orientation {
+    w: 1
+  }
+}
+joint {
+  name: "pan_joint"
+  id: 442
+  parent: "base_link"
+  child: "pan_link"
+  pose {
+    position {
+    }
+    orientation {
+      w: 1
+    }
+  }
+  axis1 {
+    xyz {
+      z: 1
+    }
+    limit_lower: -1e+16
+    limit_upper: 1e+16
+    damping: 0.5
+  }
+}
+
+header {
+  stamp {
+    nsec: 4000000
+  }
+}
+name: "camera_rig"
+id: 434
+pose {
+  position {
+    x: -2
+    y: 0.75
+    z: 0.36
+  }
+  orientation {
+    w: 1
+  }
+}
+joint {
+  name: "pan_joint"
+  id: 442
+  parent: "base_link"
+  child: "pan_link"
+  pose {
+    position {
+    }
+    orientation {
+      w: 1
+    }
+  }
+  axis1 {
+    xyz {
+      z: 1
+    }
+    limit_lower: -1e+16
+    limit_upper: 1e+16
+    damping: 0.5
+  }
+}
+
+header:
+  stamp:
+    sec: 0
+    nanosec: 258000000
+  frame_id: ''
+name:
+- pan_joint
+position:
+- 0.0
+velocity:
+- 0.0
+effort:
+- 0.0
+---
+header:
+  stamp:
+    sec: 0
+    nanosec: 900000000
+  frame_id: camera_optical_frame
+height: 720
+width: 1280
+distortion_model: plumb_bob
+d:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+k:
+- 914.0147013559828
+- 0.0
+- 640.0
+- 0.0
+- 914.0147013559828
+- 360.0
+- 0.0
+- 0.0
+- 1.0
+r:
+- 1.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+p:
+- 914.0147013559828
+- 0.0
+- 640.0
+- 0.0
+- 0.0
+- 914.0147013559828
+- 360.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+- 0.0
+binning_x: 0
+binning_y: 0
+roi:
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: false
+---

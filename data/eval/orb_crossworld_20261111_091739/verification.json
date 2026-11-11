@@ -1,0 +1,35 @@
+{
+  "frozen_hashes_unchanged": true,
+  "rooms": [
+    {
+      "room": "aws",
+      "frames": 18,
+      "visible_frames": {
+        "laptop_1": 4,
+        "cup_1": 4,
+        "bottle_1": 4,
+        "book_1": 3
+      },
+      "environment_geometry_materials_preserved": true,
+      "physics_step_s": 0.001,
+      "max_command_yaw_error_deg": 0.08523744821426463,
+      "max_joint_skew_ms": 0.0,
+      "p0_matches_live": true
+    },
+    {
+      "room": "tiffany",
+      "frames": 18,
+      "visible_frames": {
+        "laptop_1": 4,
+        "book_1": 4,
+        "cup_1": 4,
+        "bottle_1": 4
+      },
+      "environment_geometry_materials_preserved": true,
+      "physics_step_s": 0.001,
+      "max_command_yaw_error_deg": 0.07849645472013923,
+      "max_joint_skew_ms": 3.0,
+      "p0_matches_live": true
+    }
+  ]
+}

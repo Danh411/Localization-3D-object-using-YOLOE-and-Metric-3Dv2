@@ -1,0 +1,9 @@
+{
+  "attempt": "aws_initial_unstable",
+  "excluded_from_scoring": true,
+  "physics_step_s": 0.005,
+  "observation_source": "ros_status.sh tool output during attempt",
+  "ros_joint_sample": {"stamp_s": 49.065, "position_rad": 4.915411624412467, "velocity_rad_s": 1111.1111111111113},
+  "gazebo_joint_sample": {"stamp_s": 49.25, "position_rad": -0.640143931143089, "velocity_rad_s": -1111.1111111111113},
+  "recovery": "Retried the scene copy at 0.001 s physics step; model and ORB parameters unchanged"
+}

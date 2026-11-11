@@ -1,0 +1,46 @@
+[
+  {
+    "object_id": 6,
+    "class_name": "bottle",
+    "x": -1.906099907357541,
+    "y": 1.7044461337234285,
+    "approach_x": -1.9648453516170135,
+    "approach_y": 1.1073289150981762,
+    "yaw": 1.4727301452414099,
+    "distance_to_db_object": 0.6000000000000001,
+    "already_close": false
+  },
+  {
+    "object_id": 1,
+    "class_name": "chair",
+    "x": 3.875973468374987,
+    "y": 0.3604534233343425,
+    "approach_x": 3.277287638887577,
+    "approach_y": 0.400143189911787,
+    "yaw": -0.06619794879680035,
+    "distance_to_db_object": 0.6000000000000002,
+    "already_close": false
+  },
+  {
+    "object_id": 2,
+    "class_name": "chair",
+    "x": 3.880539554077147,
+    "y": 1.4211523197623994,
+    "approach_x": 3.2844095580338397,
+    "approach_y": 1.3531153605607529,
+    "yaw": 0.11363936210252941,
+    "distance_to_db_object": 0.6000000000000001,
+    "already_close": false
+  },
+  {
+    "object_id": 5,
+    "class_name": "chair",
+    "x": -0.3724338572076353,
+    "y": 3.110378015847233,
+    "approach_x": -0.713033812206677,
+    "approach_y": 2.6164228856434355,
+    "yaw": 0.9671276071768715,
+    "distance_to_db_object": 0.6,
+    "already_close": false
+  }
+]

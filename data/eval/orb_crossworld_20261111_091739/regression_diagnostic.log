@@ -1,0 +1,7 @@
+.../mnt/d/loc3d_ws/data/eval/multiview_36deg_geometry_fullbatch_20261110_231819/angles.py:14: RuntimeWarning: invalid value encountered in divide
+  return q[:2]/q[2],q[2]
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.111s
+
+OK

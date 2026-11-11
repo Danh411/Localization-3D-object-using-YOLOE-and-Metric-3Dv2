@@ -1,0 +1,3 @@
+aws: 18 quartets, K/TF/yaw, panoptic instance and depth-vs-AABB QA PASS
+tiffany: 18 quartets, K/TF/yaw, panoptic instance and depth-vs-AABB QA PASS
+Frozen inputs and all 142 regression tests PASS

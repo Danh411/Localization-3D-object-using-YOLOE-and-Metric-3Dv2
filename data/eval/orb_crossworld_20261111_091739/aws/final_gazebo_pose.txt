@@ -1,0 +1,4023 @@
+header {
+  stamp {
+    sec: 33
+    nsec: 347000000
+  }
+}
+pose {
+  name: "AirconditionerA_01_001"
+  id: 4
+  position {
+    x: -9.19941
+    y: 2.41123
+    z: 2.084544
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_AirconditionerA_01"
+  id: 5
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "AirconditionerB_01_001"
+  id: 9
+  position {
+    x: -2.0046559999961531
+    y: -5.2266100000023474
+    z: 0.0034844095688838657
+  }
+  orientation {
+    x: 3.3673312709070934e-10
+    y: 5.5220013881841243e-10
+    z: -4.4328586821694881e-20
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_AirconditionerB_01"
+  id: 10
+  position {
+    x: 4.4408920985006262e-16
+    y: 3.5527136788005009e-15
+    z: -1.3010426069826053e-18
+  }
+  orientation {
+    x: -8.4077907859489024e-45
+    y: 1.4926903659981326e-29
+    z: 1.2037062152420224e-35
+    w: 1
+  }
+}
+pose {
+  name: "Ball_01_001"
+  id: 14
+  position {
+    x: 3.295503000000005
+    y: 4.2256740000000095
+    z: 0.30999960292715983
+  }
+  orientation {
+    x: 5.491888003035815e-15
+    y: -2.7459440015179067e-15
+    z: 2.7617432308996994e-74
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Ball_01"
+  id: 15
+  position {
+    x: -4.8849813083506888e-15
+    y: -9.7699626167013776e-15
+    z: 2.2204460492503131e-16
+  }
+  orientation {
+    x: -7.5835922586217133e-89
+    y: -1.5167184517243429e-88
+    z: -2.7617432308996994e-74
+    w: 1
+  }
+}
+pose {
+  name: "Ball_01_003"
+  id: 19
+  position {
+    x: -6.945503
+    y: -4.22174
+    z: 0.30999960292717504
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Ball_01"
+  id: 20
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Bed_01_001"
+  id: 24
+  position {
+    x: -6.165067
+    y: 2.03056
+    z: -1e-05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Bed_01"
+  id: 25
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "NightStand_01_001"
+  id: 29
+  position {
+    x: -7.72551
+    y: 2.86042
+    z: 0.005258
+  }
+  orientation {
+    x: -1.0000000000005001e-06
+    w: 0.9999999999995
+  }
+}
+pose {
+  name: "aws_robomaker_residential_NightStand_01"
+  id: 30
+  position {
+    y: -4.4408920985006262e-16
+    z: -8.6736173798840355e-19
+  }
+  orientation {
+    x: 2.1175823681357508e-22
+    w: 1
+  }
+}
+pose {
+  name: "NightStand_01_002"
+  id: 34
+  position {
+    x: -4.407341
+    y: 2.86042
+    z: 0.005256
+  }
+  orientation {
+    y: 1.0000000000005001e-06
+    w: 0.9999999999995
+  }
+}
+pose {
+  name: "aws_robomaker_residential_NightStand_01"
+  id: 35
+  position {
+    x: 8.8817841970012523e-16
+    y: -4.4408920985006262e-16
+  }
+  orientation {
+    y: -2.1175823681357508e-22
+    w: 1
+  }
+}
+pose {
+  name: "Board_01_001"
+  id: 39
+  position {
+    x: 2.779073
+    y: -5.392703
+    z: 1.538173
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Board_01"
+  id: 40
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "ChairA_01_001"
+  id: 44
+  position {
+    x: 7.1151599999988138
+    y: 0.20902799999872143
+    z: -8.0290585017851867e-07
+  }
+  orientation {
+    x: 2.2276607426792121e-09
+    y: -3.2385866528084856e-09
+    z: -0.70188111723761148
+    w: 0.71229410868354548
+  }
+}
+pose {
+  name: "aws_robomaker_residential_ChairA_01"
+  id: 45
+  position {
+    x: -1.2891909761947318e-12
+    y: 1.2336798249634739e-12
+    z: 4.1752053915177379e-17
+  }
+  orientation {
+    x: -2.4484546131569619e-22
+    y: -7.3577715486591812e-22
+    w: 0.999999999999998
+  }
+}
+pose {
+  name: "ChairA_01_002"
+  id: 49
+  position {
+    x: 6.2550600000000118
+    y: 0.21946799999992109
+    z: -1.2748513509606671e-07
+  }
+  orientation {
+    x: 2.7549971154996512e-11
+    y: 4.164402311163384e-11
+    z: -0.68315189452381464
+    w: 0.730276310041975
+  }
+}
+pose {
+  name: "aws_robomaker_residential_ChairA_01"
+  id: 50
+  position {
+    x: -8.0380146982861334e-14
+    y: -6.2172489379008766e-15
+    z: -8.4892024253990133e-18
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "ChairA_01_003"
+  id: 54
+  position {
+    x: 6.0667800000000049
+    y: 1.6807499999998805
+    z: -1.2958945734253647e-07
+  }
+  orientation {
+    x: -4.0653029511382293e-11
+    y: 2.8913390281190032e-11
+    z: 0.70677566219484311
+    w: 0.70743774519673541
+  }
+}
+pose {
+  name: "aws_robomaker_residential_ChairA_01"
+  id: 55
+  position {
+    x: 1.2034817586936697e-13
+    y: 5.3290705182007514e-15
+    z: 3.8952715903620323e-17
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "ChairA_01_004"
+  id: 59
+  position {
+    x: 7.00277
+    y: 1.67074
+    z: -5.8459088208904565e-07
+  }
+  orientation {
+    x: -3.75219902541343e-11
+    y: 2.7938631731985528e-11
+    z: 0.69023588701693261
+    w: 0.72358442511841581
+  }
+}
+pose {
+  name: "aws_robomaker_residential_ChairA_01"
+  id: 60
+  position {
+    z: -2.4352197233561135e-21
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "ChairA_01_005"
+  id: 64
+  position {
+    x: -8.2709399999999977
+    y: 1.9166500000000009
+    z: -5.7662774672186654e-07
+  }
+  orientation {
+    x: -8.2769593229625761e-12
+    y: 4.87709400222657e-11
+    z: -3.089610993266652e-24
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_ChairA_01"
+  id: 65
+  position {
+    x: -1.7763568394002505e-15
+    y: -8.8817841970012523e-16
+    z: -1.5881867761018131e-21
+  }
+  orientation {
+    y: -2.5572584515046082e-35
+    w: 1
+  }
+}
+pose {
+  name: "ChairD_01_001"
+  id: 69
+  position {
+    x: -1.3807751025732706
+    y: 4.1044560000980868
+    z: -0.000249719472832069
+  }
+  orientation {
+    x: -7.9635996797111687e-12
+    y: 0.00048710158862937868
+    z: 2.5149369313932674e-10
+    w: 0.99999988136604545
+  }
+}
+pose {
+  name: "aws_robomaker_residential_ChairD_01"
+  id: 70
+  position {
+    x: 1.9984014443252818e-15
+    y: -8.8817841970012523e-16
+    z: -3.1840849401554294e-15
+  }
+  orientation {
+    x: -4.3822801006837648e-26
+    y: -7.0272861702144425e-19
+    z: 5.169878828456423e-26
+    w: 0.99999999999999689
+  }
+}
+pose {
+  name: "ChairD_01_002"
+  id: 74
+  position {
+    x: 0.32521410460582251
+    y: 4.104456000348752
+    z: -0.00024911010194423564
+  }
+  orientation {
+    x: -0.00048896279924478224
+    y: -6.9718520907636256e-07
+    z: 0.99999886396681248
+    w: -0.0014258260694715839
+  }
+}
+pose {
+  name: "aws_robomaker_residential_ChairD_01"
+  id: 75
+  position {
+    x: -4.8849813083506888e-15
+    y: -5.9507954119908391e-14
+    z: -2.4936649967166602e-18
+  }
+  orientation {
+    x: -8.4703294725430034e-22
+    z: 1.5178830414797062e-18
+    w: 0.99999999999999967
+  }
+}
+pose {
+  name: "ChairD_01_003"
+  id: 79
+  position {
+    x: -8.2707750671000362
+    y: -4.5044560794779978
+    z: -0.00024941342963694622
+  }
+  orientation {
+    x: -0.0002055289898410257
+    y: 0.00044248760394044462
+    z: 0.4212620723568552
+    w: 0.90693882282994387
+  }
+}
+pose {
+  name: "aws_robomaker_residential_ChairD_01"
+  id: 80
+  position {
+    x: -1.7763568394002505e-15
+    y: 1.5720758028692217e-13
+    z: -1.3530843112619095e-16
+  }
+  orientation {
+    x: 1.3552527156068805e-19
+    y: -6.7762635780344027e-20
+    z: 2.2204460492503131e-16
+    w: 0.99999999999999911
+  }
+}
+pose {
+  name: "Chandelier_01_001"
+  id: 84
+  position {
+    x: 1.221061
+    y: 4.15574
+    z: 1.295
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Chandelier_01"
+  id: 85
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Chandelier_01_002"
+  id: 89
+  position {
+    x: -6.451061
+    y: -0.69204
+    z: 1.81
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Chandelier_01"
+  id: 90
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Chandelier_01_003"
+  id: 94
+  position {
+    x: 7.824061
+    y: -1.59
+    z: 1.751
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Chandelier_01"
+  id: 95
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Chandelier_01_004"
+  id: 99
+  position {
+    x: 1.221061
+    y: -1.59204
+    z: 1.7873
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Chandelier_01"
+  id: 100
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Carpet_01_001"
+  id: 104
+  position {
+    x: 0.78505
+    y: -1.106647
+    z: 0.001106
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Carpet_01"
+  id: 105
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Carpet_01_002"
+  id: 109
+  position {
+    x: 2.85405
+    y: 3.45
+    z: 0.000585
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Carpet_01"
+  id: 110
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "SecurityCamera_01_001"
+  id: 114
+  position {
+    x: 0.84213400000137606
+    y: -4.9962939999995521
+    z: 0.49256320906744461
+  }
+  orientation {
+    x: 1.4029929874612411e-09
+    y: 1.443310002273549e-10
+    z: 0.98872967157103908
+    w: -0.14971184507254306
+  }
+}
+pose {
+  name: "aws_robomaker_residential_SecurityCamera_01"
+  id: 115
+  position {
+    x: 8.8817841970012523e-16
+    y: 9.0594198809412774e-14
+    z: -3.7747582837255322e-15
+  }
+  orientation {
+    x: -2.5849394142282115e-26
+    w: 1
+  }
+}
+pose {
+  name: "CoffeeTable_01_001"
+  id: 119
+  position {
+    x: 1.512301
+    y: -1.733438
+    z: 0.041983
+  }
+  orientation {
+    z: 0.0049999791666927081
+    w: 0.99998750002604164
+  }
+}
+pose {
+  name: "aws_robomaker_residential_CoffeeTable_01"
+  id: 120
+  position {
+    x: -4.4408920985006262e-16
+    y: -2.2204460492503131e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "CookingBench_01_001"
+  id: 124
+  position {
+    x: 9.048514266618005
+    y: -3.367363461428754
+    z: 0.90920566547794091
+  }
+  orientation {
+    x: -2.275474716657e-06
+    y: 4.13215689854648e-08
+    z: 0.99999897552564876
+    w: 0.0014314133546821897
+  }
+}
+pose {
+  name: "aws_robomaker_residential_CookingBench_01"
+  id: 125
+  position {
+    x: -2.3030151474756622e-07
+    y: 8.5120275716832339e-08
+    z: -9.5479180117763462e-14
+  }
+  orientation {
+    x: -3.3087224502121107e-23
+    y: 2.583450489125616e-20
+    z: 4.0982842119952068e-17
+    w: 0.99999999999914091
+  }
+}
+pose {
+  name: "Curtain_01_001"
+  id: 129
+  position {
+    x: -9.172642
+    y: 0.20376
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Curtain_01"
+  id: 130
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "KitchenTable_01_001"
+  id: 134
+  position {
+    x: 6.55269
+    y: 0.95117299999999561
+    z: -8.709785648932357e-07
+  }
+  orientation {
+    x: -1.6101881330412077e-10
+    y: 1.315538788122046e-11
+    z: -0.70474595514275817
+    w: 0.709459751296662
+  }
+}
+pose {
+  name: "aws_robomaker_residential_KitchenTable_01"
+  id: 135
+  position {
+    x: -5.3290705182007514e-15
+    z: 8.4703294725430034e-22
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "ReadingDesk_01_001"
+  id: 139
+  position {
+    x: -8.9872620000707126
+    y: 2.0570579999353233
+    z: 0.0014540063924080068
+  }
+  orientation {
+    x: 2.223742400676402e-08
+    y: -2.4066115929425826e-08
+    z: -0.0023189979214958455
+    w: 0.99999731112070933
+  }
+}
+pose {
+  name: "aws_robomaker_residential_ReadingDesk_01"
+  id: 140
+  position {
+    x: -5.9330318435968366e-13
+    y: -3.1974423109204508e-14
+    z: -7.589415207398531e-18
+  }
+  orientation {
+    x: 1.9884646443950517e-23
+    y: -1.4863401631812216e-24
+    z: 1.7347234759768071e-18
+    w: 0.999999999999995
+  }
+}
+pose {
+  name: "BalconyTable_01_001"
+  id: 144
+  position {
+    x: -0.55624
+    y: 4.111241
+    z: -3.1874134739581782e-11
+  }
+  orientation {
+    x: -8.9513918456393675e-13
+    y: -6.6643542008699985e-13
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_BalconyTable_01"
+  id: 145
+  position {
+    z: -3.2311742677852644e-27
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Door_01_001"
+  id: 149
+  position {
+    x: 6.001449
+    y: -5.549002
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Door_01"
+  id: 150
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Dumbbell_01_001"
+  id: 154
+  position {
+    x: 2.512849
+    y: 2.717787
+    z: 0.002183
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Dumbbell_01"
+  id: 155
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Tablet_01_001"
+  id: 159
+  position {
+    x: 1.57283
+    y: -1.775857
+    z: 0.40179
+  }
+  orientation {
+    x: -0.010312392102334082
+    y: -7.4262737990138107e-06
+    z: -0.0031587392887414546
+    w: 0.99994183674856008
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Tablet_01"
+  id: 160
+  position {
+    x: 2.2204460492503131e-16
+    y: -2.2204460492503131e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "FitnessEquipment_01_001"
+  id: 164
+  position {
+    x: 3.48472
+    y: 3.169104
+    z: 0.003168
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_FitnessEquipment_01"
+  id: 165
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "FoldingDoor_01_001"
+  id: 169
+  position {
+    x: -2.461096
+    y: 1.844219
+    z: 0.041881
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_FoldingDoor_01"
+  id: 170
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "FoldingDoor_01_002"
+  id: 174
+  position {
+    x: -2.461096
+    y: -4.05332
+    z: 0.041881
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_FoldingDoor_01"
+  id: 175
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Handle_01_001"
+  id: 179
+  position {
+    x: 5.724
+    y: -5.523
+    z: 0.9938
+  }
+  orientation {
+    z: 0.999999998926914
+    w: -4.6326794879957764e-05
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Handle_01"
+  id: 180
+  position {
+    x: -1.7763568394002505e-15
+    y: 8.8817841970012523e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "HouseWallB_01_001"
+  id: 184
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_HouseWallB_01"
+  id: 185
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "FloorB_01_001"
+  id: 189
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_FloorB_01"
+  id: 190
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "FoldingDoor_02_001"
+  id: 194
+  position {
+    x: 4.674231
+    y: 2.46451
+  }
+  orientation {
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "aws_robomaker_residential_FoldingDoor_02"
+  id: 195
+  position {
+    y: -4.4408920985006262e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "FoldingDoor_02_002"
+  id: 199
+  position {
+    x: 4.8912
+    y: -4.84968
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_FoldingDoor_02"
+  id: 200
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "KitchenCabinet_01_001"
+  id: 204
+  position {
+    x: 8.002009
+    y: -3.836509
+    z: 0.012068
+  }
+  orientation {
+    z: 0.999999683329873
+    w: -0.00079582671089185018
+  }
+}
+pose {
+  name: "aws_robomaker_residential_KitchenCabinet_01"
+  id: 205
+  position {
+    x: -8.8817841970012523e-16
+    y: -4.4408920985006262e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "KitchenUtensils_01_001"
+  id: 209
+  position {
+    x: 9.285478
+    y: -5.021261
+    z: 1.141805
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_KitchenUtensils_01"
+  id: 210
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LightC_01_001"
+  id: 214
+  position {
+    x: 1.769567
+    y: -5.444371
+    z: 2
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_LightC_01"
+  id: 215
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LightC_01_002"
+  id: 219
+  position {
+    x: -0.138245
+    y: -5.444371
+    z: 2
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_LightC_01"
+  id: 220
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "PortraitA_01"
+  id: 224
+  position {
+    x: -2.71236
+    y: -4.817539
+    z: 1
+  }
+  orientation {
+    z: 0.70569103858359172
+    w: 0.70851969490114508
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitA_01"
+  id: 225
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "PortraitB_01"
+  id: 229
+  position {
+    x: -1.279683
+    y: -5.42963
+  }
+  orientation {
+    x: 0.00047809127963121764
+    y: -0.038438053107654233
+    z: 0.99918358520912387
+    w: -0.012427813591422887
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitB_01"
+  id: 230
+  position {
+    x: 4.4408920985006262e-16
+    y: 1.7763568394002505e-15
+    z: 5.5511151231257827e-17
+  }
+  orientation {
+    x: 6.9388939039072284e-18
+    y: -5.4210108624275222e-20
+    w: 1
+  }
+}
+pose {
+  name: "PortraitB_02"
+  id: 234
+  position {
+    x: 5.737017
+    y: 3.08031
+    z: 0.3
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitB_02"
+  id: 235
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "PortraitB_03"
+  id: 239
+  position {
+    x: 3.07138
+    y: -5.349366
+    z: 0.005494
+  }
+  orientation {
+    x: -0.0015711948600953451
+    y: -0.0840998187306871
+    z: 0.99628224237320717
+    w: 0.018613042953561896
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitB_03"
+  id: 240
+  position {
+    x: -4.4408920985006262e-16
+    y: 1.7763568394002505e-15
+    z: 1.1102230246251565e-16
+  }
+  orientation {
+    x: 1.3877787807814457e-17
+    z: 3.4694469519536142e-18
+    w: 1
+  }
+}
+pose {
+  name: "PortraitA_02"
+  id: 244
+  position {
+    x: 7.937017
+    y: 3.08031
+    z: 0.3
+  }
+  orientation {
+    z: 0.99999968293183461
+    w: 0.00079632671073326324
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitA_02"
+  id: 245
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "PortraitC_01"
+  id: 249
+  position {
+    x: -9.294904
+    y: -4.526084
+    z: 1
+  }
+  orientation {
+    z: 0.70140514821029354
+    w: 0.71276280631364053
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitC_01"
+  id: 250
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "PortraitD_01"
+  id: 254
+  position {
+    x: 0.789763
+    y: -5.478725
+    z: 1.8
+  }
+  orientation {
+    z: 0.99999882828489084
+    w: 0.0015308261969989643
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitD_01"
+  id: 255
+  position {
+    x: 1.1102230246251565e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "PortraitD_02"
+  id: 259
+  position {
+    x: 6.870181
+    y: 3.08031
+    z: 1.488439
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitD_02"
+  id: 260
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "PortraitE_01"
+  id: 264
+  position {
+    x: -5.773094
+    y: -5.492466
+    z: 1
+  }
+  orientation {
+    z: 0.99998995214879
+    w: 0.00448281178062777
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitE_01"
+  id: 265
+  position {
+    x: -8.8817841970012523e-16
+    y: 1.7763568394002505e-15
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "PortraitE_02"
+  id: 269
+  position {
+    x: -6.193025
+    y: -1.590208
+    z: 0.3
+  }
+  orientation {
+    z: 0.0021449983551339422
+    w: 0.999997699488382
+  }
+}
+pose {
+  name: "aws_robomaker_residential_PortraitE_02"
+  id: 270
+  position {
+    x: -8.8817841970012523e-16
+    y: -2.2204460492503131e-16
+    z: 5.5511151231257827e-17
+  }
+  orientation {
+    z: -4.3368086899420177e-19
+    w: 1
+  }
+}
+pose {
+  name: "DeskPortraitA_01"
+  id: 274
+  position {
+    x: -0.0368640635535755
+    y: -5.1101562904043369
+    z: 0.49260395368721177
+  }
+  orientation {
+    x: -2.8838280443888219e-05
+    y: -0.00026854477363671774
+    z: 0.99429113731671193
+    w: 0.10670080274073239
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitA_01"
+  id: 275
+  position {
+    x: -2.4724666758402236e-12
+    y: 2.4771296125436493e-11
+    z: 1.6653345369377348e-15
+  }
+  orientation {
+    x: -1.951563910473908e-18
+    y: 2.3716922523120409e-19
+    z: -1.2351231148954867e-15
+    w: 0.99999999999999034
+  }
+}
+pose {
+  name: "DeskPortraitA_02"
+  id: 279
+  position {
+    x: 2.0460941581161332
+    y: -1.8929259072176232
+    z: 0.065166665348882519
+  }
+  orientation {
+    x: -0.00019014739351797224
+    y: -0.00019116232419630366
+    z: 0.70902157622524853
+    w: 0.70518673537443388
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitA_02"
+  id: 280
+  position {
+    x: -1.0668932404200859e-10
+    y: -3.8729019991023961e-12
+    z: -1.006972283335017e-13
+  }
+  orientation {
+    x: -8.8904578143811364e-18
+    y: -8.5380921083233474e-18
+    z: -9.43689570931383e-16
+    w: 0.99999999999997335
+  }
+}
+pose {
+  name: "DeskPortraitC_01"
+  id: 284
+  position {
+    x: -7.7463761032363392
+    y: 2.7310759890801219
+    z: 0.694526295407571
+  }
+  orientation {
+    x: 6.1214410343265726e-06
+    y: -2.1025548460565281e-07
+    z: -0.027746909538305772
+    w: 0.99961498036672913
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitC_01"
+  id: 285
+  position {
+    x: -2.2026824808563106e-13
+    y: -6.6258110109629342e-13
+    z: 1.1102230246251565e-15
+  }
+  orientation {
+    x: -9.1066795177800476e-20
+    y: -1.3891340334970526e-19
+    z: 4.5102810375396984e-17
+    w: 0.99999999999999034
+  }
+}
+pose {
+  name: "DeskPortraitC_02"
+  id: 289
+  position {
+    x: 0.96461653421734783
+    y: -1.5869522399702904
+    z: 0.066128841767807547
+  }
+  orientation {
+    x: 5.1310397138311892e-06
+    y: -5.2240125969970355e-06
+    z: -0.70989500217131885
+    w: 0.70430752220786341
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitC_02"
+  id: 290
+  position {
+    x: 1.3702372569923682e-12
+    y: 5.6860072206177392e-12
+    z: -1.1102230246251565e-15
+  }
+  orientation {
+    x: -4.7476196693603534e-19
+    y: 1.2074454663110051e-18
+    z: 2.0539125955565396e-15
+    w: 0.99999999999999267
+  }
+}
+pose {
+  name: "DeskPortraitD_01"
+  id: 294
+  position {
+    x: 2.6455599999950232
+    y: -5.3762249999918277
+    z: 1.5741647565328893
+  }
+  orientation {
+    x: -4.5793139811769331e-10
+    y: -3.7522900760544473e-09
+    z: 0.99989656173848207
+    w: -0.014382830860643897
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitD_01"
+  id: 295
+  position {
+    x: -4.5630166312093934e-12
+    y: 9.43245481721533e-12
+    z: -7.5495165674510645e-15
+  }
+  orientation {
+    x: 1.6543612251060553e-24
+    y: -5.6868667113020653e-25
+    z: -3.7296554733501353e-16
+    w: 0.999999999999998
+  }
+}
+pose {
+  name: "DeskPortraitD_02"
+  id: 299
+  position {
+    x: -0.58921103169435429
+    y: -5.1098899981936992
+    z: 0.19237080151219541
+  }
+  orientation {
+    x: 7.6867020098339111e-07
+    y: -1.0717302137569339e-07
+    z: 0.99989452382191757
+    w: -0.014523815970794444
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitD_02"
+  id: 300
+  position {
+    x: 1.3586909375362666e-12
+    y: 1.0420109219921869e-11
+    z: 1.9428902930940239e-16
+  }
+  orientation {
+    x: -1.9322939109238726e-21
+    y: 7.2103679635022316e-20
+    z: -3.4694469519536142e-18
+    w: 0.99999999999999256
+  }
+}
+pose {
+  name: "DeskPortraitD_03"
+  id: 304
+  position {
+    x: 1.8267290012094355
+    y: -1.4648810014584555
+    z: 0.064784319249803241
+  }
+  orientation {
+    x: 1.9813368932145287e-07
+    y: 4.9044028476896776e-07
+    z: 0.999907435363649
+    w: -0.013605906961550009
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitD_03"
+  id: 305
+  position {
+    x: -1.9862778088963751e-11
+    y: 1.6376677791640759e-11
+    z: -1.27675647831893e-15
+  }
+  orientation {
+    x: -3.5998900258307764e-20
+    y: 1.3843694731687471e-20
+    z: 3.4694469519536142e-17
+    w: 0.9999999999999819
+  }
+}
+pose {
+  name: "DeskPortraitD_04"
+  id: 309
+  position {
+    x: 4.302131869690081
+    y: -5.17656967741997
+    z: 0.00018465478571062284
+  }
+  orientation {
+    x: 5.4593770828063054e-08
+    y: 3.47803620810992e-08
+    z: 0.99887428687740976
+    w: 0.047435841040662542
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitD_04"
+  id: 310
+  position {
+    x: -3.7930192320345668e-10
+    y: 4.1484682355985569e-10
+    z: -5.06203748622952e-13
+  }
+  orientation {
+    x: 3.6297909506133433e-17
+    y: -1.33948996185407e-18
+    z: -1.762479051592436e-15
+    w: 0.99999999999995359
+  }
+}
+pose {
+  name: "DeskPortraitB_01"
+  id: 314
+  position {
+    x: 3.5473760121494395
+    y: -5.0838979991587676
+    z: -0.012660604190891361
+  }
+  orientation {
+    x: -0.0079416545703114017
+    y: -0.16732917880432849
+    z: 0.98476059155595641
+    w: 0.046738136053095729
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitB_01"
+  id: 315
+  position {
+    x: 4.4408920985006262e-15
+    y: 2.6645352591003757e-15
+    z: 2.2204460492503131e-16
+  }
+  orientation {
+    y: -3.4694469519536142e-18
+    z: -1.3877787807814457e-17
+    w: 1
+  }
+}
+pose {
+  name: "DeskPortraitB_02"
+  id: 319
+  position {
+    x: 2.4862700013208645
+    y: -5.1025249860540542
+    z: -0.0126606041908926
+  }
+  orientation {
+    x: -0.007936909391016227
+    y: -0.16732937900718853
+    z: 0.98476192762205306
+    w: 0.046710066329283303
+  }
+}
+pose {
+  name: "aws_robomaker_residential_DeskPortraitB_02"
+  id: 320
+  position {
+    x: 2.2204460492503131e-15
+    y: -4.4408920985006262e-15
+    z: -8.8817841970012523e-16
+  }
+  orientation {
+    x: 2.7755575615628914e-17
+    y: -6.9388939039072284e-18
+    z: 1.3877787807814457e-17
+    w: 1
+  }
+}
+pose {
+  name: "Rangehood_01_001"
+  id: 324
+  position {
+    x: 9.019794
+    y: -3.36994
+    z: 1.507605
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Rangehood_01"
+  id: 325
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Refrigerator_01_001"
+  id: 329
+  position {
+    x: 8.702731
+    y: -1.032031
+  }
+  orientation {
+    z: -0.70452208551964379
+    w: 0.70968206333192041
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Refrigerator_01"
+  id: 330
+  position {
+    x: -8.8817841970012523e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "SeasoningBox_01_001"
+  id: 334
+  position {
+    x: 9.10796798052745
+    y: -2.6517260036751065
+    z: 0.90976618001583742
+  }
+  orientation {
+    x: 1.4698991810981172e-07
+    y: 2.4756492524419097e-07
+    z: 0.00064500004901145544
+    w: 0.99999979198758
+  }
+}
+pose {
+  name: "aws_robomaker_residential_SeasoningBox_01"
+  id: 335
+  position {
+    x: -1.4779288903810084e-12
+    y: -9.00701735417897e-12
+    z: 3.5771385853422544e-13
+  }
+  orientation {
+    x: 5.5470018434527709e-19
+    y: -1.2621887445388591e-18
+    z: -7.7845715984459218e-17
+    w: 0.99999999999982525
+  }
+}
+pose {
+  name: "SofaC_01_001"
+  id: 339
+  position {
+    x: 0.33069900000081831
+    y: -1.9027919999981318
+    z: 0.00019989488292533364
+  }
+  orientation {
+    x: -1.7746561547297618e-09
+    y: 4.6096120179231154e-09
+    z: 0.70743786761387617
+    w: 0.70677553966300488
+  }
+}
+pose {
+  name: "aws_robomaker_residential_SofaC_01"
+  id: 340
+  position {
+    x: -8.8817841970012523e-16
+    y: 5.2180482157382357e-15
+    z: -1.0042422622646985e-16
+  }
+  orientation {
+    x: 8.06501097239202e-23
+    y: 1.1683926152311516e-22
+    w: 1
+  }
+}
+pose {
+  name: "Tableware_01_001"
+  id: 344
+  position {
+    x: 7.15317088305852
+    y: 0.98276709259591444
+    z: 0.819015657151861
+  }
+  orientation {
+    x: 1.1048420346602336e-06
+    y: 1.4289563856776984e-06
+    z: 0.490252932791745
+    w: 0.8715802096685572
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Tableware_01"
+  id: 345
+  position {
+    x: -7.560441162013376e-11
+    y: -1.9162715858556112e-10
+    z: -1.9539925233402755e-13
+  }
+  orientation {
+    x: 8.0046731097899518e-18
+    y: 7.3046003788842725e-19
+    z: 5.4956039718945249e-15
+    w: 0.999999999999972
+  }
+}
+pose {
+  name: "Trash_01_001"
+  id: 349
+  position {
+    x: 2.3601510000000121
+    y: -0.79623799999997991
+    z: 0.00090284938255506017
+  }
+  orientation {
+    x: -1.3566796148473681e-11
+    y: 1.3259050845623779e-11
+    z: 5.6307726060691459e-25
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Trash_01"
+  id: 350
+  position {
+    x: -8.8817841970012523e-16
+    y: 1.1102230246251565e-15
+    z: -8.6736173798840355e-19
+  }
+  orientation {
+    x: -4.0091470651382935e-50
+    y: 7.639154410495e-36
+    z: 2.9387358770557188e-39
+    w: 1
+  }
+}
+pose {
+  name: "Trash_01_002"
+  id: 354
+  position {
+    x: -8.70415099998363
+    y: 1.0005800000731917
+    z: 0.00090314629611272263
+  }
+  orientation {
+    x: -3.9532909550894223e-08
+    y: 8.9666172601697188e-09
+    z: 7.5017920280200484e-13
+    w: 0.99999999999999911
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Trash_01"
+  id: 355
+  position {
+    x: 1.9539925233402755e-14
+    y: -3.9968028886505635e-15
+    z: -1.0842021724855044e-19
+  }
+  orientation {
+    x: 1.1249656330726217e-22
+    y: 6.3552976636400334e-23
+    z: -4.0389678347315804e-28
+    w: 1
+  }
+}
+pose {
+  name: "TV_01_001"
+  id: 359
+  position {
+    x: 0.824259
+    y: -5.382968
+    z: 0.676282
+  }
+  orientation {
+    z: -0.7038990683458024
+    w: 0.71030000815283068
+  }
+}
+pose {
+  name: "aws_robomaker_residential_TV_01"
+  id: 360
+  position {
+    x: 1.7763568394002505e-15
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "TV_02_001"
+  id: 364
+  position {
+    x: -6.197322
+    y: -1.388739
+    z: 0.676282
+  }
+  orientation {
+    z: -0.7038990683458024
+    w: 0.71030000815283068
+  }
+}
+pose {
+  name: "aws_robomaker_residential_TV_02"
+  id: 365
+  position {
+    x: 8.8817841970012523e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "TVCabinet_01_001"
+  id: 369
+  position {
+    x: 0.629509
+    y: -5.183576
+    z: -0.017049
+  }
+  orientation {
+    z: 0.71007167747059341
+    w: 0.70412940064600171
+  }
+}
+pose {
+  name: "aws_robomaker_residential_TVCabinet_01"
+  id: 370
+  position {
+    y: -4.4408920985006262e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Vase_01_001"
+  id: 374
+  position {
+    x: 3.0556613783132103
+    y: -5.4130799984505487
+    z: 1.5749088512043752
+  }
+  orientation {
+    x: 2.0209990502985975e-08
+    y: 1.6915425177984538e-09
+    z: 0.00042111102344072256
+    w: 0.999999911332987
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Vase_01"
+  id: 375
+  position {
+    x: -4.4626524697832792e-12
+    y: -2.4575896873102465e-12
+    z: 1.1057821325266559e-13
+  }
+  orientation {
+    x: -1.2469414519390527e-22
+    y: -4.1696782753547049e-18
+    z: -1.7889335846010823e-18
+    w: 0.99999999999977751
+  }
+}
+pose {
+  name: "RoomWall_01_001"
+  id: 379
+  position {
+    x: -6.09755
+    y: -1.49618
+    z: 0.028124
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWall_01"
+  id: 380
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Wardrobe_01_001"
+  id: 384
+  position {
+    x: -3.14671
+    y: 2.476204
+    z: 0.000704
+  }
+  orientation {
+    z: -0.7067095136763587
+    w: 0.70750382562875558
+  }
+}
+pose {
+  name: "aws_robomaker_residential_Wardrobe_01"
+  id: 385
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "RoomWindow_01_001"
+  id: 389
+  position {
+    x: -9.4186
+    y: -0.026285
+    z: 0.502739
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWindow_01"
+  id: 390
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "RoomWindow_01_002"
+  id: 394
+  position {
+    x: -9.4186
+    y: -2.37409
+    z: 0.502739
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWindow_01"
+  id: 395
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "RoomWindow_01_003"
+  id: 399
+  position {
+    x: 9.422616
+    y: -3.373981
+    z: 0.502739
+  }
+  orientation {
+    z: 0.99999622747365136
+    w: -0.0027468233407368348
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWindow_01"
+  id: 400
+  position {
+    x: 3.5527136788005009e-15
+    y: -4.4408920985006262e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "RoomWindow_01_004"
+  id: 404
+  position {
+    x: 9.422558
+    y: 0.96852
+    z: 0.496581
+  }
+  orientation {
+    z: 0.99999622747365136
+    w: -0.0027468233407368348
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWindow_01"
+  id: 405
+  position {
+    x: 1.7763568394002505e-15
+    y: 1.1102230246251565e-16
+    z: 5.5511151231257827e-17
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "RoomWindow_01_005"
+  id: 409
+  position {
+    x: 4.722317
+    y: 4.470281
+    z: 0.502739
+  }
+  orientation {
+    z: 0.99999622747365136
+    w: -0.0027468233407368348
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWindow_01"
+  id: 410
+  position {
+    x: 8.8817841970012523e-16
+    y: -8.8817841970012523e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "RoomWindow_01_006"
+  id: 414
+  position {
+    x: 3.48852
+    y: 5.600688
+    z: 0.502739
+  }
+  orientation {
+    z: -0.70550609090913241
+    w: 0.70870385612758935
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWindow_01"
+  id: 415
+  position {
+    x: 8.8817841970012523e-16
+    y: 8.8817841970012523e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "RoomWindow_01_007"
+  id: 419
+  position {
+    x: 1.140949
+    y: 5.600688
+    z: 0.502739
+  }
+  orientation {
+    z: -0.70550609090913241
+    w: 0.70870385612758935
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWindow_01"
+  id: 420
+  position {
+    x: 1.7763568394002505e-15
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "RoomWindow_01_008"
+  id: 424
+  position {
+    x: -1.19934
+    y: 5.600688
+    z: 0.502739
+  }
+  orientation {
+    z: -0.70550609090913241
+    w: 0.70870385612758935
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWindow_01"
+  id: 425
+  position {
+    x: 8.8817841970012523e-16
+    y: 8.8817841970012523e-16
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "RoomWindow_01_009"
+  id: 429
+  position {
+    x: -2.396624
+    y: 4.387607
+    z: 0.502739
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "aws_robomaker_residential_RoomWindow_01"
+  id: 430
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "camera_rig"
+  id: 434
+  position {
+    x: -2
+    y: 0.75
+    z: 0.36
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "laptop_1"
+  id: 443
+  position {
+    x: -1.48
+    y: 2.4
+    z: 0.0060029999999999754
+  }
+  orientation {
+    z: 0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "book_1"
+  id: 447
+  position {
+    x: -2.45
+    y: 2.55
+    z: 0.0059689999999999969
+  }
+  orientation {
+    z: 0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "cup_1"
+  id: 451
+  position {
+    x: -2.12
+    y: 2.1
+    z: 0.0060280000000000281
+  }
+  orientation {
+    z: 0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "bottle_1"
+  id: 455
+  position {
+    x: -1.85
+    y: 2.35
+    z: 0.13622035679398292
+  }
+  orientation {
+    x: 0.49999991830126916
+    y: 0.49999991830126911
+    z: 0.50000008169871746
+    w: 0.50000008169871757
+  }
+}
+pose {
+  name: "link"
+  id: 6
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 11
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 16
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 21
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 26
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 31
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 36
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 41
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 46
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 51
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 56
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 61
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 66
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 71
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 76
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 81
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 86
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 91
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 96
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 101
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 106
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 111
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 116
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 121
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 126
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 131
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 136
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 141
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 146
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 151
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 156
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 161
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 166
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 171
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 176
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 181
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 186
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 191
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 196
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 201
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 206
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 211
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 216
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 221
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 226
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 231
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 236
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 241
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 246
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 251
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 256
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 261
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 266
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 271
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 276
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 281
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 286
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 291
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 296
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 301
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 306
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 311
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 316
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 321
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 326
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 331
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 336
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 341
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 346
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 351
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 356
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 361
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 366
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 371
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 376
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 381
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 386
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 391
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 396
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 401
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 406
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 411
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 416
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 421
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 426
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 431
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link"
+  id: 435
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pan_link"
+  id: 437
+  position {
+  }
+  orientation {
+    z: -0.17229014289280406
+    w: 0.98504624595090828
+  }
+}
+pose {
+  name: "link_0"
+  id: 444
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link_0"
+  id: 448
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link_0"
+  id: 452
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 456
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 7
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 12
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 17
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 22
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 27
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 32
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 37
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 42
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 47
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 52
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 57
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 62
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 67
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 72
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 77
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 82
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 87
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 92
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 97
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 102
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 107
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 112
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 117
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 122
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 127
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 132
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 137
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 142
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 147
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 152
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 157
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 162
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 167
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 172
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 177
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 182
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 187
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 192
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 197
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 202
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 207
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 212
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 217
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 222
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 227
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 232
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 237
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 242
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 247
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 252
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 257
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 262
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 267
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 272
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 277
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 282
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 287
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 292
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 297
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 302
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 307
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 312
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 317
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 322
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 327
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 332
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 337
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 342
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 347
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 352
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 357
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 362
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 367
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 372
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 377
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 382
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 387
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 392
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 397
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 402
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 407
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 412
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 417
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 422
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 427
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 432
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "v"
+  id: 436
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "v"
+  id: 438
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 445
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 449
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 453
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 457
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LivingRoom_CeilingLight_0Visual"
+  id: 460
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LivingRoom_CeilingLight_1Visual"
+  id: 462
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LivingRoom_WallLight_0Visual"
+  id: 464
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LivingRoom_WallLight_1Visual"
+  id: 466
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "TV_Light_0Visual"
+  id: 468
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "BedRoom_Portrait_Light_0Visual"
+  id: 470
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "BedRoom_CeilingLight_0Visual"
+  id: 472
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Kitchen_CeilingLight_0Visual"
+  id: 474
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LivingRoom_CeilingLight_0"
+  id: 459
+  position {
+    x: 1.194296
+    y: 4.155759
+    z: 2.2
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LivingRoom_CeilingLight_1"
+  id: 461
+  position {
+    x: 1.194296
+    y: -1.589959
+    z: 2.2
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LivingRoom_WallLight_0"
+  id: 463
+  position {
+    x: 1.76956
+    y: -5.44437
+    z: 2.2
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "LivingRoom_WallLight_1"
+  id: 465
+  position {
+    x: -0.13826
+    y: -5.44437
+    z: 2.2
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "TV_Light_0"
+  id: 467
+  position {
+    x: 0.8269
+    y: -4.939577
+    z: 1.1
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "BedRoom_Portrait_Light_0"
+  id: 469
+  position {
+    x: -6.190379
+    y: -1.829697
+    z: 1.5587
+  }
+  orientation {
+    x: 0.14943813247359924
+    w: 0.98877107793604235
+  }
+}
+pose {
+  name: "BedRoom_CeilingLight_0"
+  id: 471
+  position {
+    x: -6.451061
+    y: -0.69204
+    z: 2
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "Kitchen_CeilingLight_0"
+  id: 473
+  position {
+    x: 7.8582
+    y: -1.5905
+    z: 2.28
+  }
+  orientation {
+    w: 1
+  }
+}
+

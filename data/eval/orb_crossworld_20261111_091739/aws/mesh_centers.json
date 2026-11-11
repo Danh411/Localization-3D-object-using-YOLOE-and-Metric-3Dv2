@@ -1,0 +1,114 @@
+{
+  "laptop_1": {
+    "method": "Source mesh AABB under translation and 0/90-degree yaw",
+    "aabb_min_m": [
+      -1.667664,
+      2.2325269999999997,
+      0.006
+    ],
+    "aabb_max_m": [
+      -1.2922879999999999,
+      2.565202,
+      0.199866
+    ],
+    "mesh_aabb_center_world_m": [
+      -1.479976,
+      2.3988645,
+      0.102933
+    ],
+    "yaml_ref_world_m": [
+      -1.479976,
+      2.3988645,
+      0.102933
+    ],
+    "center_minus_yaml_m": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "book_1": {
+    "method": "Source mesh AABB under translation and 0/90-degree yaw",
+    "aabb_min_m": [
+      -2.4717290000000003,
+      2.479234,
+      0.006
+    ],
+    "aabb_max_m": [
+      -2.421176,
+      2.6197739999999996,
+      0.216368
+    ],
+    "mesh_aabb_center_world_m": [
+      -2.4464525000000004,
+      2.5495039999999998,
+      0.111184
+    ],
+    "yaml_ref_world_m": [
+      -2.4464525000000004,
+      2.5495039999999998,
+      0.111184
+    ],
+    "center_minus_yaml_m": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "cup_1": {
+    "method": "Source mesh AABB under translation and 0/90-degree yaw",
+    "aabb_min_m": [
+      -2.16417,
+      2.036931,
+      0.006
+    ],
+    "aabb_max_m": [
+      -2.073546,
+      2.163253,
+      0.14093600000000006
+    ],
+    "mesh_aabb_center_world_m": [
+      -2.118858,
+      2.100092,
+      0.07346800000000003
+    ],
+    "yaml_ref_world_m": [
+      -2.118858,
+      2.100092,
+      0.07346800000000003
+    ],
+    "center_minus_yaml_m": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "bottle_1": {
+    "method": "Source mesh AABB under translation and 0/90-degree yaw",
+    "aabb_min_m": [
+      -1.9044500664553394,
+      2.29554999,
+      0.006000000000000005
+    ],
+    "aabb_max_m": [
+      -1.7955499335446607,
+      2.40445001,
+      0.26644071358796584
+    ],
+    "mesh_aabb_center_world_m": [
+      -1.85,
+      2.35,
+      0.13622035679398292
+    ],
+    "yaml_ref_world_m": [
+      -1.85,
+      2.35,
+      0.13622035679398292
+    ],
+    "center_minus_yaml_m": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

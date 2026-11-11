@@ -1,0 +1,379 @@
+{
+  "scan_id": "scan_1794364355",
+  "frames": 18,
+  "live_observations": 27,
+  "a_matches_live": true,
+  "wire_tf_missing": [],
+  "bbox_blob_columns": 108,
+  "targets": {
+    "laptop_1": {
+      "visible": 4,
+      "true_detections": 3,
+      "false_class": 0,
+      "missed_visible": 1,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 3,
+      "visible_stops": [
+        0,
+        1,
+        16,
+        17
+      ],
+      "visibility_status": {
+        "visible": 3,
+        "edge_cut_gt": 1,
+        "outside_fov": 13,
+        "frustum_uncertain": 1
+      }
+    },
+    "book_1": {
+      "visible": 4,
+      "true_detections": 0,
+      "false_class": 0,
+      "missed_visible": 4,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 0,
+      "visible_stops": [
+        0,
+        1,
+        2,
+        17
+      ],
+      "visibility_status": {
+        "visible": 3,
+        "outside_fov": 14,
+        "edge_cut_gt": 1
+      }
+    },
+    "cup_1": {
+      "visible": 4,
+      "true_detections": 3,
+      "false_class": 0,
+      "missed_visible": 1,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 3,
+      "visible_stops": [
+        0,
+        1,
+        2,
+        17
+      ],
+      "visibility_status": {
+        "visible": 3,
+        "edge_cut_gt": 1,
+        "outside_fov": 14
+      }
+    },
+    "bottle_1": {
+      "visible": 4,
+      "true_detections": 3,
+      "false_class": 0,
+      "missed_visible": 1,
+      "depth_rejected": 0,
+      "truncated": 1,
+      "valid_observations": 3,
+      "visible_stops": [
+        0,
+        1,
+        16,
+        17
+      ],
+      "visibility_status": {
+        "visible": 3,
+        "outside_fov": 14,
+        "edge_cut_gt": 1
+      }
+    }
+  },
+  "branches": {
+    "A": {
+      "association": {
+        "merged_pairs": [],
+        "confirmed": 5,
+        "rejected": 5
+      },
+      "final_confirmed": 5,
+      "scoped_confirmed": 3,
+      "unique_clean_instances": 3,
+      "localized_under_match_radius": 0,
+      "wrong_confirmed": 0,
+      "duplicate_confirmed": 0,
+      "unresolved_target_predictions": [],
+      "recall": 0.75,
+      "localized_recall": 0.0,
+      "precision": 1.0,
+      "localized_precision": 0.0,
+      "precision_conservative": 1.0,
+      "duplicate_rate": 0.0,
+      "xy_m": {
+        "mean": 1.0385097601079771,
+        "median": 1.0684480076060838,
+        "p90": 1.1540584906075078
+      },
+      "xyz_m": {
+        "mean": 1.0528873214106726,
+        "median": 1.0789547178661123,
+        "p90": 1.1654752914120723
+      },
+      "depth": {
+        "n": 9,
+        "absrel": 0.6645526344089705,
+        "mae_m": 0.9138662550184462,
+        "bias_m": -0.9138662550184462,
+        "clipped": 0
+      },
+      "primary": {
+        "cup_1": {
+          "method": "A",
+          "object_id": 1,
+          "scan_id": "scan_1794364355",
+          "class_name": "cup",
+          "x": -1.3678079493331456,
+          "y": 1.4184130894292992,
+          "z": 0.2628641754404111,
+          "weight_sum": 8.501926863491903,
+          "n_obs": 3,
+          "conf_sum": 2.3551793098449707,
+          "conf_mean": 0.7850597699483236,
+          "first_seen_stop": 0,
+          "last_seen_stop": 17,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-11T02:35:26.142971+00:00",
+          "updated_at": "2026-11-11T02:35:30.010706+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "cup_1",
+          "xy_m": 0.8716201613599842,
+          "xyz_m": 0.8926018115673429,
+          "obs_linked": 3,
+          "instance_votes": {
+            "cup_1": 3
+          },
+          "true_votes": {
+            "cup_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        },
+        "laptop_1": {
+          "method": "A",
+          "object_id": 2,
+          "scan_id": "scan_1794364355",
+          "class_name": "laptop",
+          "x": -1.3234484286412629,
+          "y": 1.2094363189481396,
+          "z": 0.26579586206869726,
+          "weight_sum": 6.471755547054226,
+          "n_obs": 3,
+          "conf_sum": 1.9052762389183044,
+          "conf_mean": 0.6350920796394348,
+          "first_seen_stop": 0,
+          "last_seen_stop": 17,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-11T02:35:26.211856+00:00",
+          "updated_at": "2026-11-11T02:35:30.033331+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "laptop_1",
+          "xy_m": 1.1754611113578637,
+          "xyz_m": 1.1871054347985623,
+          "obs_linked": 3,
+          "instance_votes": {
+            "laptop_1": 3
+          },
+          "true_votes": {
+            "laptop_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        },
+        "bottle_1": {
+          "method": "A",
+          "object_id": 6,
+          "scan_id": "scan_1794364355",
+          "class_name": "bottle",
+          "x": -1.3142146440445426,
+          "y": 1.325017558159308,
+          "z": 0.28342734147889015,
+          "weight_sum": 4.857781827588408,
+          "n_obs": 3,
+          "conf_sum": 1.7861566543579102,
+          "conf_mean": 0.5953855514526367,
+          "first_seen_stop": 1,
+          "last_seen_stop": 17,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-11T02:35:26.806720+00:00",
+          "updated_at": "2026-11-11T02:35:29.963462+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "bottle_1",
+          "xy_m": 1.0684480076060838,
+          "xyz_m": 1.0789547178661123,
+          "obs_linked": 3,
+          "instance_votes": {
+            "bottle_1": 3
+          },
+          "true_votes": {
+            "bottle_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        }
+      },
+      "association_sqlite_s": 0.9332671540003048
+    },
+    "B": {
+      "association": {
+        "merged_pairs": [],
+        "confirmed": 5,
+        "rejected": 6
+      },
+      "final_confirmed": 5,
+      "scoped_confirmed": 3,
+      "unique_clean_instances": 3,
+      "localized_under_match_radius": 0,
+      "wrong_confirmed": 0,
+      "duplicate_confirmed": 0,
+      "unresolved_target_predictions": [],
+      "recall": 0.75,
+      "localized_recall": 0.0,
+      "precision": 1.0,
+      "localized_precision": 0.0,
+      "precision_conservative": 1.0,
+      "duplicate_rate": 0.0,
+      "xy_m": {
+        "mean": 0.8801355348048084,
+        "median": 0.9100263783620192,
+        "p90": 0.9796375049063983
+      },
+      "xyz_m": {
+        "mean": 0.8918050773433542,
+        "median": 0.9186544749328507,
+        "p90": 0.9883925215514667
+      },
+      "depth": {
+        "n": 9,
+        "absrel": 0.5397550247700518,
+        "mae_m": 0.7433724561853251,
+        "bias_m": -0.7433724561853251,
+        "clipped": 0
+      },
+      "primary": {
+        "cup_1": {
+          "method": "B",
+          "object_id": 1,
+          "scan_id": "scan_1794364355",
+          "class_name": "cup",
+          "x": -1.2300025142026323,
+          "y": 1.4299416216010674,
+          "z": 0.23206623884108354,
+          "weight_sum": 6.576770627890796,
+          "n_obs": 3,
+          "conf_sum": 2.3551793098449707,
+          "conf_mean": 0.7850597699483236,
+          "first_seen_stop": 0,
+          "last_seen_stop": 17,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-11T02:35:26.175483+00:00",
+          "updated_at": "2026-11-11T02:35:30.171194+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "cup_1",
+          "xy_m": 0.7333399395099127,
+          "xyz_m": 0.7509337238910917,
+          "obs_linked": 3,
+          "instance_votes": {
+            "cup_1": 3
+          },
+          "true_votes": {
+            "cup_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        },
+        "laptop_1": {
+          "method": "B",
+          "object_id": 2,
+          "scan_id": "scan_1794364355",
+          "class_name": "laptop",
+          "x": -1.1535717260319898,
+          "y": 1.1548566001260128,
+          "z": 0.23259304575413783,
+          "weight_sum": 3.8375678270038147,
+          "n_obs": 3,
+          "conf_sum": 1.9052762389183044,
+          "conf_mean": 0.6350920796394348,
+          "first_seen_stop": 0,
+          "last_seen_stop": 17,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-11T02:35:26.243731+00:00",
+          "updated_at": "2026-11-11T02:35:30.194686+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "laptop_1",
+          "xy_m": 0.9970402865424931,
+          "xyz_m": 1.0058270332061208,
+          "obs_linked": 3,
+          "instance_votes": {
+            "laptop_1": 3
+          },
+          "true_votes": {
+            "laptop_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        },
+        "bottle_1": {
+          "method": "B",
+          "object_id": 7,
+          "scan_id": "scan_1794364355",
+          "class_name": "bottle",
+          "x": -1.1566085479054407,
+          "y": 1.3087968919404889,
+          "z": 0.25883100522578883,
+          "weight_sum": 3.351962515928316,
+          "n_obs": 3,
+          "conf_sum": 1.7861566543579102,
+          "conf_mean": 0.5953855514526367,
+          "first_seen_stop": 1,
+          "last_seen_stop": 17,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-11T02:35:26.839955+00:00",
+          "updated_at": "2026-11-11T02:35:30.124260+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "bottle_1",
+          "xy_m": 0.9100263783620192,
+          "xyz_m": 0.9186544749328507,
+          "obs_linked": 3,
+          "instance_votes": {
+            "bottle_1": 3
+          },
+          "true_votes": {
+            "bottle_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        }
+      },
+      "association_sqlite_s": 0.9382966519996216
+    }
+  },
+  "timings_ms": {
+    "yolo_ms": 14111.419656999828,
+    "depth_ms": 83887.43943599991,
+    "post_ms": 1308.4939850002684
+  },
+  "max_joint_skew_ms": 3.0,
+  "max_command_error_deg": 0.07849645472013923,
+  "max_tf_joint_error_deg": 5.028644426008965e-06
+}

@@ -1,0 +1,203 @@
+{
+  "scan_id": "scan_1794363992",
+  "frames": 18,
+  "live_observations": 25,
+  "a_matches_live": true,
+  "wire_tf_missing": [],
+  "bbox_blob_columns": 100,
+  "targets": {
+    "laptop_1": {
+      "visible": 4,
+      "true_detections": 0,
+      "false_class": 0,
+      "missed_visible": 4,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 0,
+      "visible_stops": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "visibility_status": {
+        "outside_fov": 12,
+        "edge_cut_gt": 2,
+        "visible": 2,
+        "frustum_uncertain": 2
+      }
+    },
+    "book_1": {
+      "visible": 3,
+      "true_detections": 0,
+      "false_class": 0,
+      "missed_visible": 3,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 0,
+      "visible_stops": [
+        4,
+        5,
+        6
+      ],
+      "visibility_status": {
+        "outside_fov": 15,
+        "visible": 3
+      }
+    },
+    "cup_1": {
+      "visible": 4,
+      "true_detections": 2,
+      "false_class": 0,
+      "missed_visible": 2,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 2,
+      "visible_stops": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "visibility_status": {
+        "outside_fov": 14,
+        "edge_cut_gt": 1,
+        "visible": 3
+      }
+    },
+    "bottle_1": {
+      "visible": 4,
+      "true_detections": 3,
+      "false_class": 0,
+      "missed_visible": 1,
+      "depth_rejected": 0,
+      "truncated": 0,
+      "valid_observations": 3,
+      "visible_stops": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "visibility_status": {
+        "outside_fov": 14,
+        "visible": 3,
+        "edge_cut_gt": 1
+      }
+    }
+  },
+  "branches": {
+    "A": {
+      "association": {
+        "merged_pairs": [],
+        "confirmed": 4,
+        "rejected": 8
+      },
+      "final_confirmed": 4,
+      "scoped_confirmed": 1,
+      "unique_clean_instances": 1,
+      "localized_under_match_radius": 0,
+      "wrong_confirmed": 0,
+      "duplicate_confirmed": 0,
+      "unresolved_target_predictions": [],
+      "recall": 0.25,
+      "localized_recall": 0.0,
+      "precision": 1.0,
+      "localized_precision": 0.0,
+      "precision_conservative": 1.0,
+      "duplicate_rate": 0.0,
+      "xy_m": {
+        "mean": 0.6479868778533671,
+        "median": 0.6479868778533671,
+        "p90": 0.6479868778533671
+      },
+      "xyz_m": {
+        "mean": 0.6533912592504577,
+        "median": 0.6533912592504577,
+        "p90": 0.6533912592504577
+      },
+      "depth": {
+        "n": 5,
+        "absrel": 0.32730962075666997,
+        "mae_m": 0.4463850498199463,
+        "bias_m": -0.4463850498199463,
+        "clipped": 0
+      },
+      "primary": {
+        "bottle_1": {
+          "method": "A",
+          "object_id": 6,
+          "scan_id": "scan_1794363992",
+          "class_name": "bottle",
+          "x": -1.906099907357541,
+          "y": 1.7044461337234285,
+          "z": 0.22008419760004475,
+          "weight_sum": 2.8768264672562665,
+          "n_obs": 3,
+          "conf_sum": 2.524669051170349,
+          "conf_mean": 0.8415563503901163,
+          "first_seen_stop": 3,
+          "last_seen_stop": 5,
+          "seen_untruncated": 1,
+          "status": "confirmed",
+          "created_at": "2026-11-11T02:29:39.460853+00:00",
+          "updated_at": "2026-11-11T02:29:42.772427+00:00",
+          "disposition": "confirmed",
+          "semantic_status": "clean_instance",
+          "instance_gt": "bottle_1",
+          "xy_m": 0.6479868778533671,
+          "xyz_m": 0.6533912592504577,
+          "obs_linked": 3,
+          "instance_votes": {
+            "bottle_1": 3
+          },
+          "true_votes": {
+            "bottle_1": 3
+          },
+          "conf_sum_error": 0.0,
+          "conf_mean_error": 0.0
+        }
+      },
+      "association_sqlite_s": 1.0679587790001506
+    },
+    "B": {
+      "association": {
+        "merged_pairs": [],
+        "confirmed": 0,
+        "rejected": 17
+      },
+      "final_confirmed": 0,
+      "scoped_confirmed": 0,
+      "unique_clean_instances": 0,
+      "localized_under_match_radius": 0,
+      "wrong_confirmed": 0,
+      "duplicate_confirmed": 0,
+      "unresolved_target_predictions": [],
+      "recall": 0.0,
+      "localized_recall": 0.0,
+      "precision": null,
+      "localized_precision": null,
+      "precision_conservative": null,
+      "duplicate_rate": null,
+      "xy_m": null,
+      "xyz_m": null,
+      "depth": {
+        "n": 5,
+        "absrel": 0.1358370649556801,
+        "mae_m": 0.1844168116361559,
+        "bias_m": -0.10631203537930208,
+        "clipped": 0
+      },
+      "primary": {},
+      "association_sqlite_s": 1.0240336400003116
+    }
+  },
+  "timings_ms": {
+    "yolo_ms": 11971.83767100006,
+    "depth_ms": 79853.50860700016,
+    "post_ms": 901.1959229998183
+  },
+  "max_joint_skew_ms": 0.0,
+  "max_command_error_deg": 0.08523744821426463,
+  "max_tf_joint_error_deg": 5.088887490341627e-14
+}

@@ -1,0 +1,88 @@
+{
+  "room": "aws",
+  "camera_pose": [
+    -2.0,
+    0.75,
+    0.36,
+    0,
+    0,
+    0
+  ],
+  "reference_heading_rad": 1.5707963267948966,
+  "floor_z_m": 0.006,
+  "resource_path": "/mnt/d/loc3d_ws/data/eval/metric3d_depth_calibration_20261110_184655/easynav/playground_kobuki/easynav_playground_kobuki_worlds/models:/mnt/d/loc3d_ws/src/room_sim/models",
+  "objects": {
+    "laptop_1": {
+      "pose": [
+        -1.48,
+        2.4,
+        0.006002999999999975,
+        0.0,
+        0.0,
+        1.5707963267948966
+      ],
+      "center": [
+        -1.479976,
+        2.3988645,
+        0.102933
+      ],
+      "floor_clearance_m": 0.0,
+      "forward_m": 1.65,
+      "lateral_m": -0.52
+    },
+    "book_1": {
+      "pose": [
+        -2.45,
+        2.55,
+        0.005968999999999997,
+        0.0,
+        0.0,
+        1.5707963267948966
+      ],
+      "center": [
+        -2.4464525000000004,
+        2.5495039999999998,
+        0.111184
+      ],
+      "floor_clearance_m": 0.0,
+      "forward_m": 1.8,
+      "lateral_m": 0.45
+    },
+    "cup_1": {
+      "pose": [
+        -2.12,
+        2.1,
+        0.006028000000000028,
+        0.0,
+        0.0,
+        1.5707963267948966
+      ],
+      "center": [
+        -2.118858,
+        2.100092,
+        0.07346800000000003
+      ],
+      "floor_clearance_m": 0.0,
+      "forward_m": 1.35,
+      "lateral_m": 0.12
+    },
+    "bottle_1": {
+      "pose": [
+        -1.85,
+        2.35,
+        0.13622035679398292,
+        1.570796,
+        0.0,
+        1.5707963267948966
+      ],
+      "center": [
+        -1.85,
+        2.35,
+        0.13622035679398292
+      ],
+      "floor_clearance_m": 5.204170427930421e-18,
+      "forward_m": 1.6,
+      "lateral_m": -0.15
+    }
+  }
+}
